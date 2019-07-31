@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         lblWelcome.text = "Welcome"
-        
+        lblWelcome.textColor = .red
         
     }
 
