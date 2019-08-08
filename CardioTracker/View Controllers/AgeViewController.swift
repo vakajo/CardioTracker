@@ -34,6 +34,7 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         
         // ATH: Enabla takkann aðeins þegar það er komið input???
         txtFieldAge.keyboardType = .numberPad
+        txtFieldAge.delegate = self
         
         // MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -62,8 +63,51 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func btnNextClicked(_ sender: UIButton) {
+        
+        if txtFieldAge.text == ""{
+            return
+        }
+        
+        guard let text = txtFieldAge.text else { return }
+        let dataManager = RiskDataManager.shared
+        dataManager.age = text
         buttonTapped(sender: btnNext)
+        
+        
+        
+        let dummyRisk = DummyRisk(age: RiskDataManager.shared.age, isMale: RiskDataManager.shared.isMale)
+        
+        let age = dataManager.age
+        let isMale = dataManager.isMale
+        
+        let myOtherRisk = DummyRisk(age: age, isMale: isMale)
+        
+        
+        let myRisk = dummyRisk.computedRisk
+        print(myRisk)
+        print(myOtherRisk.computedRisk)
     }
     
+}
 
+class DummyRisk{
+    
+    var age: String = ""
+    var isMale: Bool = false
+    
+    var computedRisk: Double = 0
+    
+    init(age: String, isMale: Bool){
+        self.age = age
+        self.isMale = isMale
+        
+        computeRisk()
+    }
+    
+    func computeRisk(){
+        
+        if isMale == true{
+            computedRisk = 5
+        }
+    }
 }

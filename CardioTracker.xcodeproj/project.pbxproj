@@ -31,6 +31,7 @@
 		3DDB609E22FB022D00B5156A /* SystolicBpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB609D22FB022D00B5156A /* SystolicBpViewController.swift */; };
 		3DDB60A022FB073C00B5156A /* UnknownSystolicBpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB609F22FB073C00B5156A /* UnknownSystolicBpViewController.swift */; };
 		3DDB60A222FB074B00B5156A /* BmiIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB60A122FB074B00B5156A /* BmiIndexViewController.swift */; };
+		3DDB60A422FCDB3800B5156A /* RiskDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB60A322FCDB3800B5156A /* RiskDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		3DDB609D22FB022D00B5156A /* SystolicBpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystolicBpViewController.swift; sourceTree = "<group>"; };
 		3DDB609F22FB073C00B5156A /* UnknownSystolicBpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownSystolicBpViewController.swift; sourceTree = "<group>"; };
 		3DDB60A122FB074B00B5156A /* BmiIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiIndexViewController.swift; sourceTree = "<group>"; };
+		3DDB60A322FCDB3800B5156A /* RiskDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				3DDB609D22FB022D00B5156A /* SystolicBpViewController.swift */,
 				3DDB609F22FB073C00B5156A /* UnknownSystolicBpViewController.swift */,
 				3DDB60A122FB074B00B5156A /* BmiIndexViewController.swift */,
+				3DDB60A322FCDB3800B5156A /* RiskDataManager.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				3DDA005B22F24C25005C23B3 /* AppDelegate.swift in Sources */,
 				3DDB609822FADE7800B5156A /* MedicationViewController.swift in Sources */,
 				3DDB609422F9B52400B5156A /* FamHistoryViewController.swift in Sources */,
+				3DDB60A422FCDB3800B5156A /* RiskDataManager.swift in Sources */,
 				3DDA008522F99291005C23B3 /* SmokingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

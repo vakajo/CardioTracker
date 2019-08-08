@@ -21,9 +21,15 @@ class MedicationViewController: UIViewController {
     @IBOutlet weak var lblQuestions: UILabel!
     
     @IBOutlet weak var lblMedication: UILabel!
-    @IBOutlet weak var btnBloodPressure: UIButton!
-    @IBOutlet weak var btnAntipsychotic: UIButton!
-    @IBOutlet weak var btnSteroid: UIButton!
+    
+    
+    @IBOutlet weak var lblBloodPressureTreatment: UILabel!
+    @IBOutlet weak var btnBloodPressureTreatment: UIButton!
+    @IBOutlet weak var lblAtypicalAntipsychotic: UILabel!
+    @IBOutlet weak var btnAtypicalAntipsychotic: UIButton!
+    @IBOutlet weak var lblSteroidTablets: UILabel!
+    @IBOutlet weak var btnSteroidTablets: UIButton!
+    @IBOutlet weak var lblHealthy: UILabel!
     @IBOutlet weak var btnHealthy: UIButton!
     
     @IBOutlet weak var btnNext: UIButton!
@@ -40,18 +46,11 @@ class MedicationViewController: UIViewController {
         lblMedication.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
         
         //MARK: Buttons Layout
-        let buttons = [btnBloodPressure, btnAntipsychotic, btnSteroid, btnHealthy, btnNext]
-        
-        for index in buttons {
-            index!.layer.cornerRadius = 15
-            index!.clipsToBounds = true
-            index!.layer.borderWidth = 1
-            index!.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
-            index!.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
-        }
-        
-        btnHealthy!.titleLabel!.numberOfLines = 0
-        btnHealthy.titleLabel!.textAlignment = NSTextAlignment.center
+            btnNext.layer.cornerRadius = 15
+            btnNext.clipsToBounds = true
+            btnNext.layer.borderWidth = 1
+            btnNext.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
+            btnNext.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
     }
     
     //MARK: Button Methods
@@ -60,46 +59,32 @@ class MedicationViewController: UIViewController {
         sender.setTitleColor(.white, for: [])
     }
     
-    @IBAction func btnSelected(_ sender: AnyObject) {
-        
-        guard let button = sender as? UIButton else { return }
-        
-        if !button.isSelected {
-            button.isSelected = true
-            button.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
-            button.setTitleColor(.white, for: [])
-        }
-        else {
-            button.isSelected = false
-            button.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            button.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
-            button.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
+    func checkBoxTapped(_ sender: UIButton) {
+        if sender.isSelected {
+            sender.isSelected = false
+        } else {
+            sender.isSelected = true
         }
     }
     
-    @IBAction func btnBloodPressureSel(_ sender: UIButton) {
-        btnSelected(btnBloodPressure)
+    
+    @IBAction func btnBloodPressureSelected(_ sender: UIButton) {
+        checkBoxTapped(btnBloodPressureTreatment)
     }
     
-    @IBAction func btnAntipsychoticSel(_ sender: UIButton) {
-        btnSelected(btnAntipsychotic)
+    @IBAction func btnAtypicalAntypsychoticSelected(_ sender: UIButton) {
+        checkBoxTapped(btnAtypicalAntipsychotic)
     }
     
-    @IBAction func btnSteroidSel(_ sender: UIButton) {
-        btnSelected(btnSteroid)
+    @IBAction func btnSteroidTabletsSelected(_ sender: UIButton) {
+        checkBoxTapped(btnSteroidTablets)
     }
     
-    @IBAction func btnHealthySel(_ sender: UIButton) {
-        btnSelected(btnHealthy)
+    @IBAction func btnHealthySelected(_ sender: UIButton) {
+        checkBoxTapped(btnHealthy)
     }
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
         buttonTapped(sender: btnNext)
     }
-    
-    
-    
-    
-
-
 }

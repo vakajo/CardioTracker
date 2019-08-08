@@ -65,12 +65,27 @@ class GenderViewController: UIViewController {
 
     @IBAction func btnMaleClicked(_ sender: UIButton) {
         buttonTapped(sender: btnMale)
+        let dataManager = RiskDataManager.shared
+        dataManager.isMale = true
+        print("")
     }
     
     
     @IBAction func btnFemaleClicked(_ sender: UIButton) {
         buttonTapped(sender: btnFemale)
+        let dataManager = RiskDataManager.shared
+        dataManager.isMale = false
+        
+        
     }
     
-   
+    @IBAction func backBtnPressed(_ sender: Any) {
+        
+//        dismiss(animated: true, completion: nil)
+        
+        dismiss(animated: true) {
+            print("dismissed!!!")
+        }
+    }
+    
 }

@@ -344,12 +344,24 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFt-qh-7wX">
+                                <rect key="frame" x="35" y="47" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kI8-aw-mBH"/>
+                                    <constraint firstAttribute="width" constant="46" id="lOU-7A-67d"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="S8E-KZ-00K" eventType="touchUpInside" id="hxN-ej-UIp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sUM-5F-sWu" firstAttribute="centerX" secondItem="wRP-lx-baA" secondAttribute="centerX" id="35Y-3i-kaq"/>
                             <constraint firstItem="H4p-bB-H9b" firstAttribute="centerX" secondItem="wRP-lx-baA" secondAttribute="centerX" id="74z-gp-yai"/>
                             <constraint firstItem="XNv-Bo-xam" firstAttribute="top" secondItem="5Bn-Fg-1e3" secondAttribute="bottom" constant="40" id="7Xy-q2-107"/>
+                            <constraint firstItem="jFt-qh-7wX" firstAttribute="top" secondItem="wRP-lx-baA" secondAttribute="top" constant="27" id="GGv-li-3PA"/>
                             <constraint firstItem="wRP-lx-baA" firstAttribute="bottom" secondItem="Skj-Lx-Zt1" secondAttribute="bottom" constant="75" id="GTn-Sf-oGW"/>
                             <constraint firstItem="5Bn-Fg-1e3" firstAttribute="centerX" secondItem="wRP-lx-baA" secondAttribute="centerX" id="Huf-uX-PbX"/>
                             <constraint firstItem="wRP-lx-baA" firstAttribute="trailing" secondItem="VTD-1l-L4E" secondAttribute="trailing" constant="50" id="LTG-v8-V1E"/>
@@ -360,6 +372,7 @@
                             <constraint firstItem="XNv-Bo-xam" firstAttribute="centerX" secondItem="wRP-lx-baA" secondAttribute="centerX" id="U5K-J6-YEj"/>
                             <constraint firstItem="3gg-5j-q0K" firstAttribute="leading" secondItem="VTD-1l-L4E" secondAttribute="leading" id="bIw-tI-ohO"/>
                             <constraint firstItem="sUM-5F-sWu" firstAttribute="top" secondItem="H4p-bB-H9b" secondAttribute="bottom" constant="10" id="hpc-D7-u8P"/>
+                            <constraint firstItem="jFt-qh-7wX" firstAttribute="leading" secondItem="wRP-lx-baA" secondAttribute="leading" constant="35" id="lKa-IJ-hgm"/>
                             <constraint firstItem="zzL-YQ-1zL" firstAttribute="centerX" secondItem="wRP-lx-baA" secondAttribute="centerX" id="niO-Uw-34G"/>
                             <constraint firstItem="VTD-1l-L4E" firstAttribute="centerX" secondItem="wRP-lx-baA" secondAttribute="centerX" id="pX3-eU-e1t"/>
                             <constraint firstItem="YmR-2V-otX" firstAttribute="centerY" secondItem="XNv-Bo-xam" secondAttribute="centerY" id="s70-75-equ"/>
@@ -459,8 +472,8 @@
                                     <constraint firstItem="V1U-Ce-Dbg" firstAttribute="leading" secondItem="Df7-aK-nTU" secondAttribute="trailing" id="z46-gx-79h"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8S-ry-jrE">
-                                <rect key="frame" x="109.66666666666669" y="227" width="195" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8S-ry-jrE">
+                                <rect key="frame" x="100" y="227" width="214" height="24"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -490,16 +503,16 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12C-Ty-foU">
-                                <rect key="frame" x="109.66666666666669" y="276" width="195" height="30"/>
+                                <rect key="frame" x="100" y="276" width="214" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="195" id="Ec0-qI-A70"/>
+                                    <constraint firstAttribute="width" constant="214" id="Ec0-qI-A70"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HH-z2-ZIZ">
-                                <rect key="frame" x="109.66666666666669" y="316" width="195" height="36"/>
+                                <rect key="frame" x="100" y="316" width="214" height="36"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
@@ -670,9 +683,9 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smp-iT-tBb">
-                                <rect key="frame" x="99.666666666666686" y="491" width="215" height="36"/>
+                                <rect key="frame" x="100" y="491" width="214" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="nbv-bz-SBd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="nbv-bz-SBd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <state key="normal" title="NEXT"/>
@@ -823,9 +836,9 @@
                                 <rect key="frame" x="55" y="257" width="304" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9db-K2-On5">
-                                <rect key="frame" x="99.666666666666686" y="491" width="215" height="36"/>
+                                <rect key="frame" x="100" y="491" width="214" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="qZP-Bb-uKF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="qZP-Bb-uKF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <state key="normal" title="NEXT"/>
@@ -999,9 +1012,9 @@
                                 <rect key="frame" x="55" y="245" width="304" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsx-oX-L4D">
-                                <rect key="frame" x="99.666666666666686" y="491" width="215" height="36"/>
+                                <rect key="frame" x="100" y="491" width="214" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="NuE-oA-PEr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="NuE-oA-PEr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <state key="normal" title="NEXT"/>
@@ -1346,109 +1359,141 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select all of the following conditions you have been diagnosed with" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whg-xB-BnC">
-                                <rect key="frame" x="50" y="207" width="314" height="71.666666666666686"/>
+                                <rect key="frame" x="50" y="226.99999999999997" width="314" height="71.666666666666657"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nks-oR-Z7l">
-                                <rect key="frame" x="68" y="293.66666666666669" width="278" height="35"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="BAC-jj-SaO">
+                                <rect key="frame" x="184.66666666666666" y="167" width="45" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="CsA-sK-iVy"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="E0I-WA-xJl"/>
+                                    <constraint firstAttribute="height" constant="45" id="T0R-CB-Utg"/>
+                                    <constraint firstAttribute="width" constant="45" id="kaU-bU-Atu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Chronic Kidney Disease (stage 3, 4 or 5)"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYu-cU-eCj">
+                                <rect key="frame" x="193.66666666666666" y="179" width="27" height="21"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF2-ZU-Nhf">
+                                <rect key="frame" x="334" y="317.33333333333331" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="N3o-ik-VfU"/>
+                                    <constraint firstAttribute="height" constant="30" id="SYi-V4-qza"/>
+                                </constraints>
+                                <state key="selected" image="Checked"/>
                                 <connections>
-                                    <action selector="btnKidneySel:" destination="cvF-r8-v9W" eventType="touchUpInside" id="5Ev-AZ-7RW"/>
+                                    <action selector="checkBoxKidneySelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="bVM-W4-dVA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU4-p4-cbZ">
-                                <rect key="frame" x="68" y="333.66666666666669" width="278" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv1-ck-doR">
+                                <rect key="frame" x="334" y="349.33333333333331" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="9Ai-wY-VFD"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="Vj1-yA-uZb"/>
+                                    <constraint firstAttribute="height" constant="30" id="2dd-mY-ZE4"/>
+                                    <constraint firstAttribute="width" constant="30" id="ILX-vv-BYK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Atrial Fibrillation"/>
                                 <connections>
-                                    <action selector="btnAtrialSel:" destination="cvF-r8-v9W" eventType="touchUpInside" id="AUS-hM-FlF"/>
+                                    <action selector="checkBoxAtrialFibrillationSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="2iv-Fc-gkp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szS-z0-4Pv">
-                                <rect key="frame" x="68" y="373.66666666666669" width="278" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-jO-zTe">
+                                <rect key="frame" x="334" y="381.33333333333331" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="9Vl-Nm-W6v"/>
-                                    <constraint firstAttribute="height" constant="35" id="BuJ-xG-dq7"/>
+                                    <constraint firstAttribute="height" constant="30" id="dnw-bH-pEy"/>
+                                    <constraint firstAttribute="width" constant="30" id="jxV-rb-cwz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Migraines"/>
                                 <connections>
-                                    <action selector="btnMigrainesSel:" destination="cvF-r8-v9W" eventType="touchUpInside" id="VJE-lF-gt4"/>
+                                    <action selector="checkBoxMigranesSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="4qX-IY-xZy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obi-i8-od0">
-                                <rect key="frame" x="68" y="413.66666666666669" width="278" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="276-Ft-saI">
+                                <rect key="frame" x="334" y="413.33333333333331" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="T9a-Pz-aVv"/>
-                                    <constraint firstAttribute="height" constant="35" id="vaN-5h-jGO"/>
+                                    <constraint firstAttribute="width" constant="30" id="0JO-N2-Qle"/>
+                                    <constraint firstAttribute="height" constant="30" id="dJ3-lj-b8D"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Rheumatoid arthritis"/>
                                 <connections>
-                                    <action selector="btnArthritisSel:" destination="cvF-r8-v9W" eventType="touchUpInside" id="Cgp-gN-gHq"/>
+                                    <action selector="checkBoxRheumatoidArthritisSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="5z3-LU-7DH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qF-jY-tsc">
-                                <rect key="frame" x="68" y="453.66666666666669" width="278" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sp2-JL-mzJ">
+                                <rect key="frame" x="334" y="445.33333333333331" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="K6G-nx-oo5"/>
-                                    <constraint firstAttribute="height" constant="35" id="d9n-Rp-Yfc"/>
+                                    <constraint firstAttribute="width" constant="30" id="CzS-2v-X9G"/>
+                                    <constraint firstAttribute="height" constant="30" id="fKu-Nn-hEb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Systemic lupus erythematosus (SLE)"/>
                                 <connections>
-                                    <action selector="btnSLESel:" destination="cvF-r8-v9W" eventType="touchUpInside" id="G4n-iB-H0c"/>
+                                    <action selector="checkBoxSleSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="HJc-OY-icU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAJ-f5-n8o">
-                                <rect key="frame" x="68" y="493.66666666666669" width="278" height="35.000000000000057"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-oA-clw">
+                                <rect key="frame" x="334" y="477.33333333333331" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Djo-kb-J6a"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="YaE-5b-snT"/>
+                                    <constraint firstAttribute="width" constant="30" id="C9N-p4-ETb"/>
+                                    <constraint firstAttribute="height" constant="30" id="EzU-Yl-Ya3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Severe mental illness"/>
                                 <connections>
-                                    <action selector="btnMentalSel:" destination="cvF-r8-v9W" eventType="touchUpInside" id="VnP-aX-AzD"/>
+                                    <action selector="checkBoxSevereMentalIllnessSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="k9E-Rs-fhj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbl-PD-qeV">
-                                <rect key="frame" x="68" y="548.66666666666663" width="278" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="GnR-RG-Onv"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="sSK-vq-bIe"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chronic Kidney Disease (stage 3, 4 or 5)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWn-6b-wuu">
+                                <rect key="frame" x="50" y="323.66666666666669" width="274" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <string key="title">I have not been diagnosed with
-any of the above conditions</string>
-                                </state>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atrial Fibrillation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7f-Zp-5yN">
+                                <rect key="frame" x="50" y="355.66666666666669" width="274" height="17"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Migraines" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4x-V8-TZi">
+                                <rect key="frame" x="50" y="387.66666666666669" width="274" height="17"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rheumatoid Arthritis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce2-5y-qWf">
+                                <rect key="frame" x="50" y="419.66666666666669" width="274" height="17"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Systemic Lupus Erythematosus (SLE)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR2-EC-b72">
+                                <rect key="frame" x="50" y="451.66666666666669" width="274" height="17"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Severe Mental Illness" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vI-Q2-V6g">
+                                <rect key="frame" x="50" y="483.66666666666669" width="276" height="17"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have not been diagnosed with any of the above conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCG-WV-BMa">
+                                <rect key="frame" x="50" y="525.33333333333337" width="276" height="33.666666666666629"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpb-4Z-qin">
+                                <rect key="frame" x="334" y="527.33333333333337" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="KSs-oX-F8q"/>
+                                    <constraint firstAttribute="height" constant="30" id="oNj-W1-Vk2"/>
+                                </constraints>
                                 <connections>
-                                    <action selector="btnHealthySel:" destination="cvF-r8-v9W" eventType="touchUpInside" id="qtN-TJ-7lB"/>
+                                    <action selector="checkBoxHealthySelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="wpv-ct-fjD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igu-TL-21J">
-                                <rect key="frame" x="68" y="613.66666666666663" width="278" height="35"/>
+                                <rect key="frame" x="100" y="626" width="214" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="oec-nB-6ne"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="LI9-Cp-9Te"/>
                                     <constraint firstAttribute="height" constant="35" id="p2W-er-GhX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
@@ -1458,73 +1503,87 @@ any of the above conditions</string>
                                     <segue destination="Y15-aS-0jS" kind="show" id="MBJ-rO-ckI"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="BAC-jj-SaO">
-                                <rect key="frame" x="184.66666666666666" y="147" width="45" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="T0R-CB-Utg"/>
-                                    <constraint firstAttribute="width" constant="45" id="kaU-bU-Atu"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYu-cU-eCj">
-                                <rect key="frame" x="193.66666666666666" y="159" width="27" height="21"/>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pU4-p4-cbZ" firstAttribute="trailing" secondItem="nks-oR-Z7l" secondAttribute="trailing" id="2SX-SU-gd7"/>
-                            <constraint firstItem="Igu-TL-21J" firstAttribute="leading" secondItem="vbl-PD-qeV" secondAttribute="leading" id="2pm-Bp-9Ee"/>
-                            <constraint firstItem="aAJ-f5-n8o" firstAttribute="leading" secondItem="1qF-jY-tsc" secondAttribute="leading" id="5Ti-Lc-PWk"/>
+                            <constraint firstItem="sp2-JL-mzJ" firstAttribute="leading" secondItem="aR2-EC-b72" secondAttribute="trailing" constant="10" id="15I-qD-WlG"/>
+                            <constraint firstItem="dpb-4Z-qin" firstAttribute="leading" secondItem="gCG-WV-BMa" secondAttribute="trailing" constant="8" id="2fy-KS-fgO"/>
+                            <constraint firstItem="TWn-6b-wuu" firstAttribute="leading" secondItem="whg-xB-BnC" secondAttribute="leading" id="4oB-hl-2eV"/>
+                            <constraint firstItem="7j3-jO-zTe" firstAttribute="top" secondItem="Rv1-ck-doR" secondAttribute="bottom" constant="2" id="5I3-Hi-kdf"/>
                             <constraint firstItem="8S8-sl-W6M" firstAttribute="trailing" secondItem="whg-xB-BnC" secondAttribute="trailing" constant="50" id="6Hg-v2-Gmp"/>
+                            <constraint firstItem="c7G-oA-clw" firstAttribute="trailing" secondItem="sp2-JL-mzJ" secondAttribute="trailing" id="7CA-c0-HkI"/>
                             <constraint firstItem="Dbw-kq-qeY" firstAttribute="centerX" secondItem="8S8-sl-W6M" secondAttribute="centerX" id="7cX-n0-bRZ"/>
-                            <constraint firstItem="1qF-jY-tsc" firstAttribute="trailing" secondItem="obi-i8-od0" secondAttribute="trailing" id="9DU-ma-RtZ"/>
-                            <constraint firstItem="obi-i8-od0" firstAttribute="trailing" secondItem="szS-z0-4Pv" secondAttribute="trailing" id="Ad8-4J-fcn"/>
-                            <constraint firstItem="nks-oR-Z7l" firstAttribute="top" secondItem="whg-xB-BnC" secondAttribute="bottom" constant="15" id="D4T-mM-7hy"/>
-                            <constraint firstItem="1qF-jY-tsc" firstAttribute="leading" secondItem="obi-i8-od0" secondAttribute="leading" id="Ec8-t5-GMt"/>
+                            <constraint firstItem="276-Ft-saI" firstAttribute="top" secondItem="7j3-jO-zTe" secondAttribute="bottom" constant="2" id="7iZ-i7-FzT"/>
+                            <constraint firstItem="276-Ft-saI" firstAttribute="trailing" secondItem="7j3-jO-zTe" secondAttribute="trailing" id="7ky-vN-G3X"/>
+                            <constraint firstItem="gCG-WV-BMa" firstAttribute="centerY" secondItem="dpb-4Z-qin" secondAttribute="centerY" id="7wy-lx-GBu"/>
+                            <constraint firstItem="c7G-oA-clw" firstAttribute="leading" secondItem="sp2-JL-mzJ" secondAttribute="leading" id="9Ed-Q4-ETF"/>
+                            <constraint firstItem="sp2-JL-mzJ" firstAttribute="leading" secondItem="276-Ft-saI" secondAttribute="leading" id="APp-3P-Zed"/>
+                            <constraint firstItem="Rv1-ck-doR" firstAttribute="leading" secondItem="eF2-ZU-Nhf" secondAttribute="leading" id="CN1-me-DzR"/>
+                            <constraint firstItem="Rv1-ck-doR" firstAttribute="leading" secondItem="w7f-Zp-5yN" secondAttribute="trailing" constant="10" id="D8L-zZ-gHT"/>
+                            <constraint firstItem="8S8-sl-W6M" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Igu-TL-21J" secondAttribute="trailing" symbolic="YES" id="F2e-wr-GGz"/>
+                            <constraint firstItem="c7G-oA-clw" firstAttribute="top" secondItem="sp2-JL-mzJ" secondAttribute="bottom" constant="2" id="Gu5-zj-AnK"/>
                             <constraint firstItem="BAC-jj-SaO" firstAttribute="centerX" secondItem="8S8-sl-W6M" secondAttribute="centerX" id="JIF-NQ-6tN"/>
                             <constraint firstItem="Dbw-kq-qeY" firstAttribute="top" secondItem="8S8-sl-W6M" secondAttribute="top" constant="50" id="LbD-Zv-SsK"/>
-                            <constraint firstItem="pU4-p4-cbZ" firstAttribute="top" secondItem="nks-oR-Z7l" secondAttribute="bottom" constant="5" id="NPO-Us-hih"/>
-                            <constraint firstItem="Igu-TL-21J" firstAttribute="trailing" secondItem="vbl-PD-qeV" secondAttribute="trailing" id="O7q-om-Ks1"/>
-                            <constraint firstItem="aAJ-f5-n8o" firstAttribute="top" secondItem="1qF-jY-tsc" secondAttribute="bottom" constant="5" id="OnA-BC-Ii7"/>
-                            <constraint firstItem="whg-xB-BnC" firstAttribute="top" secondItem="Dbw-kq-qeY" secondAttribute="bottom" constant="80" id="Q4h-gj-cVD"/>
-                            <constraint firstItem="obi-i8-od0" firstAttribute="top" secondItem="szS-z0-4Pv" secondAttribute="bottom" constant="5" id="Q6H-b9-sRO"/>
+                            <constraint firstItem="dpb-4Z-qin" firstAttribute="trailing" secondItem="c7G-oA-clw" secondAttribute="trailing" id="M1t-1R-cYc"/>
+                            <constraint firstItem="276-Ft-saI" firstAttribute="leading" secondItem="7j3-jO-zTe" secondAttribute="leading" id="NYd-nL-7Rc"/>
+                            <constraint firstItem="ce2-5y-qWf" firstAttribute="centerY" secondItem="276-Ft-saI" secondAttribute="centerY" id="OMM-vW-siG"/>
+                            <constraint firstItem="7j3-jO-zTe" firstAttribute="leading" secondItem="f4x-V8-TZi" secondAttribute="trailing" constant="10" id="OaJ-mM-DdZ"/>
+                            <constraint firstItem="Rv1-ck-doR" firstAttribute="trailing" secondItem="eF2-ZU-Nhf" secondAttribute="trailing" id="PJW-F9-UJi"/>
+                            <constraint firstItem="whg-xB-BnC" firstAttribute="top" secondItem="Dbw-kq-qeY" secondAttribute="bottom" constant="100" id="Q4h-gj-cVD"/>
+                            <constraint firstItem="c7G-oA-clw" firstAttribute="leading" secondItem="8vI-Q2-V6g" secondAttribute="trailing" constant="8" id="QeC-aW-m4K"/>
+                            <constraint firstItem="aR2-EC-b72" firstAttribute="leading" secondItem="ce2-5y-qWf" secondAttribute="leading" id="RHl-QS-PmJ"/>
+                            <constraint firstItem="eF2-ZU-Nhf" firstAttribute="centerY" secondItem="TWn-6b-wuu" secondAttribute="centerY" id="Sff-1P-UQ6"/>
                             <constraint firstItem="whg-xB-BnC" firstAttribute="leading" secondItem="8S8-sl-W6M" secondAttribute="leading" constant="50" id="Tij-oR-oGU"/>
-                            <constraint firstItem="1qF-jY-tsc" firstAttribute="top" secondItem="obi-i8-od0" secondAttribute="bottom" constant="5" id="YD6-vX-g4z"/>
+                            <constraint firstItem="Igu-TL-21J" firstAttribute="centerX" secondItem="8S8-sl-W6M" secondAttribute="centerX" id="Tmv-te-DK9"/>
+                            <constraint firstItem="dpb-4Z-qin" firstAttribute="leading" secondItem="c7G-oA-clw" secondAttribute="leading" id="UwS-C4-Peh"/>
+                            <constraint firstItem="w7f-Zp-5yN" firstAttribute="centerY" secondItem="Rv1-ck-doR" secondAttribute="centerY" id="W8W-Dx-M8q"/>
+                            <constraint firstItem="TWn-6b-wuu" firstAttribute="top" secondItem="whg-xB-BnC" secondAttribute="bottom" constant="25" id="WNP-Ab-DAH"/>
+                            <constraint firstItem="sp2-JL-mzJ" firstAttribute="top" secondItem="276-Ft-saI" secondAttribute="bottom" constant="2" id="YSR-y8-RY0"/>
+                            <constraint firstItem="f4x-V8-TZi" firstAttribute="centerY" secondItem="7j3-jO-zTe" secondAttribute="centerY" id="Ycd-wW-BqM"/>
                             <constraint firstItem="hYu-cU-eCj" firstAttribute="centerY" secondItem="BAC-jj-SaO" secondAttribute="centerY" id="ZAJ-SR-yhh"/>
-                            <constraint firstItem="pU4-p4-cbZ" firstAttribute="leading" secondItem="nks-oR-Z7l" secondAttribute="leading" id="Ze9-xT-vfC"/>
-                            <constraint firstItem="aAJ-f5-n8o" firstAttribute="trailing" secondItem="1qF-jY-tsc" secondAttribute="trailing" id="bqN-y8-mtC"/>
-                            <constraint firstItem="BAC-jj-SaO" firstAttribute="top" secondItem="Dbw-kq-qeY" secondAttribute="bottom" constant="20" id="g6Y-aB-Qx7"/>
-                            <constraint firstItem="szS-z0-4Pv" firstAttribute="leading" secondItem="pU4-p4-cbZ" secondAttribute="leading" id="gcw-GE-Duo"/>
-                            <constraint firstItem="szS-z0-4Pv" firstAttribute="trailing" secondItem="pU4-p4-cbZ" secondAttribute="trailing" id="hd4-R3-lyQ"/>
-                            <constraint firstItem="Igu-TL-21J" firstAttribute="top" secondItem="vbl-PD-qeV" secondAttribute="bottom" constant="20" id="iBE-zO-cZY"/>
-                            <constraint firstItem="8S8-sl-W6M" firstAttribute="trailing" secondItem="nks-oR-Z7l" secondAttribute="trailing" constant="68" id="kWv-IB-iDv"/>
-                            <constraint firstItem="vbl-PD-qeV" firstAttribute="trailing" secondItem="aAJ-f5-n8o" secondAttribute="trailing" id="l9X-3A-X5Q"/>
-                            <constraint firstItem="vbl-PD-qeV" firstAttribute="top" secondItem="aAJ-f5-n8o" secondAttribute="bottom" constant="20" id="qca-d2-QCa"/>
-                            <constraint firstItem="vbl-PD-qeV" firstAttribute="leading" secondItem="aAJ-f5-n8o" secondAttribute="leading" id="r1B-tH-v9h"/>
-                            <constraint firstItem="nks-oR-Z7l" firstAttribute="leading" secondItem="8S8-sl-W6M" secondAttribute="leading" constant="68" id="sYp-sj-EZX"/>
-                            <constraint firstItem="szS-z0-4Pv" firstAttribute="top" secondItem="pU4-p4-cbZ" secondAttribute="bottom" constant="5" id="vMZ-dP-9Vr"/>
-                            <constraint firstItem="obi-i8-od0" firstAttribute="leading" secondItem="szS-z0-4Pv" secondAttribute="leading" id="z0E-W1-b0w"/>
+                            <constraint firstItem="Rv1-ck-doR" firstAttribute="top" secondItem="eF2-ZU-Nhf" secondAttribute="bottom" constant="2" id="aEX-Hu-urc"/>
+                            <constraint firstItem="eF2-ZU-Nhf" firstAttribute="trailing" secondItem="whg-xB-BnC" secondAttribute="trailing" id="av7-VW-kKh"/>
+                            <constraint firstItem="7j3-jO-zTe" firstAttribute="leading" secondItem="Rv1-ck-doR" secondAttribute="leading" id="dev-Ni-ZFU"/>
+                            <constraint firstItem="BAC-jj-SaO" firstAttribute="top" secondItem="Dbw-kq-qeY" secondAttribute="bottom" constant="40" id="g6Y-aB-Qx7"/>
+                            <constraint firstItem="dpb-4Z-qin" firstAttribute="top" secondItem="c7G-oA-clw" secondAttribute="bottom" constant="20" id="glW-Zf-Mca"/>
+                            <constraint firstItem="7j3-jO-zTe" firstAttribute="trailing" secondItem="Rv1-ck-doR" secondAttribute="trailing" id="gvx-Sc-mY1"/>
+                            <constraint firstItem="sp2-JL-mzJ" firstAttribute="trailing" secondItem="276-Ft-saI" secondAttribute="trailing" id="lMN-om-SN0"/>
+                            <constraint firstItem="ce2-5y-qWf" firstAttribute="leading" secondItem="f4x-V8-TZi" secondAttribute="leading" id="nWz-tl-ufr"/>
+                            <constraint firstItem="aR2-EC-b72" firstAttribute="centerY" secondItem="sp2-JL-mzJ" secondAttribute="centerY" id="o4O-ic-2Dg"/>
+                            <constraint firstItem="276-Ft-saI" firstAttribute="leading" secondItem="ce2-5y-qWf" secondAttribute="trailing" constant="10" id="ofT-PE-SIs"/>
+                            <constraint firstItem="8S8-sl-W6M" firstAttribute="bottom" secondItem="Igu-TL-21J" secondAttribute="bottom" constant="75" id="s7q-TV-fcy"/>
+                            <constraint firstItem="eF2-ZU-Nhf" firstAttribute="leading" secondItem="TWn-6b-wuu" secondAttribute="trailing" constant="10" id="sww-Su-npY"/>
+                            <constraint firstItem="f4x-V8-TZi" firstAttribute="leading" secondItem="w7f-Zp-5yN" secondAttribute="leading" id="tnm-7K-S4e"/>
+                            <constraint firstItem="w7f-Zp-5yN" firstAttribute="leading" secondItem="TWn-6b-wuu" secondAttribute="leading" id="u0L-3L-Sbq"/>
+                            <constraint firstItem="8vI-Q2-V6g" firstAttribute="leading" secondItem="aR2-EC-b72" secondAttribute="leading" id="uE4-EZ-F3n"/>
+                            <constraint firstItem="gCG-WV-BMa" firstAttribute="leading" secondItem="8vI-Q2-V6g" secondAttribute="leading" id="vdb-vi-Lrm"/>
+                            <constraint firstItem="8vI-Q2-V6g" firstAttribute="centerY" secondItem="c7G-oA-clw" secondAttribute="centerY" id="yhG-hu-oI5"/>
                             <constraint firstItem="hYu-cU-eCj" firstAttribute="centerX" secondItem="BAC-jj-SaO" secondAttribute="centerX" id="zlq-NA-RM4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8S8-sl-W6M"/>
                     </view>
                     <connections>
-                        <outlet property="btnArthritis" destination="obi-i8-od0" id="rLa-VQ-mvx"/>
-                        <outlet property="btnAtrial" destination="pU4-p4-cbZ" id="vFc-y9-DyS"/>
-                        <outlet property="btnHealthy" destination="vbl-PD-qeV" id="LdK-EY-kXN"/>
-                        <outlet property="btnKidney" destination="nks-oR-Z7l" id="2hs-mM-WWM"/>
-                        <outlet property="btnMental" destination="aAJ-f5-n8o" id="Ln5-lF-iWW"/>
-                        <outlet property="btnMigraines" destination="szS-z0-4Pv" id="l5I-PH-xbE"/>
                         <outlet property="btnNext" destination="Igu-TL-21J" id="hVf-be-XHJ"/>
-                        <outlet property="btnSLE" destination="1qF-jY-tsc" id="vAB-S7-FXk"/>
+                        <outlet property="checkBoxAtrialFibrillation" destination="Rv1-ck-doR" id="kjU-YP-mTn"/>
+                        <outlet property="checkBoxHealthy" destination="dpb-4Z-qin" id="j6K-jX-mrp"/>
+                        <outlet property="checkBoxKidney" destination="eF2-ZU-Nhf" id="H0l-LM-RyW"/>
+                        <outlet property="checkBoxMigraines" destination="7j3-jO-zTe" id="0vM-BA-ggh"/>
+                        <outlet property="checkBoxRheumatoidArthritis" destination="276-Ft-saI" id="fbU-Eq-wui"/>
+                        <outlet property="checkBoxSevereMentalIllness" destination="c7G-oA-clw" id="ynI-7Q-JBO"/>
+                        <outlet property="checkBoxSle" destination="sp2-JL-mzJ" id="Cb7-zz-OXX"/>
                         <outlet property="imgViewCircle" destination="BAC-jj-SaO" id="nI9-E7-Ww5"/>
                         <outlet property="imgViewHeart" destination="HMg-YB-kIC" id="upi-Qx-WAi"/>
+                        <outlet property="lblAtrialFibrillation" destination="w7f-Zp-5yN" id="bDW-lK-Yff"/>
                         <outlet property="lblC" destination="9xd-IC-bmc" id="d5y-A5-oSu"/>
                         <outlet property="lblCardio" destination="LoY-KO-OXg" id="rH7-uc-6Qh"/>
                         <outlet property="lblConditions" destination="whg-xB-BnC" id="F2c-1U-Otz"/>
+                        <outlet property="lblHealthy" destination="gCG-WV-BMa" id="iV4-ZM-YUL"/>
+                        <outlet property="lblKidney" destination="TWn-6b-wuu" id="HFy-Aj-lxC"/>
+                        <outlet property="lblMigraines" destination="f4x-V8-TZi" id="53Z-Ap-K6g"/>
                         <outlet property="lblQuestions" destination="hYu-cU-eCj" id="fsF-I9-og2"/>
+                        <outlet property="lblRheumatoidArthritis" destination="ce2-5y-qWf" id="fv2-4O-cbS"/>
+                        <outlet property="lblSevereMentalIllness" destination="8vI-Q2-V6g" id="IP1-Ea-HYl"/>
+                        <outlet property="lblSle" destination="aR2-EC-b72" id="r9l-ti-84g"/>
                         <outlet property="lblT" destination="qCY-w4-iX0" id="Gue-Uh-QzU"/>
                         <outlet property="lblTracker" destination="LA8-2A-hJX" id="RbR-hY-6vt"/>
                         <outlet property="viewContainer" destination="Dbw-kq-qeY" id="3IU-un-0gW"/>
@@ -1601,52 +1660,13 @@ any of the above conditions</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select all of the below medication you are currently taking " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoJ-Xr-oLJ">
-                                <rect key="frame" x="50" y="207" width="314" height="48"/>
+                                <rect key="frame" x="50" y="227" width="314" height="48"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3v-SA-Lng">
-                                <rect key="frame" x="68" y="280" width="278" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="WtA-hi-0xv"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="d0Q-oW-NiR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Blood Pressure Treatment"/>
-                                <connections>
-                                    <action selector="btnBloodPressureSel:" destination="Y15-aS-0jS" eventType="touchUpInside" id="ZQ5-Ly-MUH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aG0-lJ-e0q">
-                                <rect key="frame" x="68" y="320" width="278" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="JFV-ey-20y"/>
-                                    <constraint firstAttribute="height" constant="35" id="dPa-Zq-SHt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Atypical Antipsychotic Medication"/>
-                                <connections>
-                                    <action selector="btnAntipsychoticSel:" destination="Y15-aS-0jS" eventType="touchUpInside" id="DhC-jq-utM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvA-tO-mkZ">
-                                <rect key="frame" x="68" y="470" width="278" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="4eT-gf-Kuv"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="SW2-JJ-dtt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="I'm not taking any of the abovementioned medication"/>
-                                <connections>
-                                    <action selector="btnHealthySel:" destination="Y15-aS-0jS" eventType="touchUpInside" id="mHj-Sf-e93"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5d-sr-OOk">
-                                <rect key="frame" x="68" y="590" width="278" height="35"/>
+                                <rect key="frame" x="100" y="626" width="214" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="dPB-1h-WoS"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="uZi-VM-h8n"/>
@@ -1659,73 +1679,147 @@ any of the above conditions</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle" translatesAutoresizingMaskIntoConstraints="NO" id="7fc-e1-MLT">
-                                <rect key="frame" x="184.66666666666666" y="147" width="45" height="45"/>
+                                <rect key="frame" x="184.66666666666666" y="167" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="1bj-pm-pEc"/>
                                     <constraint firstAttribute="width" constant="45" id="RQA-ZN-8VX"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEK-fU-tPj">
-                                <rect key="frame" x="192.66666666666666" y="159" width="29" height="21"/>
+                                <rect key="frame" x="192.66666666666666" y="179" width="29" height="21"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPq-w8-Rtp">
-                                <rect key="frame" x="68" y="360" width="278" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unb-L7-RNF">
+                                <rect key="frame" x="334" y="293.66666666666669" width="30" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="DCA-Oz-Pnm"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="sPe-Dy-gqL"/>
+                                    <constraint firstAttribute="height" constant="30" id="Vg0-VW-QbM"/>
+                                    <constraint firstAttribute="width" constant="30" id="vSt-oI-apT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Regular Steroid Tablets"/>
+                                <state key="normal" image="ThinUnchecked"/>
+                                <state key="selected" image="Checked"/>
                                 <connections>
-                                    <action selector="btnSteroidSel:" destination="Y15-aS-0jS" eventType="touchUpInside" id="DQ0-ti-fms"/>
+                                    <action selector="btnBloodPressureSelected:" destination="Y15-aS-0jS" eventType="touchUpInside" id="6mt-us-EbH"/>
+                                    <action selector="checkBoxKidneySelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="N4r-xh-z1R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulO-rk-4Me">
+                                <rect key="frame" x="334" y="325.66666666666669" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9GE-G4-lwk"/>
+                                    <constraint firstAttribute="width" constant="30" id="sft-ZY-Zg1"/>
+                                </constraints>
+                                <state key="normal" image="ThinUnchecked"/>
+                                <state key="selected" image="Checked"/>
+                                <connections>
+                                    <action selector="btnAtypicalAntypsychoticSelected:" destination="Y15-aS-0jS" eventType="touchUpInside" id="Lz2-pS-ZKy"/>
+                                    <action selector="checkBoxKidneySelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="Iu2-w2-xG2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lb-6J-4P0">
+                                <rect key="frame" x="334" y="357.66666666666669" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MMA-cH-OOM"/>
+                                    <constraint firstAttribute="width" constant="30" id="weJ-qf-l2A"/>
+                                </constraints>
+                                <state key="normal" image="ThinUnchecked"/>
+                                <state key="selected" image="Checked"/>
+                                <connections>
+                                    <action selector="btnSteroidTabletsSelected:" destination="Y15-aS-0jS" eventType="touchUpInside" id="WnD-Og-56o"/>
+                                    <action selector="checkBoxKidneySelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="CzQ-Rs-jKV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Pressure Treatment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeG-zA-PcC">
+                                <rect key="frame" x="50" y="300" width="274" height="17"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atypical Antipsychotic Medication" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fix-tv-7rA">
+                                <rect key="frame" x="50" y="332" width="274" height="17"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regular Steroid Tablets" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1p-DT-fDD">
+                                <rect key="frame" x="50" y="364" width="274" height="17"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psj-5n-xAe">
+                                <rect key="frame" x="334" y="407.66666666666669" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4kb-y5-beS"/>
+                                    <constraint firstAttribute="width" constant="30" id="gJe-yo-7YY"/>
+                                </constraints>
+                                <state key="normal" image="ThinUnchecked"/>
+                                <state key="selected" image="Checked"/>
+                                <connections>
+                                    <action selector="btnHealthySelected:" destination="Y15-aS-0jS" eventType="touchUpInside" id="jqK-Nq-M2H"/>
+                                    <action selector="checkBoxKidneySelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="5Aa-sa-Tsg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have not been diagnosed with any of the above conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tj5-8X-Muq">
+                                <rect key="frame" x="50" y="405.66666666666669" width="274" height="33.666666666666686"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7fc-e1-MLT" firstAttribute="top" secondItem="Bvl-r4-NJK" secondAttribute="bottom" constant="20" id="0UP-cA-ZiN"/>
-                            <constraint firstItem="J3v-SA-Lng" firstAttribute="leading" secondItem="N8h-DD-oun" secondAttribute="leading" constant="68" id="0uY-iP-uil"/>
+                            <constraint firstItem="unb-L7-RNF" firstAttribute="trailing" secondItem="xoJ-Xr-oLJ" secondAttribute="trailing" id="08v-kI-W0b"/>
+                            <constraint firstItem="7fc-e1-MLT" firstAttribute="top" secondItem="Bvl-r4-NJK" secondAttribute="bottom" constant="40" id="0UP-cA-ZiN"/>
                             <constraint firstItem="7fc-e1-MLT" firstAttribute="centerX" secondItem="N8h-DD-oun" secondAttribute="centerX" id="3cg-so-yo7"/>
-                            <constraint firstItem="J3v-SA-Lng" firstAttribute="top" secondItem="xoJ-Xr-oLJ" secondAttribute="bottom" constant="25" id="4uD-wQ-sPc"/>
-                            <constraint firstItem="SPq-w8-Rtp" firstAttribute="top" secondItem="aG0-lJ-e0q" secondAttribute="bottom" constant="5" id="5xE-q4-hfj"/>
-                            <constraint firstItem="N8h-DD-oun" firstAttribute="trailing" secondItem="J3v-SA-Lng" secondAttribute="trailing" constant="68" id="8iH-Fy-I0l"/>
+                            <constraint firstItem="Psj-5n-xAe" firstAttribute="leading" secondItem="tj5-8X-Muq" secondAttribute="trailing" constant="10" id="4EX-8S-VDz"/>
+                            <constraint firstItem="fix-tv-7rA" firstAttribute="leading" secondItem="FeG-zA-PcC" secondAttribute="leading" id="6BZ-ad-G9q"/>
                             <constraint firstItem="xoJ-Xr-oLJ" firstAttribute="leading" secondItem="N8h-DD-oun" secondAttribute="leading" constant="50" id="Cpl-gT-eYG"/>
+                            <constraint firstItem="tj5-8X-Muq" firstAttribute="centerY" secondItem="Psj-5n-xAe" secondAttribute="centerY" id="ETv-OD-XdG"/>
                             <constraint firstItem="PEK-fU-tPj" firstAttribute="centerY" secondItem="7fc-e1-MLT" secondAttribute="centerY" id="EbP-AP-oCo"/>
-                            <constraint firstItem="f5d-sr-OOk" firstAttribute="trailing" secondItem="YvA-tO-mkZ" secondAttribute="trailing" id="Fxv-cE-R72"/>
                             <constraint firstItem="N8h-DD-oun" firstAttribute="trailing" secondItem="xoJ-Xr-oLJ" secondAttribute="trailing" constant="50" id="HLb-6L-jk1"/>
-                            <constraint firstItem="SPq-w8-Rtp" firstAttribute="leading" secondItem="aG0-lJ-e0q" secondAttribute="leading" id="OfH-WA-jJH"/>
-                            <constraint firstItem="f5d-sr-OOk" firstAttribute="top" secondItem="YvA-tO-mkZ" secondAttribute="bottom" constant="75" id="PPR-C1-yFw"/>
-                            <constraint firstItem="YvA-tO-mkZ" firstAttribute="leading" secondItem="SPq-w8-Rtp" secondAttribute="leading" id="R41-CL-T1k"/>
-                            <constraint firstItem="aG0-lJ-e0q" firstAttribute="top" secondItem="J3v-SA-Lng" secondAttribute="bottom" constant="5" id="RFj-U3-Kx9"/>
-                            <constraint firstItem="YvA-tO-mkZ" firstAttribute="trailing" secondItem="SPq-w8-Rtp" secondAttribute="trailing" id="XHI-ku-4Cd"/>
-                            <constraint firstItem="f5d-sr-OOk" firstAttribute="leading" secondItem="YvA-tO-mkZ" secondAttribute="leading" id="YR2-nr-elX"/>
+                            <constraint firstItem="6Lb-6J-4P0" firstAttribute="top" secondItem="ulO-rk-4Me" secondAttribute="bottom" constant="2" id="HNC-f0-gCn"/>
+                            <constraint firstItem="Psj-5n-xAe" firstAttribute="trailing" secondItem="6Lb-6J-4P0" secondAttribute="trailing" id="L4B-D0-o94"/>
+                            <constraint firstItem="FeG-zA-PcC" firstAttribute="top" secondItem="xoJ-Xr-oLJ" secondAttribute="bottom" constant="25" id="OwU-ol-ZN7"/>
+                            <constraint firstItem="f5d-sr-OOk" firstAttribute="centerX" secondItem="N8h-DD-oun" secondAttribute="centerX" id="Rez-w6-JDt"/>
+                            <constraint firstItem="6Lb-6J-4P0" firstAttribute="leading" secondItem="b1p-DT-fDD" secondAttribute="trailing" constant="10" id="TIt-nC-Zpz"/>
+                            <constraint firstItem="tj5-8X-Muq" firstAttribute="leading" secondItem="b1p-DT-fDD" secondAttribute="leading" id="VQ5-Li-6C8"/>
+                            <constraint firstItem="N8h-DD-oun" firstAttribute="bottom" secondItem="f5d-sr-OOk" secondAttribute="bottom" constant="75" id="Wl4-XG-Am6"/>
+                            <constraint firstItem="unb-L7-RNF" firstAttribute="leading" secondItem="FeG-zA-PcC" secondAttribute="trailing" constant="10" id="WvD-17-TJB"/>
+                            <constraint firstItem="ulO-rk-4Me" firstAttribute="leading" secondItem="unb-L7-RNF" secondAttribute="leading" id="b1k-VM-6UP"/>
+                            <constraint firstItem="b1p-DT-fDD" firstAttribute="centerY" secondItem="6Lb-6J-4P0" secondAttribute="centerY" id="c69-rJ-cb7"/>
+                            <constraint firstItem="ulO-rk-4Me" firstAttribute="top" secondItem="unb-L7-RNF" secondAttribute="bottom" constant="2" id="dGH-LF-P9Y"/>
+                            <constraint firstItem="b1p-DT-fDD" firstAttribute="leading" secondItem="fix-tv-7rA" secondAttribute="leading" id="di2-oj-n9Q"/>
+                            <constraint firstItem="ulO-rk-4Me" firstAttribute="leading" secondItem="fix-tv-7rA" secondAttribute="trailing" constant="10" id="fPn-vb-ph0"/>
                             <constraint firstItem="Bvl-r4-NJK" firstAttribute="top" secondItem="N8h-DD-oun" secondAttribute="top" constant="50" id="hdy-RB-lzg"/>
+                            <constraint firstItem="Psj-5n-xAe" firstAttribute="top" secondItem="6Lb-6J-4P0" secondAttribute="bottom" constant="20" id="hhQ-pu-n4i"/>
                             <constraint firstItem="Bvl-r4-NJK" firstAttribute="centerX" secondItem="N8h-DD-oun" secondAttribute="centerX" id="jhH-vw-cT3"/>
-                            <constraint firstItem="YvA-tO-mkZ" firstAttribute="top" secondItem="SPq-w8-Rtp" secondAttribute="bottom" constant="75" id="jku-y5-Q2s"/>
-                            <constraint firstItem="xoJ-Xr-oLJ" firstAttribute="top" secondItem="Bvl-r4-NJK" secondAttribute="bottom" constant="80" id="kW3-G6-rkj"/>
+                            <constraint firstItem="6Lb-6J-4P0" firstAttribute="trailing" secondItem="ulO-rk-4Me" secondAttribute="trailing" id="jq8-L9-iqX"/>
+                            <constraint firstItem="xoJ-Xr-oLJ" firstAttribute="top" secondItem="Bvl-r4-NJK" secondAttribute="bottom" constant="100" id="kW3-G6-rkj"/>
                             <constraint firstItem="PEK-fU-tPj" firstAttribute="centerX" secondItem="7fc-e1-MLT" secondAttribute="centerX" id="oGm-iD-gbq"/>
-                            <constraint firstItem="SPq-w8-Rtp" firstAttribute="trailing" secondItem="aG0-lJ-e0q" secondAttribute="trailing" id="rat-pr-ZYW"/>
-                            <constraint firstItem="aG0-lJ-e0q" firstAttribute="trailing" secondItem="J3v-SA-Lng" secondAttribute="trailing" id="wey-AC-5q8"/>
-                            <constraint firstItem="aG0-lJ-e0q" firstAttribute="leading" secondItem="J3v-SA-Lng" secondAttribute="leading" id="xp8-in-G9W"/>
+                            <constraint firstItem="FeG-zA-PcC" firstAttribute="leading" secondItem="xoJ-Xr-oLJ" secondAttribute="leading" id="pEz-Tn-ogK"/>
+                            <constraint firstItem="FeG-zA-PcC" firstAttribute="centerY" secondItem="unb-L7-RNF" secondAttribute="centerY" id="qbe-bN-RZn"/>
+                            <constraint firstItem="fix-tv-7rA" firstAttribute="centerY" secondItem="ulO-rk-4Me" secondAttribute="centerY" id="yVv-xz-95n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="N8h-DD-oun"/>
                     </view>
                     <connections>
-                        <outlet property="btnAntipsychotic" destination="aG0-lJ-e0q" id="5ln-mv-8hI"/>
-                        <outlet property="btnBloodPressure" destination="J3v-SA-Lng" id="5uq-gU-TQ3"/>
-                        <outlet property="btnHealthy" destination="YvA-tO-mkZ" id="cZA-3R-uel"/>
+                        <outlet property="btnAtypicalAntipsychotic" destination="ulO-rk-4Me" id="AKC-FN-3ol"/>
+                        <outlet property="btnBloodPressureTreatment" destination="unb-L7-RNF" id="DVl-z0-DZF"/>
+                        <outlet property="btnHealthy" destination="Psj-5n-xAe" id="81f-ei-zi7"/>
                         <outlet property="btnNext" destination="f5d-sr-OOk" id="VDx-g7-bfM"/>
-                        <outlet property="btnSteroid" destination="SPq-w8-Rtp" id="bit-3p-Qnq"/>
+                        <outlet property="btnSteroidTablets" destination="6Lb-6J-4P0" id="5JO-fW-AyV"/>
                         <outlet property="imgViewCircle" destination="7fc-e1-MLT" id="uFg-iO-fDH"/>
                         <outlet property="imgViewHeart" destination="BnU-2y-PrW" id="1Wh-kh-uCQ"/>
+                        <outlet property="lblAtypicalAntipsychotic" destination="fix-tv-7rA" id="OW1-3X-xBi"/>
+                        <outlet property="lblBloodPressureTreatment" destination="FeG-zA-PcC" id="uoX-ky-sZU"/>
                         <outlet property="lblC" destination="J4e-HZ-iil" id="DJe-gL-gl2"/>
                         <outlet property="lblCardio" destination="ibO-5i-4tr" id="kZs-aB-7vD"/>
+                        <outlet property="lblHealthy" destination="tj5-8X-Muq" id="7iF-C0-DMR"/>
                         <outlet property="lblMedication" destination="xoJ-Xr-oLJ" id="7sj-Qv-mru"/>
                         <outlet property="lblQuestions" destination="PEK-fU-tPj" id="ik3-KE-sbt"/>
+                        <outlet property="lblSteroidTablets" destination="b1p-DT-fDD" id="t37-a1-VkP"/>
                         <outlet property="lblT" destination="cTx-KZ-b2G" id="oaa-sR-XSS"/>
                         <outlet property="lblTracker" destination="acv-3l-OQT" id="ta3-Bi-3wS"/>
                         <outlet property="viewContainer" destination="Bvl-r4-NJK" id="8jo-2a-4LB"/>
@@ -2768,13 +2862,15 @@ height and weight</string>
         </scene>
     </scenes>
     <resources>
+        <image name="Checked" width="170.66667175292969" height="170.66667175292969"/>
         <image name="Circle" width="341.33334350585938" height="341.33334350585938"/>
         <image name="Heart" width="78.333335876464844" height="71.333335876464844"/>
+        <image name="ThinUnchecked" width="341.33334350585938" height="341.33334350585938"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="knc-J4-o00"/>
-        <segue reference="bZK-mD-5Yk"/>
+        <segue reference="QJO-zI-B1C"/>
         <segue reference="0Dz-Lj-Tge"/>
-        <segue reference="z8R-1O-NaZ"/>
+        <segue reference="ZOd-zi-ymv"/>
     </inferredMetricsTieBreakers>
 </document>
