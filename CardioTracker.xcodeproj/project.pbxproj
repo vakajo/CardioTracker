@@ -12,8 +12,6 @@
 		3DDA006022F24C25005C23B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA005E22F24C25005C23B3 /* Main.storyboard */; };
 		3DDA006222F24C26005C23B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA006122F24C26005C23B3 /* Assets.xcassets */; };
 		3DDA006522F24C26005C23B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA006322F24C26005C23B3 /* LaunchScreen.storyboard */; };
-		3DDA007522F2DBF4005C23B3 /* SukhumvitSet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA007422F2D731005C23B3 /* SukhumvitSet-Light.ttf */; };
-		3DDA007622F2DBF6005C23B3 /* SukhumvitSet-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA007322F2D731005C23B3 /* SukhumvitSet-SemiBold.ttf */; };
 		3DDA007722F2DBF9005C23B3 /* SF-Compact-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA007222F2D615005C23B3 /* SF-Compact-Display-Light.otf */; };
 		3DDA007822F2DBFB005C23B3 /* SF-Compact-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA007022F2D615005C23B3 /* SF-Compact-Display-Medium.otf */; };
 		3DDA007922F2DBFD005C23B3 /* SF-Compact-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDA007122F2D615005C23B3 /* SF-Compact-Display-Semibold.otf */; };
@@ -32,6 +30,8 @@
 		3DDB60A022FB073C00B5156A /* UnknownSystolicBpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB609F22FB073C00B5156A /* UnknownSystolicBpViewController.swift */; };
 		3DDB60A222FB074B00B5156A /* BmiIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB60A122FB074B00B5156A /* BmiIndexViewController.swift */; };
 		3DDB60A422FCDB3800B5156A /* RiskDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB60A322FCDB3800B5156A /* RiskDataManager.swift */; };
+		3DDB60A722FCE24300B5156A /* SukhumvitSet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDB60A522FCE24200B5156A /* SukhumvitSet-Light.ttf */; };
+		3DDB60A822FCE24300B5156A /* SukhumvitSet-SemiBol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDB60A622FCE24300B5156A /* SukhumvitSet-SemiBol.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +45,6 @@
 		3DDA007022F2D615005C23B3 /* SF-Compact-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Medium.otf"; sourceTree = "<group>"; };
 		3DDA007122F2D615005C23B3 /* SF-Compact-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Semibold.otf"; sourceTree = "<group>"; };
 		3DDA007222F2D615005C23B3 /* SF-Compact-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Light.otf"; sourceTree = "<group>"; };
-		3DDA007322F2D731005C23B3 /* SukhumvitSet-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SukhumvitSet-SemiBold.ttf"; path = "../../../../../Downloads/SukhumvitSet-SemiBold.ttf"; sourceTree = "<group>"; };
-		3DDA007422F2D731005C23B3 /* SukhumvitSet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SukhumvitSet-Light.ttf"; path = "../../../../../Downloads/SukhumvitSet-Light.ttf"; sourceTree = "<group>"; };
 		3DDA007C22F33D10005C23B3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3DDA007E22F42897005C23B3 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
 		3DDA008022F454D7005C23B3 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +60,8 @@
 		3DDB609F22FB073C00B5156A /* UnknownSystolicBpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownSystolicBpViewController.swift; sourceTree = "<group>"; };
 		3DDB60A122FB074B00B5156A /* BmiIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiIndexViewController.swift; sourceTree = "<group>"; };
 		3DDB60A322FCDB3800B5156A /* RiskDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskDataManager.swift; sourceTree = "<group>"; };
+		3DDB60A522FCE24200B5156A /* SukhumvitSet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Light.ttf"; sourceTree = "<group>"; };
+		3DDB60A622FCE24300B5156A /* SukhumvitSet-SemiBol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-SemiBol.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +109,8 @@
 		3DDA006F22F2D60E005C23B3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				3DDA007422F2D731005C23B3 /* SukhumvitSet-Light.ttf */,
-				3DDA007322F2D731005C23B3 /* SukhumvitSet-SemiBold.ttf */,
+				3DDB60A522FCE24200B5156A /* SukhumvitSet-Light.ttf */,
+				3DDB60A622FCE24300B5156A /* SukhumvitSet-SemiBol.ttf */,
 				3DDA007222F2D615005C23B3 /* SF-Compact-Display-Light.otf */,
 				3DDA007022F2D615005C23B3 /* SF-Compact-Display-Medium.otf */,
 				3DDA007122F2D615005C23B3 /* SF-Compact-Display-Semibold.otf */,
@@ -199,14 +199,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DDA006522F24C26005C23B3 /* LaunchScreen.storyboard in Resources */,
-				3DDA007622F2DBF6005C23B3 /* SukhumvitSet-SemiBold.ttf in Resources */,
 				3DDA007D22F33D11005C23B3 /* Default-568h@2x.png in Resources */,
 				3DDA007922F2DBFD005C23B3 /* SF-Compact-Display-Semibold.otf in Resources */,
+				3DDB60A822FCE24300B5156A /* SukhumvitSet-SemiBol.ttf in Resources */,
+				3DDB60A722FCE24300B5156A /* SukhumvitSet-Light.ttf in Resources */,
 				3DDA007822F2DBFB005C23B3 /* SF-Compact-Display-Medium.otf in Resources */,
 				3DDA007722F2DBF9005C23B3 /* SF-Compact-Display-Light.otf in Resources */,
 				3DDA006222F24C26005C23B3 /* Assets.xcassets in Resources */,
 				3DDA006022F24C25005C23B3 /* Main.storyboard in Resources */,
-				3DDA007522F2DBF4005C23B3 /* SukhumvitSet-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
