@@ -10,6 +10,8 @@ import UIKit
 
 class UnknownCholesterolViewController: UIViewController {
 
+    
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var imgViewHeart: UIImageView!
     @IBOutlet weak var lblC: UILabel!
@@ -77,10 +79,8 @@ class UnknownCholesterolViewController: UIViewController {
         buttonTapped(sender: btnLow)
     }
     
-    
-    
-    
-   
-    
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     
 }

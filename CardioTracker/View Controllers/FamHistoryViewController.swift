@@ -10,6 +10,8 @@ import UIKit
 
 class FamHistoryViewController: UIViewController {
     
+    
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     
     @IBOutlet weak var imgViewHeart: UIImageView!
@@ -56,6 +58,11 @@ class FamHistoryViewController: UIViewController {
     func buttonTapped(sender: UIButton) {
         sender.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
         sender.setTitleColor(.white, for: [])
+    }
+    
+    
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func btnYes(_ sender: UIButton) {

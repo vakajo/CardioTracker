@@ -9,21 +9,19 @@
 import UIKit
 
 class GenderViewController: UIViewController {
-
+    
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var imgViewHeart: UIImageView!
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
-    
     @IBOutlet weak var imgViewCircle: UIImageView!
     @IBOutlet weak var lblQuestions: UILabel!
-    
     @IBOutlet weak var lblGender: UILabel!
     @IBOutlet weak var btnMale: UIButton!
     @IBOutlet weak var btnFemale: UIButton!
-
     @IBOutlet weak var viewSepTop: UIView!
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
@@ -38,11 +36,10 @@ class GenderViewController: UIViewController {
         lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        
         lblGender.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
-        
         lblDesc
             .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        
         
         //MARK: Buttons layout
         let buttons = [btnMale, btnFemale]
@@ -65,27 +62,27 @@ class GenderViewController: UIViewController {
 
     @IBAction func btnMaleClicked(_ sender: UIButton) {
         buttonTapped(sender: btnMale)
-        let dataManager = RiskDataManager.shared
-        dataManager.isMale = true
-        print("")
+        //let dataManager = RiskDataManager.shared.Gender
+        //dataManager = .male
+        
+        
+        
+//        let dataManager = RiskDataManager.shared
+//        dataManager.isFemale = false
+//        dataManager.isMale = true
     }
     
     
     @IBAction func btnFemaleClicked(_ sender: UIButton) {
         buttonTapped(sender: btnFemale)
-        let dataManager = RiskDataManager.shared
-        dataManager.isMale = false
-        
+//        let dataManager = RiskDataManager.shared
+//        dataManager.isMale = false
+//        dataManager.isFemale = true
         
     }
     
-    @IBAction func backBtnPressed(_ sender: Any) {
-        
-//        dismiss(animated: true, completion: nil)
-        
-        dismiss(animated: true) {
-            print("dismissed!!!")
-        }
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
 }

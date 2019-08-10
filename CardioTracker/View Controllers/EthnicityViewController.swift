@@ -11,6 +11,8 @@ import UIKit
 class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     // Outlets
+    
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var imgViewHeart: UIImageView!
     @IBOutlet weak var lblC: UILabel!
@@ -102,7 +104,11 @@ class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         sender.setTitleColor(.white, for: [])
     }
     
+    
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func btnNextSelected(_ sender: UIButton) {
-        buttonTapped(sender: btnNext)
     }
 }

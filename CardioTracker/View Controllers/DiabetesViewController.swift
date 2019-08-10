@@ -10,6 +10,8 @@ import UIKit
 
 class DiabetesViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var imgViewHeart: UIImageView!
     @IBOutlet weak var lblC: UILabel!
@@ -101,8 +103,12 @@ class DiabetesViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         sender.setTitleColor(.white, for: [])
     }
     
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     @IBAction func btnNextSelected(_ sender: UIButton) {
-        buttonTapped(sender: btnNext)
     }
     
     

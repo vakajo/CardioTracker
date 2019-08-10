@@ -11,6 +11,7 @@ import UIKit
 class BmiIndexViewController: UIViewController {
     
     
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var imgViewHeart: UIImageView!
     @IBOutlet weak var lblC: UILabel!
@@ -55,6 +56,9 @@ class BmiIndexViewController: UIViewController {
     @IBAction func btnFinishSelected(_ sender: UIButton) {
     }
     
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     
 
     

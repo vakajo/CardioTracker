@@ -9,7 +9,8 @@
 import UIKit
 
 class AgeViewController: UIViewController, UITextFieldDelegate {
-
+    
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var imgViewHeart: UIImageView!
     @IBOutlet weak var lblC: UILabel!
@@ -41,9 +42,7 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        
         lblAge.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
-        
         lblDesc
             .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         
@@ -56,38 +55,34 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         btnNext.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
     }
     
-    // Change color of button when pressed
-    func buttonTapped(sender: UIButton) {
-        sender.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
-        sender.setTitleColor(.white, for: [])
-    }
     
+    //MARK: Button Methods
     @IBAction func btnNextClicked(_ sender: UIButton) {
         
-        if txtFieldAge.text == ""{
+        if txtFieldAge.text == "" {
             return
         }
         
         guard let text = txtFieldAge.text else { return }
         let dataManager = RiskDataManager.shared
         dataManager.age = text
-        buttonTapped(sender: btnNext)
+        
+        //let dummyRisk = DummyRisk(age: RiskDataManager.shared.age, isMale: RiskDataManager.shared.isMale)
+        
+        //let age = dataManager.age
+        //let isMale = dataManager.isMale
+        
+        //let myOtherRisk = DummyRisk(age: age, isMale: isMale)
         
         
-        
-        let dummyRisk = DummyRisk(age: RiskDataManager.shared.age, isMale: RiskDataManager.shared.isMale)
-        
-        let age = dataManager.age
-        let isMale = dataManager.isMale
-        
-        let myOtherRisk = DummyRisk(age: age, isMale: isMale)
-        
-        
-        let myRisk = dummyRisk.computedRisk
-        print(myRisk)
-        print(myOtherRisk.computedRisk)
+        //let myRisk = dummyRisk.computedRisk
+        //print(myRisk)
+        //print(myOtherRisk.computedRisk)
     }
     
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 class DummyRisk{

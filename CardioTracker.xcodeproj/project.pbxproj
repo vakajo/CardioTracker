@@ -32,6 +32,7 @@
 		3DDB60A422FCDB3800B5156A /* RiskDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB60A322FCDB3800B5156A /* RiskDataManager.swift */; };
 		3DDB60A722FCE24300B5156A /* SukhumvitSet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDB60A522FCE24200B5156A /* SukhumvitSet-Light.ttf */; };
 		3DDB60A822FCE24300B5156A /* SukhumvitSet-SemiBol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DDB60A622FCE24300B5156A /* SukhumvitSet-SemiBol.ttf */; };
+		3DDB60AA22FD7A4300B5156A /* CalculatedRiskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDB60A922FD7A4300B5156A /* CalculatedRiskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		3DDB60A322FCDB3800B5156A /* RiskDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskDataManager.swift; sourceTree = "<group>"; };
 		3DDB60A522FCE24200B5156A /* SukhumvitSet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-Light.ttf"; sourceTree = "<group>"; };
 		3DDB60A622FCE24300B5156A /* SukhumvitSet-SemiBol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SukhumvitSet-SemiBol.ttf"; sourceTree = "<group>"; };
+		3DDB60A922FD7A4300B5156A /* CalculatedRiskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedRiskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				3DDB609F22FB073C00B5156A /* UnknownSystolicBpViewController.swift */,
 				3DDB60A122FB074B00B5156A /* BmiIndexViewController.swift */,
 				3DDB60A322FCDB3800B5156A /* RiskDataManager.swift */,
+				3DDB60A922FD7A4300B5156A /* CalculatedRiskViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				3DDB609622FAC7AD00B5156A /* ConditionsViewController.swift in Sources */,
 				3DDB609C22FAFBEF00B5156A /* UnknownCholesterolViewController.swift in Sources */,
 				3DDB60A022FB073C00B5156A /* UnknownSystolicBpViewController.swift in Sources */,
+				3DDB60AA22FD7A4300B5156A /* CalculatedRiskViewController.swift in Sources */,
 				3DDB609A22FAE75C00B5156A /* CholesterolViewController.swift in Sources */,
 				3DDA008122F454D7005C23B3 /* AgeViewController.swift in Sources */,
 				3DDB60A222FB074B00B5156A /* BmiIndexViewController.swift in Sources */,

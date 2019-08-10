@@ -11,6 +11,7 @@ import UIKit
 class SystolicBpViewController: UIViewController {
 
     
+    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var viewContainer: UIView!
     @IBOutlet weak var imgViewHeart: UIImageView!
     @IBOutlet weak var lblC: UILabel!
@@ -71,17 +72,12 @@ class SystolicBpViewController: UIViewController {
     }
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
-        buttonTapped(sender: btnNext)
     }
     
     
-    
-    
-    
-    
-    
-    
-
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion:     nil)
+    }
    
 
 }
