@@ -72,6 +72,13 @@ class SystolicBpViewController: UIViewController {
     }
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
+        
+        if txtFieldSystolicBP.text == "" {
+            return
+        }
+        
+        guard let text = txtFieldSystolicBP.text else { return }
+        RiskDataManager.shared.systolicBloodPressure = text
     }
     
     

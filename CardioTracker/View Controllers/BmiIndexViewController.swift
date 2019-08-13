@@ -54,13 +54,20 @@ class BmiIndexViewController: UIViewController {
     }
     
     @IBAction func btnFinishSelected(_ sender: UIButton) {
+        
+        if txtFieldHeight.text == "" || txtFieldWeight.text == "" {
+            return
+        }
+        
+        guard let textHeight = txtFieldHeight.text else { return }
+        RiskDataManager.shared.height = textHeight
+        
+        guard let textWeight = txtFieldWeight.text else { return }
+        RiskDataManager.shared.weight = textWeight
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
-
-    
 
 }

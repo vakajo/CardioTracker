@@ -110,26 +110,45 @@ class ConditionsViewController: UIViewController {
     
     @IBAction func checkBoxAtrialFibrillationSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxAtrialFibrillation)
+        if sender.isSelected {
+            RiskDataManager.shared.conditions = .atrialFibrillation
+        }
     }
     
     @IBAction func checkBoxMigranesSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxMigraines)
+        if sender.isSelected {
+            RiskDataManager.shared.conditions = .migraines
+        }
     }
     
     @IBAction func checkBoxRheumatoidArthritisSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxRheumatoidArthritis)
+        if sender.isSelected {
+            RiskDataManager.shared.conditions = .rheumatoidArthritis
+        }
     }
     
     @IBAction func checkBoxSleSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxSle)
+        if sender.isSelected {
+            RiskDataManager.shared.conditions = .systemicLupusErythematosus
+
+        }
     }
     
     @IBAction func checkBoxSevereMentalIllnessSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxSevereMentalIllness)
+        if sender.isSelected {
+            RiskDataManager.shared.conditions = .severeMentalIllness
+        }
     }
     
     @IBAction func checkBoxHealthySelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxHealthy)
+        if sender.isSelected {
+            RiskDataManager.shared.conditions = .none
+        }
     }
     
     @IBAction func btnNextSelected(_ sender: UIButton) {

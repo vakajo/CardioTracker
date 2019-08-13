@@ -92,18 +92,30 @@ class MedicationViewController: UIViewController {
     
     @IBAction func btnBloodPressureSelected(_ sender: UIButton) {
         checkBoxTapped(btnBloodPressureTreatment)
+        if sender.isSelected {
+            RiskDataManager.shared.medications = .bloodPressureTreatment
+        }
     }
     
     @IBAction func btnAtypicalAntypsychoticSelected(_ sender: UIButton) {
         checkBoxTapped(btnAtypicalAntipsychotic)
+        if sender.isSelected {
+            RiskDataManager.shared.medications = .atypicalAntipsychoticMedication
+        }
     }
     
     @IBAction func btnSteroidTabletsSelected(_ sender: UIButton) {
         checkBoxTapped(btnSteroidTablets)
+        if sender.isSelected {
+            RiskDataManager.shared.medications = .regularSteroidTablets
+        }
     }
     
     @IBAction func btnHealthySelected(_ sender: UIButton) {
         checkBoxTapped(btnHealthy)
+        if sender.isSelected {
+            RiskDataManager.shared.medications = .none
+        }
     }
     
     @IBAction func btnNextSelected(_ sender: UIButton) {

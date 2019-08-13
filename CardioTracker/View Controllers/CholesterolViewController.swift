@@ -74,6 +74,13 @@ class CholesterolViewController: UIViewController {
     }
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
+        
+        if txtFieldCholesterol.text == "" {
+            return
+        }
+        
+        guard let text = txtFieldCholesterol.text else { return }
+            RiskDataManager.shared.cholesterolHDL = text
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {

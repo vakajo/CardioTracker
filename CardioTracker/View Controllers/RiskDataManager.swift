@@ -75,7 +75,7 @@ enum UnknownSystolicBloodPressure {
 
 
 
-final class RiskDataManager{
+final class RiskDataManager {
     
     private init() {}
     
@@ -88,12 +88,12 @@ final class RiskDataManager{
     var diabetesStatus = DiabetesStatus.healthy
     var familyHistory: Bool = false
     var conditions = Conditions.none
-    
-    
+    var medications = Medications.none
     var cholesterolHDL: String = ""
     var systolicBloodPressure: String = ""
     var height: String = ""
     var weight: String = ""
+    
     
     //MARK: Methods
     static func getEthnicityFrom(strEthnicity: String) -> Ethnicity {
