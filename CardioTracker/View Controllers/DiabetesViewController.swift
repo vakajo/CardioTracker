@@ -92,8 +92,7 @@ class DiabetesViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     // Set value of ethnicity
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // Set diabetesStatus to selection
-        // diabetesStatus = dataSource[row]
+        RiskDataManager.shared.diabetesStatus = RiskDataManager.getDiabetesStatusFrom(strDiabetes: pickerData[row])
     }
     
     

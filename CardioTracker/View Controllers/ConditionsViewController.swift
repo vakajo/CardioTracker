@@ -103,6 +103,9 @@ class ConditionsViewController: UIViewController {
     
     @IBAction func checkBoxKidneySelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxKidney)
+        if sender.isSelected {
+            RiskDataManager.shared.conditions = .chronicKidneyDisease
+        }
     }
     
     @IBAction func checkBoxAtrialFibrillationSelected(_ sender: UIButton) {

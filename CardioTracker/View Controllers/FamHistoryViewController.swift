@@ -67,10 +67,12 @@ class FamHistoryViewController: UIViewController {
     
     @IBAction func btnYes(_ sender: UIButton) {
         buttonTapped(sender: btnYes)
+        RiskDataManager.shared.familyHistory = true
     }
     
     @IBAction func btnNo(_ sender: UIButton) {
         buttonTapped(sender: btnNo)
+        RiskDataManager.shared.familyHistory = false
     }
     
     

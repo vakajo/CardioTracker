@@ -93,8 +93,7 @@ class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     // Set value of ethnicity
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // Set ethnicity to selection
-        // ethnicity = dataSource[row]
+        RiskDataManager.shared.ethnicity = RiskDataManager.getEthnicityFrom(strEthnicity: pickerData[row])
     }
     
     
@@ -112,3 +111,4 @@ class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     @IBAction func btnNextSelected(_ sender: UIButton) {
     }
 }
+

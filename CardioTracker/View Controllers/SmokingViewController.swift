@@ -95,8 +95,7 @@ class SmokingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     // Set value of ethnicity
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        // Set smokingStatus to selection
-        // smokingStatus = dataSource[row]
+        RiskDataManager.shared.smokingStatus = RiskDataManager.getSmokingStatusFrom(strSmoking: pickerData[row])
     }
     
     
