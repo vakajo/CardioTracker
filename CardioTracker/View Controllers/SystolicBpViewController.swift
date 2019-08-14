@@ -37,6 +37,9 @@ class SystolicBpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        txtFieldSystolicBP.keyboardType = .numberPad
+        self.addDoneButtonOnKeyboard()
+        
         //MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -59,6 +62,25 @@ class SystolicBpViewController: UIViewController {
         
         btnUnknownSystolicBp!.titleLabel!.numberOfLines = 0
         btnUnknownSystolicBp.titleLabel!.textAlignment = NSTextAlignment.center
+        
+    }
+    
+    func addDoneButtonOnKeyboard(){
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        doneToolbar.barStyle = .default
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
+        
+        let items = [flexSpace, done]
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        txtFieldSystolicBP.inputAccessoryView = doneToolbar
+    }
+    
+    @objc func doneButtonAction(){
+        txtFieldSystolicBP.resignFirstResponder()
     }
     
     //MARK: Button Methods

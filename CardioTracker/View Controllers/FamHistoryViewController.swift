@@ -56,8 +56,28 @@ class FamHistoryViewController: UIViewController {
     
     //MARK: Button Methods
     func buttonTapped(sender: UIButton) {
-        sender.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
-        sender.setTitleColor(.white, for: [])
+        
+        if sender == btnYes {
+            btnNo.isSelected = false
+            btnYes.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
+            btnYes.setTitleColor(.white, for: [])
+        } else {
+            btnYes.isSelected = false
+            btnYes.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
+            btnYes.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            btnYes.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
+        }
+        
+        if sender == btnNo {
+            btnYes.isSelected = false
+            btnNo.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
+            btnNo.setTitleColor(.white, for: [])
+        } else {
+            btnNo.isSelected = false
+            btnNo.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
+            btnNo.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            btnNo.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
+        }
     }
     
     

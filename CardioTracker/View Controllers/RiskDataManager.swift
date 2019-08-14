@@ -39,28 +39,6 @@ enum DiabetesStatus {
     case type2
 }
 
-enum FamHistory {
-    case yes
-    case no
-}
-
-enum Conditions {
-    case chronicKidneyDisease
-    case atrialFibrillation
-    case migraines
-    case rheumatoidArthritis
-    case systemicLupusErythematosus
-    case severeMentalIllness
-    case none
-}
-
-enum Medications {
-    case bloodPressureTreatment
-    case atypicalAntipsychoticMedication
-    case regularSteroidTablets
-    case none
-}
-
 enum UnknownCholesterolHDL {
     case high
     case average
@@ -77,7 +55,7 @@ enum UnknownSystolicBloodPressure {
 
 final class RiskDataManager {
     
-    private init() {}
+    private init() {   }
     
     static let shared = RiskDataManager()
     
@@ -87,13 +65,33 @@ final class RiskDataManager {
     var smokingStatus = SmokingStatus.nonSmoker
     var diabetesStatus = DiabetesStatus.healthy
     var familyHistory: Bool = false
-    var conditions = Conditions.none
-    var medications = Medications.none
+    
+    // Conditions:
+    var chronicKidneyDisease: Bool = false
+    var atrialFibrillation: Bool = false
+    var migraines: Bool = false
+    var rheumatoidArthritis: Bool = false
+    var systemicLupusErythematosus: Bool = false
+    var severeMentalIllness: Bool = false
+    var noConditions: Bool = false
+
+    // Medications:
+    var bloodPressureTreatment: Bool = false
+    var atypicalAntipsychoticMedication: Bool = false
+    var regularSteroidTablets: Bool = false
+    var noMedications: Bool = false
+
     var cholesterolHDL: String = ""
     var systolicBloodPressure: String = ""
     var height: String = ""
-    var weight: String = ""
+    var weight: String = "" {
+        didSet {
+            computeRisk()
+        }
+    }
     
+    // Computed risk initialised
+    var computedRisk = 0.0
     
     //MARK: Methods
     static func getEthnicityFrom(strEthnicity: String) -> Ethnicity {
@@ -151,8 +149,85 @@ final class RiskDataManager {
         return .healthy
     }
     
+    //MARK: Compute Risk
+    func computeRisk() {
+        
+        if gender == .male {
+            computedRisk += 1.0
+            print("Gender: Male")
+        }
+        
+        if gender == .female {
+            computedRisk += 1.0
+            print("Gender: Female")
+        }
+        
+        if age == "25" {
+            computedRisk += 1.0
+            print("Age: 25")
+        }
+        
+        if ethnicity == .white {
+            computedRisk += 1.0
+            print("Ethn.: White")
+        }
+        
+        if smokingStatus == .nonSmoker {
+            computedRisk += 1.0
+            print("NonSmoker")
+        }
+        
+        if diabetesStatus == .healthy {
+            computedRisk += 1.0
+            print("NoDiabetes")
+        }
+        
+        if familyHistory == true {
+            computedRisk += 1.0
+            print("FamilyHistory")
+        }
+        
+        if familyHistory == false {
+            computedRisk += 1.0
+            print("No Family History")
+        }
+        
+        if noConditions == true {
+            computedRisk += 1.0
+            print("NoConditions")
+        }
+        
+        if noMedications == true {
+            computedRisk += 1.0
+            print("NoMedications")
+        }
+        
+        if cholesterolHDL == "4" {
+            computedRisk += 1.0
+            print("Cholesterol: 4")
+        }
+        
+        if systolicBloodPressure == "120" {
+            computedRisk += 1.0
+            print("Blood Pressure = 120")
+        }
+        
+        if height == "170" {
+            computedRisk += 1.0
+            print("Height: 170")
+        }
+        
+        if weight == "70" {
+            computedRisk += 1.0
+            print("Weight: 70")
+        }
+        
+    }
     
 }
+
+
+
 
 
 

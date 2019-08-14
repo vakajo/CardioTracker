@@ -104,50 +104,49 @@ class ConditionsViewController: UIViewController {
     @IBAction func checkBoxKidneySelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxKidney)
         if sender.isSelected {
-            RiskDataManager.shared.conditions = .chronicKidneyDisease
+            RiskDataManager.shared.chronicKidneyDisease = true
         }
     }
     
     @IBAction func checkBoxAtrialFibrillationSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxAtrialFibrillation)
         if sender.isSelected {
-            RiskDataManager.shared.conditions = .atrialFibrillation
+            RiskDataManager.shared.atrialFibrillation = true
         }
     }
     
     @IBAction func checkBoxMigranesSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxMigraines)
         if sender.isSelected {
-            RiskDataManager.shared.conditions = .migraines
+            RiskDataManager.shared.migraines = true
         }
     }
     
     @IBAction func checkBoxRheumatoidArthritisSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxRheumatoidArthritis)
         if sender.isSelected {
-            RiskDataManager.shared.conditions = .rheumatoidArthritis
+            RiskDataManager.shared.rheumatoidArthritis = true
         }
     }
     
     @IBAction func checkBoxSleSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxSle)
         if sender.isSelected {
-            RiskDataManager.shared.conditions = .systemicLupusErythematosus
-
+            RiskDataManager.shared.systemicLupusErythematosus = true
         }
     }
     
     @IBAction func checkBoxSevereMentalIllnessSelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxSevereMentalIllness)
         if sender.isSelected {
-            RiskDataManager.shared.conditions = .severeMentalIllness
+            RiskDataManager.shared.severeMentalIllness = true
         }
     }
     
     @IBAction func checkBoxHealthySelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxHealthy)
         if sender.isSelected {
-            RiskDataManager.shared.conditions = .none
+            RiskDataManager.shared.noConditions = true
         }
     }
     

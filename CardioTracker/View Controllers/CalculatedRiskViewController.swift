@@ -17,6 +17,9 @@ class CalculatedRiskViewController: UIViewController {
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
     @IBOutlet weak var lblRisk: UILabel!
+    @IBOutlet weak var viewLabels: UIView!
+    @IBOutlet weak var lblRiskValue: UILabel!
+    @IBOutlet weak var lblPercentage: UILabel!
     @IBOutlet weak var viewSepTop: UIView!
     @IBOutlet weak var lblInfo: UILabel!
     @IBOutlet weak var lblDesc: UILabel!
@@ -26,7 +29,6 @@ class CalculatedRiskViewController: UIViewController {
     @IBOutlet weak var btnLater: UIButton!
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +38,10 @@ class CalculatedRiskViewController: UIViewController {
         lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblRisk.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        lblRiskValue.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        lblRiskValue.text = String(RiskDataManager.shared.computedRisk)
+        lblPercentage.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        
         lblConnect.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblInfo.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblDesc

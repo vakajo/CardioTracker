@@ -2593,26 +2593,26 @@ ratio for you</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKK-if-vDf">
-                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0S-Fb-nha">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
+                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCX-dp-1ch">
-                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7R-9a-x6o">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7R-9a-x6o">
+                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2714,7 +2714,7 @@ ratio for you</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7Z-fV-YDm">
-                                <rect key="frame" x="189.66666666666666" y="179" width="35" height="21"/>
+                                <rect key="frame" x="189.66666666666666" y="179.66666666666666" width="34.666666666666657" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -3041,26 +3041,26 @@ height and weight</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPf-LE-l0E">
-                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
+                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR6-6b-EjB">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
+                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhD-0M-cPu">
-                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
+                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoi-P9-AmF">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -3089,7 +3089,7 @@ height and weight</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6py-sJ-WBf">
-                                <rect key="frame" x="50" y="362.66666666666669" width="314" height="1"/>
+                                <rect key="frame" x="50" y="363" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="viL-hu-VOg"/>
@@ -3103,19 +3103,19 @@ height and weight</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information about the results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhu-dY-puu">
-                                <rect key="frame" x="50" y="373.66666666666669" width="314" height="17"/>
+                                <rect key="frame" x="50" y="374" width="314" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-WC-kR5">
-                                <rect key="frame" x="50" y="390.66666666666669" width="314" height="57.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-WC-kR5">
+                                <rect key="frame" x="50" y="391" width="314" height="57"/>
                                 <string key="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hN-ed-k3L">
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hN-ed-k3L">
                                 <rect key="frame" x="100" y="628" width="214" height="33"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="17"/>
@@ -3128,6 +3128,9 @@ height and weight</string>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-50-2RO">
                                 <rect key="frame" x="114" y="167" width="186" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="vpS-hq-G3V"/>
+                                </constraints>
                                 <string key="text">Your current 10-year
 cardiovascular risk is</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
@@ -3157,6 +3160,35 @@ please connect Apple Health</string>
                                     <action selector="btnStartedClicked:" destination="UlZ-Kx-xNA" eventType="touchUpInside" id="nmH-D5-xyd"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-xB-qvc">
+                                <rect key="frame" x="110" y="225" width="194" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdX-Wl-wiP">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="91"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0D-1M-Hc6">
+                                        <rect key="frame" x="100" y="0.0" width="94" height="91"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QdX-Wl-wiP" firstAttribute="top" secondItem="rPc-xB-qvc" secondAttribute="top" id="4KO-mv-Wxi"/>
+                                    <constraint firstItem="QdX-Wl-wiP" firstAttribute="leading" secondItem="rPc-xB-qvc" secondAttribute="leading" id="DcX-Xk-Alz"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QdX-Wl-wiP" secondAttribute="trailing" constant="99" id="Hka-L9-sjq"/>
+                                    <constraint firstItem="J0D-1M-Hc6" firstAttribute="height" secondItem="rPc-xB-qvc" secondAttribute="height" id="Q3R-EC-q9w"/>
+                                    <constraint firstItem="J0D-1M-Hc6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="QdX-Wl-wiP" secondAttribute="trailing" constant="8" symbolic="YES" id="bsn-Ae-QoJ"/>
+                                    <constraint firstItem="J0D-1M-Hc6" firstAttribute="leading" secondItem="QdX-Wl-wiP" secondAttribute="trailing" constant="5" id="ekb-BA-CrM"/>
+                                    <constraint firstAttribute="trailing" secondItem="J0D-1M-Hc6" secondAttribute="trailing" id="frO-V3-EMu"/>
+                                    <constraint firstItem="J0D-1M-Hc6" firstAttribute="top" secondItem="QdX-Wl-wiP" secondAttribute="top" id="iO2-lB-FIf"/>
+                                    <constraint firstItem="QdX-Wl-wiP" firstAttribute="height" secondItem="rPc-xB-qvc" secondAttribute="height" id="lSA-9B-krA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -3166,23 +3198,28 @@ please connect Apple Health</string>
                             <constraint firstItem="yhu-dY-puu" firstAttribute="leading" secondItem="6py-sJ-WBf" secondAttribute="leading" id="7y3-ZM-p5c"/>
                             <constraint firstItem="4hN-ed-k3L" firstAttribute="trailing" secondItem="VbC-P1-Xbn" secondAttribute="trailing" constant="-50" id="BIz-oy-Q6Q"/>
                             <constraint firstItem="28j-gR-XP8" firstAttribute="top" secondItem="GwJ-5j-84U" secondAttribute="bottom" constant="25" id="CT4-Ix-Ig1"/>
+                            <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="rPc-xB-qvc" secondAttribute="trailing" constant="110" id="CaC-Ib-MHy"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="leading" secondItem="yhu-dY-puu" secondAttribute="leading" id="Ifg-Da-km0"/>
                             <constraint firstItem="GwJ-5j-84U" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="Ljk-iu-Upd"/>
                             <constraint firstItem="3dg-50-2RO" firstAttribute="top" secondItem="kKb-9b-k5g" secondAttribute="bottom" constant="40" id="Prd-kH-7hr"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="trailing" secondItem="yhu-dY-puu" secondAttribute="trailing" id="QxF-Nn-8LB"/>
+                            <constraint firstItem="rPc-xB-qvc" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="110" id="SaL-7E-OhQ"/>
                             <constraint firstItem="VbC-P1-Xbn" firstAttribute="top" secondItem="ELg-WC-kR5" secondAttribute="bottom" constant="10" id="bjt-UB-9TF"/>
                             <constraint firstItem="3dg-50-2RO" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="fcF-AI-W9E"/>
+                            <constraint firstItem="6py-sJ-WBf" firstAttribute="top" secondItem="rPc-xB-qvc" secondAttribute="bottom" constant="47" id="g7G-tU-0tm"/>
                             <constraint firstItem="yhu-dY-puu" firstAttribute="trailing" secondItem="6py-sJ-WBf" secondAttribute="trailing" id="hWn-gw-TVF"/>
                             <constraint firstItem="4hN-ed-k3L" firstAttribute="top" secondItem="28j-gR-XP8" secondAttribute="bottom" constant="10" id="hqS-xt-VJI"/>
                             <constraint firstItem="GwJ-5j-84U" firstAttribute="top" secondItem="VbC-P1-Xbn" secondAttribute="bottom" constant="40" id="iZQ-zc-0hN"/>
                             <constraint firstItem="kKb-9b-k5g" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="kbc-m6-WuO"/>
                             <constraint firstItem="28j-gR-XP8" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="lwR-47-JdE"/>
+                            <constraint firstItem="rPc-xB-qvc" firstAttribute="top" secondItem="3dg-50-2RO" secondAttribute="bottom" constant="10" id="mGv-1d-Vgg"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="top" secondItem="yhu-dY-puu" secondAttribute="bottom" id="noM-Ii-10l"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="bottom" secondItem="4hN-ed-k3L" secondAttribute="bottom" constant="75" id="pHp-jo-qbu"/>
                             <constraint firstItem="kKb-9b-k5g" firstAttribute="top" secondItem="Rwi-Ai-jBm" secondAttribute="top" constant="50" id="pNh-ai-uRa"/>
                             <constraint firstItem="6py-sJ-WBf" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="50" id="rWR-3f-LFk"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="6py-sJ-WBf" secondAttribute="trailing" constant="50" id="sf9-8c-L3K"/>
                             <constraint firstItem="VbC-P1-Xbn" firstAttribute="trailing" secondItem="ELg-WC-kR5" secondAttribute="trailing" id="sts-RB-Hyd"/>
+                            <constraint firstAttribute="bottom" secondItem="rPc-xB-qvc" secondAttribute="bottom" constant="420" id="wTu-mV-hv9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rwi-Ai-jBm"/>
                     </view>
@@ -3195,17 +3232,20 @@ please connect Apple Health</string>
                         <outlet property="lblConnect" destination="GwJ-5j-84U" id="Pts-NT-7bV"/>
                         <outlet property="lblDesc" destination="ELg-WC-kR5" id="4w0-xo-0P5"/>
                         <outlet property="lblInfo" destination="yhu-dY-puu" id="GRY-WV-Ke6"/>
+                        <outlet property="lblPercentage" destination="J0D-1M-Hc6" id="2Wy-F4-zAg"/>
                         <outlet property="lblRisk" destination="3dg-50-2RO" id="lnb-MC-SgJ"/>
+                        <outlet property="lblRiskValue" destination="QdX-Wl-wiP" id="6BW-fQ-z8E"/>
                         <outlet property="lblT" destination="zoi-P9-AmF" id="aeU-V3-Ps7"/>
                         <outlet property="lblTracker" destination="yhD-0M-cPu" id="hle-ea-08X"/>
                         <outlet property="viewContainer" destination="kKb-9b-k5g" id="9NY-Lw-TwP"/>
+                        <outlet property="viewLabels" destination="rPc-xB-qvc" id="sz7-Po-dlN"/>
                         <outlet property="viewSepBottom" destination="VbC-P1-Xbn" id="v10-0J-4uk"/>
                         <outlet property="viewSepTop" destination="6py-sJ-WBf" id="zr6-57-Z10"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xvu-at-A6F" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8812" y="24"/>
+            <point key="canvasLocation" x="8811.5942028985519" y="23.64130434782609"/>
         </scene>
     </scenes>
     <resources>

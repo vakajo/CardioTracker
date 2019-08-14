@@ -26,7 +26,7 @@ class GenderViewController: UIViewController {
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
     
-    
+    let riskDataManager = RiskDataManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,22 +55,42 @@ class GenderViewController: UIViewController {
     
     // Change color of button when pressed
     func buttonTapped(sender: UIButton) {
-        sender.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
-        sender.setTitleColor(.white, for: [])
+        
+        if sender == btnMale {
+            btnFemale.isSelected = false
+            btnMale.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
+            btnMale.setTitleColor(.white, for: [])
+        } else {
+            btnMale.isSelected = false
+            btnMale.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
+            btnMale.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            btnMale.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
+        }
+        
+        if sender == btnFemale {
+            btnMale.isSelected = false
+            btnFemale.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
+            btnFemale.setTitleColor(.white, for: [])
+        } else {
+            btnFemale.isSelected = false
+            btnFemale.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
+            btnFemale.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            btnFemale.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
+        }
+        
     }
     
 
     @IBAction func btnMaleClicked(_ sender: UIButton) {
         buttonTapped(sender: btnMale)
-        
-       RiskDataManager.shared.gender = .male
+        RiskDataManager.shared.gender = Gender.male
     }
     
     
     @IBAction func btnFemaleClicked(_ sender: UIButton) {
         buttonTapped(sender: btnFemale)
-
-        RiskDataManager.shared.gender = .female
+        riskDataManager.gender = .female
+        print("")
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {

@@ -33,9 +33,10 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ATH: Enabla takkann aðeins þegar það er komið input???
         txtFieldAge.keyboardType = .numberPad
         txtFieldAge.delegate = self
+        self.addDoneButtonOnKeyboard()
+        
         
         // MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -53,6 +54,24 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         btnNext.layer.borderWidth = 1
         btnNext.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
         btnNext.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
+    }
+    
+    func addDoneButtonOnKeyboard(){
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        doneToolbar.barStyle = .default
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
+        
+        let items = [flexSpace, done]
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        txtFieldAge.inputAccessoryView = doneToolbar
+    }
+    
+    @objc func doneButtonAction(){
+        txtFieldAge.resignFirstResponder()
     }
     
     
