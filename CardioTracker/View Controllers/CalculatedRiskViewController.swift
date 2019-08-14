@@ -39,7 +39,7 @@ class CalculatedRiskViewController: UIViewController {
         lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblRisk.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblRiskValue.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblRiskValue.text = String(RiskDataManager.shared.computedRisk)
+        lblRiskValue.text = String(RiskDataManager.shared.risk)
         lblPercentage.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         
         lblConnect.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)

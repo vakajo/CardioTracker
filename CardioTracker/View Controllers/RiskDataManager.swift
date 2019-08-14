@@ -61,6 +61,8 @@ final class RiskDataManager {
     
     static let shared = RiskDataManager()
     
+    var risk = 0.0
+    
     var gender = Gender.male
     var age: String = ""
     var ethnicity = Ethnicity.white
@@ -89,14 +91,16 @@ final class RiskDataManager {
     var weight: String = "" {
         didSet {
             
-            if RiskDataManager.shared.gender == .male {
-                computeMaleRisk()
-            }
-            else if RiskDataManager.shared.gender == .female {
-                computeFemaleRisk()
-            } else {
-                return
-            }
+            risk = computeFemaleRisk()
+            
+//            if RiskDataManager.shared.gender == .male {
+//                computeMaleRisk()
+//            }
+//            else if RiskDataManager.shared.gender == .female {
+//                var finalRisk = computeFemaleRisk()
+//            } else {
+//                return
+//            }
         }
     }
     
@@ -165,9 +169,19 @@ final class RiskDataManager {
         
     }
     
+//    func setAge(stringAge: String) -> Bool
+//    {
+//        guard let ageAsDouble = Double(stringAge) else { return false }
+//
+//        //self.age declered at the top of RiskManager
+//
+//        self.age = ageAsDouble
+//        return true
+//    }
+    
     
     //MARK: Compute Risk
-    func computeFemaleRisk() {
+    func computeFemaleRisk() -> Double {
         
         //convertVariables()
         let intAge = Int(RiskDataManager.shared.age)
@@ -190,7 +204,7 @@ final class RiskDataManager {
         
         
     
-        
+        // QRISK3
         var survivor: [Double] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.988876402378082, 0, 0.0, 0.0, 0, 0]
         
         // Conditional Arrays
@@ -284,13 +298,9 @@ final class RiskDataManager {
         sum += age_2 * dblSystolicBloodPressure! * -0.0015082501423272358000000
         
         // Calculate the score itself
-       
-        
-        
-        
-        
-        
-        
+        let riskScore: Double = 100.0 * (1 - pow(0.988876402378082, exp(sum)))
+        return riskScore
+
     }
     
     func computeMaleRisk() {
