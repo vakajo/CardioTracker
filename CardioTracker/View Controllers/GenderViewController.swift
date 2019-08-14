@@ -26,7 +26,7 @@ class GenderViewController: UIViewController {
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
     
-    let riskDataManager = RiskDataManager.shared
+    //let riskDataManager = RiskDataManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,7 +77,6 @@ class GenderViewController: UIViewController {
             btnFemale.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             btnFemale.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
         }
-        
     }
     
 
@@ -89,8 +88,7 @@ class GenderViewController: UIViewController {
     
     @IBAction func btnFemaleClicked(_ sender: UIButton) {
         buttonTapped(sender: btnFemale)
-        riskDataManager.gender = .female
-        print("")
+        RiskDataManager.shared.gender = .female
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {

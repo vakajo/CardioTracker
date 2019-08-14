@@ -83,8 +83,7 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         }
         
         guard let text = txtFieldAge.text else { return }
-        let dataManager = RiskDataManager.shared
-        dataManager.age = text
+        RiskDataManager.shared.age = text
         
         //let dummyRisk = DummyRisk(age: RiskDataManager.shared.age, isMale: RiskDataManager.shared.isMale)
         
@@ -101,27 +100,5 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func backBtnPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
-    }
-}
-
-class DummyRisk{
-    
-    var age: String = ""
-    var isMale: Bool = false
-    
-    var computedRisk: Double = 0
-    
-    init(age: String, isMale: Bool){
-        self.age = age
-        self.isMale = isMale
-        
-        computeRisk()
-    }
-    
-    func computeRisk(){
-        
-        if isMale == true{
-            computedRisk = 5
-        }
     }
 }
