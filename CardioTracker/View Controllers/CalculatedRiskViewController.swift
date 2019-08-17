@@ -32,6 +32,9 @@ class CalculatedRiskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let risk = RiskDataManager.shared.risk
+        let roundedRisk = round((10*risk)/10)
+        
         // MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -39,7 +42,7 @@ class CalculatedRiskViewController: UIViewController {
         lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblRisk.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblRiskValue.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblRiskValue.text = String(RiskDataManager.shared.risk)
+        lblRiskValue.text = String(roundedRisk)
         lblPercentage.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         
         lblConnect.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)

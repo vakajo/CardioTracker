@@ -36,6 +36,9 @@ class ConditionsViewController: UIViewController {
     @IBOutlet weak var checkBoxSle: UIButton!
     @IBOutlet weak var lblSevereMentalIllness: UILabel!
     @IBOutlet weak var checkBoxSevereMentalIllness: UIButton!
+    @IBOutlet weak var lblErectileDysfunction: UILabel!
+    @IBOutlet weak var checkBoxErectileDysfunction: UIButton!
+    
     @IBOutlet weak var lblHealthy: UILabel!
     @IBOutlet weak var checkBoxHealthy: UIButton!
     
@@ -63,7 +66,7 @@ class ConditionsViewController: UIViewController {
         btnNext.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
         
         
-        let arrButtons = [checkBoxHealthy, checkBoxSevereMentalIllness, checkBoxSle, checkBoxRheumatoidArthritis, checkBoxMigraines, checkBoxAtrialFibrillation, checkBoxKidney]
+        let arrButtons = [checkBoxHealthy, checkBoxErectileDysfunction,  checkBoxSevereMentalIllness, checkBoxSle, checkBoxRheumatoidArthritis, checkBoxMigraines, checkBoxAtrialFibrillation, checkBoxKidney]
         
         for button in arrButtons{
             guard let btn = button else { return }
@@ -142,6 +145,14 @@ class ConditionsViewController: UIViewController {
             RiskDataManager.shared.severeMentalIllness = true
         }
     }
+    
+    @IBAction func checkBoxErectileDysfunctionSelected(_ sender: UIButton) {
+        checkBoxTapped(checkBoxErectileDysfunction)
+        if sender.isSelected {
+            RiskDataManager.shared.erectileDysfunction = true
+        }
+    }
+    
     
     @IBAction func checkBoxHealthySelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxHealthy)

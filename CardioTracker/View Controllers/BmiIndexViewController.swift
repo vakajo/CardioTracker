@@ -84,10 +84,12 @@ class BmiIndexViewController: UIViewController {
         }
         
         guard let textHeight = txtFieldHeight.text else { return }
-        RiskDataManager.shared.height = textHeight
+        guard let dblHeight = Double(textHeight) else { return }
+        RiskDataManager.shared.height = dblHeight
         
         guard let textWeight = txtFieldWeight.text else { return }
-        RiskDataManager.shared.weight = textWeight
+        guard let dblWeight = Double(textWeight) else { return }
+        RiskDataManager.shared.weight = dblWeight
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {

@@ -1,11 +1,10 @@
-//
+
 //  RiskDataManager.swift
 //  CardioTracker
 //
 //  Created by Vaka Jóhannesdóttir on 08/08/2019.
 //  Copyright © 2019 Vaka Johannesdottir. All rights reserved.
 //
-
 import Foundation
 
 enum Gender {
@@ -14,7 +13,6 @@ enum Gender {
 }
 
 enum Ethnicity: Int {
-    //ATH: Passar ekki alveg!!!
     case white = 0
     case indian = 1
     case pakistani = 2
@@ -25,7 +23,6 @@ enum Ethnicity: Int {
     case chinese = 7
     case other = 8
 }
-
 
 enum SmokingStatus: Int {
     case nonSmoker = 0
@@ -64,7 +61,7 @@ final class RiskDataManager {
     var risk = 0.0
     
     var gender = Gender.male
-    var age: String = ""
+    var age: Double = 0
     var ethnicity = Ethnicity.white
     var smokingStatus = SmokingStatus.nonSmoker
     var diabetesStatus = DiabetesStatus.healthy
@@ -77,30 +74,31 @@ final class RiskDataManager {
     var rheumatoidArthritis: Bool = false
     var systemicLupusErythematosus: Bool = false
     var severeMentalIllness: Bool = false
+    var erectileDysfunction: Bool = false
     var noConditions: Bool = false
-
+    
     // Medications:
     var bloodPressureTreatment: Bool = false
     var atypicalAntipsychoticMedication: Bool = false
     var regularSteroidTablets: Bool = false
     var noMedications: Bool = false
-
-    var cholesterolHDL: String = ""
-    var systolicBloodPressure: String = ""
-    var height: String = ""
-    var weight: String = "" {
+    
+    var cholesterolHDL: Double = 0
+    var systolicBloodPressure: Double = 0
+    var height: Double = 0
+    var weight: Double = 0 {
         didSet {
             
             risk = computeFemaleRisk()
             
-//            if RiskDataManager.shared.gender == .male {
-//                computeMaleRisk()
-//            }
-//            else if RiskDataManager.shared.gender == .female {
-//                var finalRisk = computeFemaleRisk()
-//            } else {
-//                return
-//            }
+            //            if RiskDataManager.shared.gender == .male {
+            //                computeMaleRisk()
+            //            }
+            //            else if RiskDataManager.shared.gender == .female {
+            //                var finalRisk = computeFemaleRisk()
+            //            } else {
+            //                return
+            //            }
         }
     }
     
@@ -163,36 +161,21 @@ final class RiskDataManager {
         return .healthy
     }
     
-    //MARK: Convert Variables for Computation
-    func convertVariables() {
-        
-        
-    }
-    
-//    func setAge(stringAge: String) -> Bool
-//    {
-//        guard let ageAsDouble = Double(stringAge) else { return false }
-//
-//        //self.age declered at the top of RiskManager
-//
-//        self.age = ageAsDouble
-//        return true
-//    }
     
     
     //MARK: Compute Risk
     func computeFemaleRisk() -> Double {
         
-        //convertVariables()
-        let intAge = Int(RiskDataManager.shared.age)
-        let dblWeight = Double(RiskDataManager.shared.weight)
-        let dblHeight = (Double(RiskDataManager.shared.height)!)/100
-        let bmiIndex = dblWeight! / (pow(dblHeight,2))
-        var dblCholesterolHDLRatio = Double(RiskDataManager.shared.cholesterolHDL)
-        var dblSystolicBloodPressure = Double(RiskDataManager.shared.systolicBloodPressure)
+        // Calculation of BMI Index
+        let dblWeight = RiskDataManager.shared.weight
+        let dblHeight = RiskDataManager.shared.height/100
+        let bmiIndex = dblWeight / (pow(dblHeight,2))
+        
+        // Declaration of variables
+        var dblCholesterolHDLRatio = RiskDataManager.shared.cholesterolHDL
+        var dblSystolicBloodPressure = RiskDataManager.shared.systolicBloodPressure
         let ethnicityCategory = RiskDataManager.shared.ethnicity.rawValue
         let smokingCategory = RiskDataManager.shared.smokingStatus.rawValue
-        
         var diabetesType1: Double = 0
         var diabetesType2: Double = 0
         
@@ -202,11 +185,30 @@ final class RiskDataManager {
             diabetesType2 = 1
         }
         
+        var sbps5 = 8.9 // Er 10.8 hjá karlmönnum
+        var town: Double = 0
         
-    
-        // QRISK3
-        var survivor: [Double] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.988876402378082, 0, 0.0, 0.0, 0, 0]
+        if ethnicityCategory == 0 {
+            town = -0.65
+        } else if ethnicityCategory == 1 {
+            town = 1.06
+        } else if ethnicityCategory == 2 {
+            town = 2.58
+        } else if ethnicityCategory == 3 {
+            town = 5.77
+        } else if ethnicityCategory == 4 {
+            town = 2.09
+        } else if ethnicityCategory == 5 {
+            town = 3.66
+        } else if ethnicityCategory == 6 {
+            town = 4.19
+        } else if ethnicityCategory == 7 {
+            town = 1.95
+        } else if ethnicityCategory == 8 {
+            town = 2.80
+        }
         
+        //MARK: QRISK3
         // Conditional Arrays
         var ethnicityRisk: [Double] = [0, 0, 0.2804031433299542500000000, 0.5629899414207539800000000, 0.2959000085111651600000000, 0.0727853798779825450000000, -0.1707213550885731700000000, -0.3937104331487497100000000, -0.3263249528353027200000000, -0.1712705688324178400000000]
         
@@ -214,7 +216,7 @@ final class RiskDataManager {
         
         // Applying fractional polynomial transforms
         // Includes Scaling
-        let dblAge = (Double(intAge!))/10
+        let dblAge = RiskDataManager.shared.age/10
         var age_1 = pow(dblAge,-2)
         var age_2 = dblAge
         let dBmi = bmiIndex/10
@@ -226,9 +228,10 @@ final class RiskDataManager {
         age_2 = age_2 - 4.332503318786621
         bmi_1 = bmi_1 - 0.154946178197861
         bmi_2 = bmi_2 - 0.144462317228317
-        dblCholesterolHDLRatio = dblCholesterolHDLRatio! - 3.476326465606690
-        dblSystolicBloodPressure = dblSystolicBloodPressure! - 123.130012512207030
-        // ATH sbps5 - standard deviation???
+        dblCholesterolHDLRatio = dblCholesterolHDLRatio - 3.476326465606690
+        dblSystolicBloodPressure = dblSystolicBloodPressure - 123.130012512207030
+        town = town - 0.392308831214905
+        sbps5 = sbps5 - 9.002537727355957
         
         // Start of Sum
         var sum: Double = 0
@@ -242,8 +245,10 @@ final class RiskDataManager {
         sum += age_2 * 0.7973337668969909800000000
         sum += bmi_1 * 0.2923609227546005200000000
         sum += bmi_2 * -4.1513300213837665000000000
-        sum += dblCholesterolHDLRatio! * 0.1533803582080255400000000
-        sum += dblSystolicBloodPressure! * 0.0131314884071034240000000
+        sum += dblCholesterolHDLRatio * 0.1533803582080255400000000
+        sum += dblSystolicBloodPressure * 0.0131314884071034240000000
+        sum += sbps5 * 0.0078894541014586095000000
+        sum += town * 0.0772237905885901080000000
         
         // Sum for boolean values
         sum += atrialFibrillation.doubleValue * 1.5923354969269663000000000
@@ -278,8 +283,9 @@ final class RiskDataManager {
         sum += age_1 * bmi_1 * 23.8026234121417420000000000
         sum += age_1 * bmi_2 * -71.1849476920870070000000000
         sum += age_1 * familyHistory.doubleValue * 0.9946780794043512700000000
-        sum += age_1 * dblSystolicBloodPressure! * 0.0341318423386154850000000
-
+        sum += age_1 * dblSystolicBloodPressure * 0.0341318423386154850000000
+        sum += age_1 * town * -1.0301180802035639000000000
+        
         sum += age_2 * (smokingCategory == 1).doubleValue * -0.0755892446431930260000000
         sum += age_2 * (smokingCategory == 2).doubleValue * -0.1195119287486707400000000
         sum += age_2 * (smokingCategory == 3).doubleValue * -0.1036630639757192300000000
@@ -295,13 +301,15 @@ final class RiskDataManager {
         sum += age_2 * bmi_1 * 0.5236995893366442900000000
         sum += age_2 * bmi_2 * 0.0457441901223237590000000
         sum += age_2 * familyHistory.doubleValue * -0.0768850516984230380000000
-        sum += age_2 * dblSystolicBloodPressure! * -0.0015082501423272358000000
+        sum += age_2 * dblSystolicBloodPressure * -0.0015082501423272358000000
+        sum += age_2 * town * -0.0315934146749623290000000
         
         // Calculate the score itself
         let riskScore: Double = 100.0 * (1 - pow(0.988876402378082, exp(sum)))
         return riskScore
-
+        
     }
+    
     
     func computeMaleRisk() {
         
@@ -315,8 +323,6 @@ extension Bool {
         return self ? 1 : 0
     }
 }
-
-
 
 
 

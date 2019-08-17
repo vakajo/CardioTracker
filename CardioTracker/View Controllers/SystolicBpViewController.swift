@@ -100,7 +100,9 @@ class SystolicBpViewController: UIViewController {
         }
         
         guard let text = txtFieldSystolicBP.text else { return }
-        RiskDataManager.shared.systolicBloodPressure = text
+        guard let dblSystolicBloodPressure = Double(text) else { return }
+        RiskDataManager.shared.systolicBloodPressure = dblSystolicBloodPressure
+        
     }
     
     

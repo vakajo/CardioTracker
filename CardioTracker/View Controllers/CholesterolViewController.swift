@@ -100,7 +100,9 @@ class CholesterolViewController: UIViewController {
         }
         
         guard let text = txtFieldCholesterol.text else { return }
-            RiskDataManager.shared.cholesterolHDL = text
+        guard let dblCholesterolHDL = Double(text) else { return }
+        RiskDataManager.shared.cholesterolHDL = dblCholesterolHDL
+        
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {
