@@ -90,6 +90,7 @@ final class RiskDataManager {
         didSet {
             
             risk = computeFemaleRisk()
+            print("")
             
             //            if RiskDataManager.shared.gender == .male {
             //                computeMaleRisk()

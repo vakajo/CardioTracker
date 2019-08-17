@@ -1598,7 +1598,6 @@
                                     <constraint firstAttribute="width" constant="30" id="VRU-aj-ind"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="checkBoxErectileDysfunctionSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="cLG-7A-Rga"/>
                                     <action selector="checkBoxSevereMentalIllnessSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="GYJ-NP-gRJ"/>
                                 </connections>
                             </button>
@@ -1673,7 +1672,6 @@
                         <outlet property="btnBack" destination="iLW-DW-XxH" id="EPS-C2-DDl"/>
                         <outlet property="btnNext" destination="Igu-TL-21J" id="hVf-be-XHJ"/>
                         <outlet property="checkBoxAtrialFibrillation" destination="Rv1-ck-doR" id="kjU-YP-mTn"/>
-                        <outlet property="checkBoxErectileDysfunction" destination="s25-8B-PMh" id="fKb-Mb-mCD"/>
                         <outlet property="checkBoxHealthy" destination="dpb-4Z-qin" id="j6K-jX-mrp"/>
                         <outlet property="checkBoxKidney" destination="eF2-ZU-Nhf" id="H0l-LM-RyW"/>
                         <outlet property="checkBoxMigraines" destination="7j3-jO-zTe" id="0vM-BA-ggh"/>
@@ -2029,6 +2027,9 @@ if unknown</string>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtFieldCholesterolSelected:" destination="le7-Um-JIo" eventType="editingDidBegin" id="WC0-Bo-a2R"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKK-di-twJ">
                                 <rect key="frame" x="50" y="379.66666666666669" width="314" height="46"/>
@@ -2248,6 +2249,9 @@ button below if unknown</string>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtFieldSystolicBloodPressureSelected:" destination="FfM-Zn-vWg" eventType="editingDidBegin" id="V6r-ti-Fmi"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X26-El-sk4">
                                 <rect key="frame" x="50" y="372.66666666666669" width="314" height="46"/>
@@ -3280,7 +3284,7 @@ please connect Apple Health</string>
         <image name="Heart" width="78.333335876464844" height="71.333335876464844"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TIQ-P1-Mjm"/>
+        <segue reference="knc-J4-o00"/>
         <segue reference="QJO-zI-B1C"/>
         <segue reference="0Dz-Lj-Tge"/>
         <segue reference="ZOd-zi-ymv"/>

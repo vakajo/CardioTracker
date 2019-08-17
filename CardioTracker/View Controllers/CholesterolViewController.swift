@@ -37,7 +37,7 @@ class CholesterolViewController: UIViewController {
         super.viewDidLoad()
         
         // ATH: Enabla takkann aðeins þegar það er komið input???
-        txtFieldCholesterol.keyboardType = .numberPad
+        txtFieldCholesterol.keyboardType = .decimalPad
         self.addDoneButtonOnKeyboard()
 
         //MARK: Labels Layout
@@ -92,6 +92,18 @@ class CholesterolViewController: UIViewController {
     @IBAction func btnUnknownSelected(_ sender: UIButton) {
         buttonTapped(sender: btnUnknownCholesterol)
     }
+    
+
+    @IBAction func txtFieldCholesterolSelected(_ sender: UITextField) {
+        
+        btnUnknownCholesterol.isSelected = false
+        btnUnknownCholesterol.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
+        btnUnknownCholesterol.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        btnUnknownCholesterol.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
+    }
+    
+ 
+    
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
         

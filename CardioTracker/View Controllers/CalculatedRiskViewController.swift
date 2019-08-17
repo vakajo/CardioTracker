@@ -32,8 +32,10 @@ class CalculatedRiskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         let risk = RiskDataManager.shared.risk
-        let roundedRisk = round((10*risk)/10)
+        let roundedRisk = String(format: "%.1f", risk)
         
         // MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
