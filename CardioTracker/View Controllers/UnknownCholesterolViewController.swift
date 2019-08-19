@@ -69,12 +69,12 @@ class UnknownCholesterolViewController: UIViewController {
     
     @IBAction func btnHighSelected(_ sender: UIButton) {
         buttonTapped(sender: btnHigh)
-        RiskDataManager.shared.cholesterolHDL = 6
+        RiskDataManager.shared.cholesterolHDL = 5
     }
     
     @IBAction func btnAverageSelected(_ sender: UIButton) {
         buttonTapped(sender: btnAverage)
-        RiskDataManager.shared.cholesterolHDL = 4
+        RiskDataManager.shared.cholesterolHDL = 3.5
     }
     
     @IBAction func btnLowSelected(_ sender: UIButton) {

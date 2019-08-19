@@ -36,8 +36,9 @@ class CholesterolViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ATH: Enabla takkann aðeins þegar það er komið input???
         txtFieldCholesterol.keyboardType = .decimalPad
+        btnNext.isEnabled = false
+        btnNext.alpha = 0.5
         self.addDoneButtonOnKeyboard()
 
         //MARK: Labels Layout
@@ -55,7 +56,7 @@ class CholesterolViewController: UIViewController {
         for index in buttons {
             index!.layer.cornerRadius = 15
             index!.clipsToBounds = true
-            index!.layer.borderWidth = 1
+            index!.layer.borderWidth = 1.25
             index!.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
             index!.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
         }
@@ -91,18 +92,27 @@ class CholesterolViewController: UIViewController {
     
     @IBAction func btnUnknownSelected(_ sender: UIButton) {
         buttonTapped(sender: btnUnknownCholesterol)
+        txtFieldCholesterol.text = ""
     }
     
 
     @IBAction func txtFieldCholesterolSelected(_ sender: UITextField) {
-        
         btnUnknownCholesterol.isSelected = false
         btnUnknownCholesterol.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
         btnUnknownCholesterol.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         btnUnknownCholesterol.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
     }
     
- 
+    @IBAction func txtFieldCholesterolEdited(_ sender: UITextField) {
+        
+        if txtFieldCholesterol.text!.isEmpty {
+            btnNext.isEnabled = false
+            btnNext.alpha = 0.5
+        } else {
+            btnNext.isEnabled = true
+            btnNext.alpha = 1.0
+        }
+    }
     
     
     @IBAction func btnNextSelected(_ sender: UIButton) {

@@ -37,7 +37,9 @@ class SystolicBpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        txtFieldSystolicBP.keyboardType = .numberPad
+        txtFieldSystolicBP.keyboardType = .decimalPad
+        btnNext.isEnabled = false
+        btnNext.alpha = 0.5
         self.addDoneButtonOnKeyboard()
         
         //MARK: Labels Layout
@@ -55,7 +57,7 @@ class SystolicBpViewController: UIViewController {
         for index in buttons {
             index!.layer.cornerRadius = 15
             index!.clipsToBounds = true
-            index!.layer.borderWidth = 1
+            index!.layer.borderWidth = 1.25
             index!.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
             index!.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
         }
@@ -91,6 +93,7 @@ class SystolicBpViewController: UIViewController {
     
     @IBAction func btnUnknownSystolicBpSelected(_ sender: UIButton) {
         buttonTapped(sender: btnUnknownSystolicBp)
+        txtFieldSystolicBP.text = ""
     }
     
     @IBAction func txtFieldSystolicBloodPressureSelected(_ sender: UITextField) {
@@ -100,6 +103,18 @@ class SystolicBpViewController: UIViewController {
         btnUnknownSystolicBp.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         btnUnknownSystolicBp.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
     }
+    
+    @IBAction func txtFieldSystolicBloodPressureEdited(_ sender: UITextField) {
+        
+        if txtFieldSystolicBP.text!.isEmpty {
+            btnNext.isEnabled = false
+            btnNext.alpha = 0.5
+        } else {
+            btnNext.isEnabled = true
+            btnNext.alpha = 1.0
+        }
+    }
+    
     
     
     @IBAction func btnNextSelected(_ sender: UIButton) {

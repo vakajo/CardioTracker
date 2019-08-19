@@ -233,26 +233,26 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF8-Qm-YPm">
-                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGv-1x-CFO">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
+                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM2-pu-rtP">
-                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ES-Yy-uQo">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -281,7 +281,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzL-YQ-1zL">
-                                <rect key="frame" x="93" y="227" width="228" height="24"/>
+                                <rect key="frame" x="93.333333333333329" y="227" width="227.33333333333337" height="24"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -311,15 +311,15 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTD-1l-L4E">
-                                <rect key="frame" x="50" y="567.33333333333337" width="314" height="1"/>
+                                <rect key="frame" x="50" y="581.66666666666663" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="DVL-aQ-8zP"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-5j-q0K">
-                                <rect key="frame" x="50" y="578.33333333333337" width="314" height="71.666666666666629"/>
-                                <string key="text">Text about how gender affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <rect key="frame" x="50" y="592.66666666666663" width="314" height="57.333333333333371"/>
+                                <string key="text">Cardiovascular disease develops 7-10 years later in women than in men. For that reason, cardiovascular disease in women is often underestimated.  It is however still the major cause of death in women over 65 years old.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -480,18 +480,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVe-2y-ROj">
-                                <rect key="frame" x="50" y="569" width="314" height="1"/>
+                                <rect key="frame" x="50" y="555" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="PEb-tM-TI0"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="may-Av-iaq">
-                                <rect key="frame" x="50" y="578" width="314" height="72"/>
+                                <rect key="frame" x="50" y="564" width="314" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="46g-zH-k9A"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="46g-zH-k9A"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">Higher age is associated with greater risk of cardiovascular disease. Aging can cause changes in the heart and blood vessels. In addition, at a higher age, individuals have less time to modify other cardiovascular risk factors by altering their lifestyle. Therefore, people aged 65 and older are more likely to develop cardiovascular disease.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -674,18 +674,18 @@
                                 <rect key="frame" x="55" y="236" width="304" height="216"/>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cK7-r8-3dI">
-                                <rect key="frame" x="50" y="567" width="309" height="1"/>
+                                <rect key="frame" x="50" y="553" width="309" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="cd3-Rd-i8B"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp4-mZ-VjY">
-                                <rect key="frame" x="50" y="578" width="314" height="72"/>
+                                <rect key="frame" x="50" y="564" width="314" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="qnN-FH-KEf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="qnN-FH-KEf"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">Cardiovascular risk varies greatly between ethnic groups. Migrants of South Asian migrants (including Indian, Bangladeshi and Pakistani) have elevated risk of developing cardiovascular disease. On the contrary, Black African and Chinese have a low risk of developing cardiovascular disease compared to the other ethnic groups. </string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -698,7 +698,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smp-iT-tBb">
-                                <rect key="frame" x="100" y="491" width="214" height="36"/>
+                                <rect key="frame" x="100" y="477" width="214" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="nbv-bz-SBd"/>
                                 </constraints>
@@ -865,7 +865,7 @@
                                 <rect key="frame" x="55" y="257" width="304" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9db-K2-On5">
-                                <rect key="frame" x="100" y="491" width="214" height="36"/>
+                                <rect key="frame" x="100" y="462.66666666666669" width="214" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="qZP-Bb-uKF"/>
                                 </constraints>
@@ -877,18 +877,18 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg5-gd-aVX">
-                                <rect key="frame" x="50" y="567" width="314" height="1"/>
+                                <rect key="frame" x="50" y="538.66666666666663" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="kD2-C4-ctP"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVj-gP-l3Y">
-                                <rect key="frame" x="50" y="578" width="314" height="72"/>
+                                <rect key="frame" x="50" y="549.66666666666663" width="314" height="100.33333333333337"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="xXZ-9F-BPO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="xXZ-9F-BPO"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">Smoking has a multiplicative effect on other cardiovascular risk factors such as cholesterol, hypertension and diabetes mellitus. Smoking also increases the risk of cardiovascular disease beyond effects on other risk factors. In general, smoking leads to atherosclerosis, where fat plaques narrow and eventually block the coronary arteries which supply the heart with blood, resulting in myocardial infarction.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1055,7 +1055,7 @@
                                 <rect key="frame" x="55" y="245" width="304" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsx-oX-L4D">
-                                <rect key="frame" x="100" y="491" width="214" height="36"/>
+                                <rect key="frame" x="100" y="477" width="214" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="NuE-oA-PEr"/>
                                 </constraints>
@@ -1067,18 +1067,18 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2j-XE-Ciz">
-                                <rect key="frame" x="50" y="567" width="314" height="1"/>
+                                <rect key="frame" x="50" y="553" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="I1t-de-e6a"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyB-LP-KnJ">
-                                <rect key="frame" x="50" y="578" width="314" height="72"/>
+                                <rect key="frame" x="50" y="564" width="314" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="cgD-JO-lHc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="cgD-JO-lHc"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">Over time, high blood glucose can damage blood vessels and the nervous system controlling the circulatory system. Therefore, Diabetes Mellitus increases cardiovascular risk greatly. Cardiovascular disease events are more common and occur earlier in patients with diabetes than in nondiabetic individuals.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1266,18 +1266,18 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHj-L1-9XG">
-                                <rect key="frame" x="50" y="567" width="314" height="1"/>
+                                <rect key="frame" x="50" y="553" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="cJH-sC-6ny"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0h-uI-AvL">
-                                <rect key="frame" x="50" y="578" width="314" height="72"/>
+                                <rect key="frame" x="50" y="564" width="314" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="5cK-kl-ryO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="5cK-kl-ryO"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">Family medical history can be an indicator of cardiovascular disease. Genes can carry conditions such as high blood pressure or high cholesterol, thus increasing cardiovascular risk. Family lifestyle and environment, i.e. growing up in a smoking household or eating a fast food diet, affects blood pressure and cholesterol.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1382,26 +1382,26 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoY-KO-OXg">
-                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xd-IC-bmc">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
+                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LA8-2A-hJX">
-                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCY-w4-iX0">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1443,7 +1443,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYu-cU-eCj">
-                                <rect key="frame" x="193.66666666666666" y="179" width="27" height="21"/>
+                                <rect key="frame" x="193.66666666666666" y="179.66666666666666" width="26.666666666666657" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1598,7 +1598,7 @@
                                     <constraint firstAttribute="width" constant="30" id="VRU-aj-ind"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="checkBoxSevereMentalIllnessSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="GYJ-NP-gRJ"/>
+                                    <action selector="checkBoxErectileDysfunctionSelected:" destination="cvF-r8-v9W" eventType="touchUpInside" id="UFP-By-yhy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1672,6 +1672,7 @@
                         <outlet property="btnBack" destination="iLW-DW-XxH" id="EPS-C2-DDl"/>
                         <outlet property="btnNext" destination="Igu-TL-21J" id="hVf-be-XHJ"/>
                         <outlet property="checkBoxAtrialFibrillation" destination="Rv1-ck-doR" id="kjU-YP-mTn"/>
+                        <outlet property="checkBoxErectileDysfunction" destination="s25-8B-PMh" id="tdr-zw-1ab"/>
                         <outlet property="checkBoxHealthy" destination="dpb-4Z-qin" id="j6K-jX-mrp"/>
                         <outlet property="checkBoxKidney" destination="eF2-ZU-Nhf" id="H0l-LM-RyW"/>
                         <outlet property="checkBoxMigraines" destination="7j3-jO-zTe" id="0vM-BA-ggh"/>
@@ -1720,26 +1721,26 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibO-5i-4tr">
-                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4e-HZ-iil">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
+                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acv-3l-OQT">
-                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTx-KZ-b2G">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1794,7 +1795,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEK-fU-tPj">
-                                <rect key="frame" x="192.66666666666666" y="179" width="29" height="21"/>
+                                <rect key="frame" x="193" y="179.66666666666666" width="28.333333333333343" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1962,26 +1963,26 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bi4-CC-Sof">
-                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5.0000000000000018" width="68.333333333333343" height="24.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrx-hb-M0U">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
+                                        <rect key="frame" x="74.333333333333343" y="3.0000000000000018" width="17.333333333333329" height="26.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ui1-re-pNB">
-                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="34.666666666666671" width="71.333333333333343" height="27.333333333333329"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbI-5B-sHv">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="33.666666666666671" width="14.333333333333329" height="25.333333333333329"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2020,22 +2021,23 @@ if unknown</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tgu-CD-amL">
-                                <rect key="frame" x="50" y="339.66666666666669" width="314" height="30"/>
+                                <rect key="frame" x="100" y="339.66666666666669" width="214" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="zSQ-f9-diC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="H2j-K9-Zk6"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="txtFieldCholesterolEdited:" destination="le7-Um-JIo" eventType="editingDidEnd" id="a5P-oT-7CE"/>
                                     <action selector="txtFieldCholesterolSelected:" destination="le7-Um-JIo" eventType="editingDidBegin" id="WC0-Bo-a2R"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKK-di-twJ">
-                                <rect key="frame" x="50" y="379.66666666666669" width="314" height="46"/>
+                                <rect key="frame" x="100" y="379.66666666666669" width="214" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="Ago-Rs-SBV"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="q3o-JH-xio"/>
+                                    <constraint firstAttribute="width" priority="500" constant="214" id="q3o-JH-xio"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
                                 <state key="normal">
@@ -2048,7 +2050,7 @@ Cholesterol/HDL ratio</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iws-81-WGv">
-                                <rect key="frame" x="50" y="492" width="314" height="35"/>
+                                <rect key="frame" x="100" y="478" width="214" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="Lhx-7X-Tsl"/>
                                     <constraint firstAttribute="height" constant="35" id="Occ-gr-xg3"/>
@@ -2068,17 +2070,17 @@ Cholesterol/HDL ratio</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxr-3G-ZEQ">
-                                <rect key="frame" x="50" y="578" width="314" height="72"/>
+                                <rect key="frame" x="50" y="564" width="314" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="XK3-zj-8qm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="XK3-zj-8qm"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">Higher cholesterol/HDL ratio increases risk of cardiovascular disease. There are three types of cholesterol in the human body: HDL, considered "good" cholesterol, LDL, considered "bad" cholesterol, and VLDL, a precursor to LDL. The more HDL you have proportionally to your total cholesterol levels, the lower the cholesterol/HDL ratio becomes. </string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lfx-Qw-8aJ">
-                                <rect key="frame" x="50" y="567" width="314" height="1"/>
+                                <rect key="frame" x="50" y="553" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="jsR-p9-yzL"/>
@@ -2118,6 +2120,7 @@ Cholesterol/HDL ratio</string>
                             <constraint firstItem="6Wr-Jq-q2t" firstAttribute="top" secondItem="Qxr-3G-ZEQ" secondAttribute="bottom" constant="10" id="9ap-Oy-3jb"/>
                             <constraint firstItem="Ugz-vv-tC1" firstAttribute="leading" secondItem="r9j-YY-WOC" secondAttribute="leading" constant="50" id="AO3-Dx-Fcs"/>
                             <constraint firstItem="Qxr-3G-ZEQ" firstAttribute="leading" secondItem="6Wr-Jq-q2t" secondAttribute="leading" id="AvC-Rp-8Ae"/>
+                            <constraint firstItem="uKK-di-twJ" firstAttribute="leading" secondItem="Tgu-CD-amL" secondAttribute="leading" id="Fq5-Rw-CT3"/>
                             <constraint firstItem="iws-81-WGv" firstAttribute="leading" secondItem="uKK-di-twJ" secondAttribute="leading" id="MsB-fj-j07"/>
                             <constraint firstItem="5EY-RP-1tg" firstAttribute="centerX" secondItem="r9j-YY-WOC" secondAttribute="centerX" id="OrE-4z-aSC"/>
                             <constraint firstItem="r9j-YY-WOC" firstAttribute="trailing" secondItem="Ugz-vv-tC1" secondAttribute="trailing" constant="50" id="Spb-fM-o6S"/>
@@ -2126,7 +2129,6 @@ Cholesterol/HDL ratio</string>
                             <constraint firstItem="Qxr-3G-ZEQ" firstAttribute="trailing" secondItem="6Wr-Jq-q2t" secondAttribute="trailing" id="YQh-do-PTB"/>
                             <constraint firstItem="r9j-YY-WOC" firstAttribute="bottom" secondItem="6Wr-Jq-q2t" secondAttribute="bottom" constant="75" id="Ytt-7N-CQ2"/>
                             <constraint firstItem="Lfx-Qw-8aJ" firstAttribute="trailing" secondItem="Qxr-3G-ZEQ" secondAttribute="trailing" id="dji-N9-0qC"/>
-                            <constraint firstItem="uKK-di-twJ" firstAttribute="leading" secondItem="r9j-YY-WOC" secondAttribute="leading" constant="50" id="f3F-Cm-XEd"/>
                             <constraint firstItem="Tgu-CD-amL" firstAttribute="top" secondItem="Ugz-vv-tC1" secondAttribute="bottom" constant="17" id="fzA-jb-BRD"/>
                             <constraint firstItem="ixi-YS-aA0" firstAttribute="centerX" secondItem="br8-zh-4J1" secondAttribute="centerX" id="gfT-qN-yvU"/>
                             <constraint firstItem="Tgu-CD-amL" firstAttribute="centerX" secondItem="r9j-YY-WOC" secondAttribute="centerX" id="iN9-6X-2NO"/>
@@ -2136,7 +2138,7 @@ Cholesterol/HDL ratio</string>
                             <constraint firstItem="br8-zh-4J1" firstAttribute="centerX" secondItem="r9j-YY-WOC" secondAttribute="centerX" id="uJY-3g-9E0"/>
                             <constraint firstItem="iws-81-WGv" firstAttribute="trailing" secondItem="uKK-di-twJ" secondAttribute="trailing" id="vEF-fm-t4P"/>
                             <constraint firstItem="uKK-di-twJ" firstAttribute="top" secondItem="Tgu-CD-amL" secondAttribute="bottom" constant="10" id="vVR-O3-Ztr"/>
-                            <constraint firstItem="r9j-YY-WOC" firstAttribute="trailing" secondItem="uKK-di-twJ" secondAttribute="trailing" constant="50" id="w9C-qQ-EA9"/>
+                            <constraint firstItem="uKK-di-twJ" firstAttribute="trailing" secondItem="Tgu-CD-amL" secondAttribute="trailing" id="wwZ-nk-s5T"/>
                             <constraint firstItem="5EY-RP-1tg" firstAttribute="top" secondItem="r9j-YY-WOC" secondAttribute="top" constant="50" id="ylk-5M-Ukq"/>
                             <constraint firstItem="Ugz-vv-tC1" firstAttribute="top" secondItem="5EY-RP-1tg" secondAttribute="bottom" constant="100" id="zvk-Fn-9EE"/>
                         </constraints>
@@ -2184,26 +2186,26 @@ Cholesterol/HDL ratio</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2T-E3-Stl">
-                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wm-4d-V6A">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
+                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6g-fE-dCC">
-                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1db-E2-ZSO">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2242,19 +2244,20 @@ button below if unknown</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfd-Yc-Mce">
-                                <rect key="frame" x="50" y="332.66666666666669" width="314" height="30"/>
+                                <rect key="frame" x="100" y="332.66666666666669" width="214" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="314" id="389-9Q-9qU"/>
+                                    <constraint firstAttribute="width" constant="214" id="389-9Q-9qU"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="txtFieldSystolicBloodPressureEdited:" destination="FfM-Zn-vWg" eventType="editingDidEnd" id="IIe-Fv-ePa"/>
                                     <action selector="txtFieldSystolicBloodPressureSelected:" destination="FfM-Zn-vWg" eventType="editingDidBegin" id="V6r-ti-Fmi"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X26-El-sk4">
-                                <rect key="frame" x="50" y="372.66666666666669" width="314" height="46"/>
+                                <rect key="frame" x="100" y="372.66666666666669" width="214" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="DUN-le-f93"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="hru-R7-5UI"/>
@@ -2270,7 +2273,7 @@ Systolic Blood Pressure </string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1T-nw-PkJ">
-                                <rect key="frame" x="50" y="467" width="314" height="35"/>
+                                <rect key="frame" x="100" y="453" width="214" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="CnQ-7C-ogu"/>
                                     <constraint firstAttribute="height" constant="35" id="Mcz-Y8-NDU"/>
@@ -2283,18 +2286,18 @@ Systolic Blood Pressure </string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6D1-VH-q5i">
-                                <rect key="frame" x="50" y="542" width="314" height="1"/>
+                                <rect key="frame" x="50" y="528" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="PUR-ZF-N1g"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0R-7m-Vbn">
-                                <rect key="frame" x="50" y="553" width="314" height="72"/>
+                                <rect key="frame" x="50" y="539" width="314" height="86"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="w2Q-hM-OIu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="w2Q-hM-OIu"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">Hypertension, or high blood pressure, is one of the most important risk factors for cardiovascular disease. It can cause damage arteries and cause fats to collect in the blood stream, narrowing the arteries, leading to cardiovascular disease. Blood pressure can be lowered by e.g. losing weight, excercising regularly, and eating a healthy diet.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2314,7 +2317,7 @@ Systolic Blood Pressure </string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbQ-3V-RmJ">
-                                <rect key="frame" x="189.66666666666666" y="172" width="34.666666666666657" height="21"/>
+                                <rect key="frame" x="189.66666666666666" y="172.66666666666666" width="34.666666666666657" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2346,10 +2349,8 @@ Systolic Blood Pressure </string>
                             <constraint firstItem="u0R-7m-Vbn" firstAttribute="top" secondItem="6D1-VH-q5i" secondAttribute="bottom" constant="10" id="KZJ-Zh-Wq4"/>
                             <constraint firstItem="X26-El-sk4" firstAttribute="leading" secondItem="rfd-Yc-Mce" secondAttribute="leading" id="LuQ-I8-vUg"/>
                             <constraint firstItem="FWH-2e-sox" firstAttribute="top" secondItem="eAR-5w-UVq" secondAttribute="bottom" constant="100" id="Lvm-3q-SLt"/>
-                            <constraint firstItem="rfd-Yc-Mce" firstAttribute="trailing" secondItem="FWH-2e-sox" secondAttribute="trailing" id="NQw-0q-XEB"/>
                             <constraint firstItem="I1T-nw-PkJ" firstAttribute="leading" secondItem="X26-El-sk4" secondAttribute="leading" id="NXr-yH-KcI"/>
                             <constraint firstItem="FWH-2e-sox" firstAttribute="leading" secondItem="Q2t-Ux-gX4" secondAttribute="leading" constant="50" id="Q4t-tv-7tV"/>
-                            <constraint firstItem="rfd-Yc-Mce" firstAttribute="leading" secondItem="FWH-2e-sox" secondAttribute="leading" id="RpU-Ee-wqA"/>
                             <constraint firstItem="O8E-qi-jYl" firstAttribute="top" secondItem="Q2t-Ux-gX4" secondAttribute="top" constant="25" id="UVk-2d-aRB"/>
                             <constraint firstItem="I1T-nw-PkJ" firstAttribute="trailing" secondItem="X26-El-sk4" secondAttribute="trailing" id="YJk-G1-5vj"/>
                             <constraint firstItem="u0R-7m-Vbn" firstAttribute="leading" secondItem="6D1-VH-q5i" secondAttribute="leading" id="d56-Ko-bDf"/>
@@ -2359,6 +2360,7 @@ Systolic Blood Pressure </string>
                             <constraint firstItem="cMj-Hv-jcQ" firstAttribute="top" secondItem="eAR-5w-UVq" secondAttribute="bottom" constant="33" id="pmT-Oc-0la"/>
                             <constraint firstItem="XbQ-3V-RmJ" firstAttribute="centerX" secondItem="cMj-Hv-jcQ" secondAttribute="centerX" id="t1F-eY-EiO"/>
                             <constraint firstItem="Ico-cY-hzV" firstAttribute="top" secondItem="u0R-7m-Vbn" secondAttribute="bottom" constant="10" id="u0k-F6-mtt"/>
+                            <constraint firstItem="rfd-Yc-Mce" firstAttribute="centerX" secondItem="Q2t-Ux-gX4" secondAttribute="centerX" id="vSU-Hf-2HF"/>
                             <constraint firstItem="u0R-7m-Vbn" firstAttribute="trailing" secondItem="6D1-VH-q5i" secondAttribute="trailing" id="vh5-f2-g3q"/>
                             <constraint firstItem="rfd-Yc-Mce" firstAttribute="top" secondItem="FWH-2e-sox" secondAttribute="bottom" constant="10" id="wCG-jv-cZc"/>
                             <constraint firstItem="Q2t-Ux-gX4" firstAttribute="trailing" secondItem="Ico-cY-hzV" secondAttribute="trailing" constant="50" id="yEZ-nX-Bz8"/>
@@ -2407,26 +2409,26 @@ Systolic Blood Pressure </string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyH-0z-4kw">
-                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkt-Ua-B26">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkt-Ua-B26">
+                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwh-CF-PR1">
-                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxK-91-Dny">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2510,7 +2512,9 @@ ratio for you</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="Ovx-Vc-FMr"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">High cholesterol/HDL ratio is 5:1
+Average cholesterol/HDL ratio is 3.5:1
+Low cholesterol/HDL ratio is  2:1</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2530,7 +2534,7 @@ ratio for you</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AM-UG-Q9J">
-                                <rect key="frame" x="193" y="179" width="28" height="21"/>
+                                <rect key="frame" x="193" y="179.66666666666666" width="28" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2622,26 +2626,26 @@ ratio for you</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKK-if-vDf">
-                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5.0000000000000018" width="68.333333333333343" height="24.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0S-Fb-nha">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
+                                        <rect key="frame" x="74.333333333333343" y="3.0000000000000018" width="17.333333333333329" height="26.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCX-dp-1ch">
-                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="34.666666666666671" width="71.333333333333343" height="27.333333333333329"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7R-9a-x6o">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="33.666666666666671" width="14.333333333333329" height="25.333333333333329"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2723,7 +2727,9 @@ ratio for you</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="yun-0m-oyc"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">High systolic blood pressure is 140 mmHg
+Average systolic blood pressure is 105 mmHg
+Low blood pressure is  80 mmHg</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2835,26 +2841,26 @@ ratio for you</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0W-bX-3EC">
-                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
+                                        <rect key="frame" x="91.666666666666657" y="5" width="68.333333333333343" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zm-oH-OD7">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zm-oH-OD7">
+                                        <rect key="frame" x="74.333333333333343" y="3" width="17.333333333333329" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRm-Dv-aDH">
-                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
+                                        <rect key="frame" x="88.666666666666657" y="35" width="71.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="You-QJ-Ruz">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="34" width="14.333333333333329" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2909,7 +2915,7 @@ height and weight</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66o-KT-nyR">
-                                <rect key="frame" x="50" y="467" width="314" height="35"/>
+                                <rect key="frame" x="50" y="395.66666666666669" width="314" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="Gg1-Wv-g2T"/>
                                     <constraint firstAttribute="height" constant="35" id="Zzb-xw-RPK"/>
@@ -2924,18 +2930,18 @@ height and weight</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n02-ZW-MCm">
-                                <rect key="frame" x="50" y="542" width="314" height="1"/>
+                                <rect key="frame" x="50" y="470.66666666666669" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="SyN-qx-FaB"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPJ-f8-PQQ">
-                                <rect key="frame" x="50" y="553" width="314" height="72"/>
+                                <rect key="frame" x="50" y="481.66666666666669" width="314" height="143.33333333333331"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="qLR-44-jrM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="qLR-44-jrM"/>
                                 </constraints>
-                                <string key="text">Text about how age affects cardiovascular risk Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+                                <string key="text">Excess weight increases the risk for cardiovascular disease, as it can lead to fatty plaques building up in the arteries. People carrying weight around the middle are at higher risk than people that carry weight around their hips and bottom, as they contain visceral fat around the organs rather than subcutaneous fat under the skin. Obesity also has an effect on other cardiovascular risk factors, raising both blood pressure and cholesterol levels in the body. To manage their weight, people can eat suitable portion sizes, eat a healthier diet and become more physically active.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2967,7 +2973,7 @@ height and weight</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGl-FS-QlC">
-                                <rect key="frame" x="191.33333333333334" y="179" width="31.666666666666657" height="21"/>
+                                <rect key="frame" x="191.33333333333334" y="179.66666666666666" width="31.666666666666657" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -3070,26 +3076,26 @@ height and weight</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPf-LE-l0E">
-                                        <rect key="frame" x="91.333333333333343" y="5" width="68.666666666666657" height="25"/>
+                                        <rect key="frame" x="93.666666666666657" y="5" width="66.333333333333343" height="25"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR6-6b-EjB">
-                                        <rect key="frame" x="74.333333333333343" y="3" width="17" height="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GR6-6b-EjB">
+                                        <rect key="frame" x="74.333333333333343" y="3" width="19.333333333333329" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="RACKER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhD-0M-cPu">
-                                        <rect key="frame" x="88.333333333333343" y="35" width="71.666666666666657" height="27"/>
+                                        <rect key="frame" x="90.666666666666657" y="35" width="69.333333333333343" height="27"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="17.200000762939453"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoi-P9-AmF">
-                                        <rect key="frame" x="77.333333333333343" y="34" width="14" height="25"/>
+                                        <rect key="frame" x="77.333333333333343" y="34" width="16.333333333333329" height="25"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -3125,7 +3131,7 @@ height and weight</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-P1-Xbn" userLabel="View Sep Bottom">
-                                <rect key="frame" x="50" y="458" width="314" height="1"/>
+                                <rect key="frame" x="50" y="471" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="yvf-zk-e7U"/>
@@ -3138,25 +3144,14 @@ height and weight</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-WC-kR5">
-                                <rect key="frame" x="50" y="391" width="314" height="57"/>
+                                <rect key="frame" x="50" y="391" width="314" height="70"/>
                                 <string key="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hN-ed-k3L">
-                                <rect key="frame" x="100" y="628" width="214" height="33"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="17"/>
-                                <state key="normal" title="LATER">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnStartedClicked:" destination="UlZ-Kx-xNA" eventType="touchUpInside" id="hW9-Dt-WL1"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-50-2RO">
-                                <rect key="frame" x="114" y="167" width="186" height="48"/>
+                                <rect key="frame" x="113.33333333333333" y="167" width="187.33333333333337" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="vpS-hq-G3V"/>
                                 </constraints>
@@ -3167,7 +3162,7 @@ cardiovascular risk is</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwJ-5j-84U">
-                                <rect key="frame" x="99.666666666666686" y="499" width="215" height="61"/>
+                                <rect key="frame" x="97.666666666666671" y="512" width="218.66666666666663" height="59.666666666666629"/>
                                 <string key="text">To automatically monitor
 your cardiovascular risk,
 please connect Apple Health</string>
@@ -3176,7 +3171,7 @@ please connect Apple Health</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28j-gR-XP8">
-                                <rect key="frame" x="100" y="585" width="214" height="33"/>
+                                <rect key="frame" x="100" y="596.66666666666663" width="214" height="32"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="3gN-Y3-elO"/>
@@ -3186,21 +3181,15 @@ please connect Apple Health</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnStartedClicked:" destination="UlZ-Kx-xNA" eventType="touchUpInside" id="nmH-D5-xyd"/>
+                                    <action selector="btnConnectClicked:" destination="UlZ-Kx-xNA" eventType="touchUpInside" id="GSj-Yb-Ghk"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-xB-qvc">
                                 <rect key="frame" x="110" y="225" width="194" height="91"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdX-Wl-wiP">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="91"/>
-                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="70"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0D-1M-Hc6">
-                                        <rect key="frame" x="100" y="0.0" width="94" height="91"/>
-                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="70"/>
+                                        <rect key="frame" x="79" y="0.0" width="36.333333333333343" height="91"/>
+                                        <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="65"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3208,24 +3197,38 @@ please connect Apple Health</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="QdX-Wl-wiP" firstAttribute="top" secondItem="rPc-xB-qvc" secondAttribute="top" id="4KO-mv-Wxi"/>
-                                    <constraint firstItem="QdX-Wl-wiP" firstAttribute="leading" secondItem="rPc-xB-qvc" secondAttribute="leading" id="DcX-Xk-Alz"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QdX-Wl-wiP" secondAttribute="trailing" constant="99" id="Hka-L9-sjq"/>
-                                    <constraint firstItem="J0D-1M-Hc6" firstAttribute="height" secondItem="rPc-xB-qvc" secondAttribute="height" id="Q3R-EC-q9w"/>
-                                    <constraint firstItem="J0D-1M-Hc6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="QdX-Wl-wiP" secondAttribute="trailing" constant="8" symbolic="YES" id="bsn-Ae-QoJ"/>
-                                    <constraint firstItem="J0D-1M-Hc6" firstAttribute="leading" secondItem="QdX-Wl-wiP" secondAttribute="trailing" constant="5" id="ekb-BA-CrM"/>
-                                    <constraint firstAttribute="trailing" secondItem="J0D-1M-Hc6" secondAttribute="trailing" id="frO-V3-EMu"/>
-                                    <constraint firstItem="J0D-1M-Hc6" firstAttribute="top" secondItem="QdX-Wl-wiP" secondAttribute="top" id="iO2-lB-FIf"/>
+                                    <constraint firstItem="QdX-Wl-wiP" firstAttribute="centerX" secondItem="rPc-xB-qvc" secondAttribute="centerX" id="Qgn-Qv-1PX"/>
                                     <constraint firstItem="QdX-Wl-wiP" firstAttribute="height" secondItem="rPc-xB-qvc" secondAttribute="height" id="lSA-9B-krA"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP6-ho-L1N">
+                                <rect key="frame" x="25" y="45" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dWh-kl-ESA"/>
+                                    <constraint firstAttribute="width" constant="30" id="pzt-ys-P8a"/>
+                                </constraints>
+                                <state key="normal" image="Back"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="he6-5Z-5Dj" eventType="touchUpInside" id="BIR-KQ-h0Y"/>
+                                    <action selector="btnBackClicked:" destination="UlZ-Kx-xNA" eventType="touchUpInside" id="h8C-R4-izL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-LL-2pp">
+                                <rect key="frame" x="345" y="45" width="44" height="30"/>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <action selector="btnProfile:" destination="UlZ-Kx-xNA" eventType="touchUpInside" id="8FX-aM-jct"/>
+                                    <segue destination="Rhv-bI-Og1" kind="show" id="HTO-66-84c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yhu-dY-puu" firstAttribute="top" secondItem="6py-sJ-WBf" secondAttribute="bottom" constant="10" id="2zR-Rz-EEW"/>
-                            <constraint firstItem="4hN-ed-k3L" firstAttribute="leading" secondItem="VbC-P1-Xbn" secondAttribute="leading" constant="50" id="4au-sk-snm"/>
+                            <constraint firstItem="eP6-ho-L1N" firstAttribute="top" secondItem="Rwi-Ai-jBm" secondAttribute="top" constant="25" id="3Ay-1e-bm6"/>
                             <constraint firstItem="VbC-P1-Xbn" firstAttribute="leading" secondItem="ELg-WC-kR5" secondAttribute="leading" id="5eP-0S-Kbt"/>
+                            <constraint firstItem="4bg-LL-2pp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kKb-9b-k5g" secondAttribute="trailing" constant="8" symbolic="YES" id="6t0-gX-Agu"/>
                             <constraint firstItem="yhu-dY-puu" firstAttribute="leading" secondItem="6py-sJ-WBf" secondAttribute="leading" id="7y3-ZM-p5c"/>
-                            <constraint firstItem="4hN-ed-k3L" firstAttribute="trailing" secondItem="VbC-P1-Xbn" secondAttribute="trailing" constant="-50" id="BIz-oy-Q6Q"/>
                             <constraint firstItem="28j-gR-XP8" firstAttribute="top" secondItem="GwJ-5j-84U" secondAttribute="bottom" constant="25" id="CT4-Ix-Ig1"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="rPc-xB-qvc" secondAttribute="trailing" constant="110" id="CaC-Ib-MHy"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="leading" secondItem="yhu-dY-puu" secondAttribute="leading" id="Ifg-Da-km0"/>
@@ -3237,14 +3240,15 @@ please connect Apple Health</string>
                             <constraint firstItem="3dg-50-2RO" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="fcF-AI-W9E"/>
                             <constraint firstItem="6py-sJ-WBf" firstAttribute="top" secondItem="rPc-xB-qvc" secondAttribute="bottom" constant="47" id="g7G-tU-0tm"/>
                             <constraint firstItem="yhu-dY-puu" firstAttribute="trailing" secondItem="6py-sJ-WBf" secondAttribute="trailing" id="hWn-gw-TVF"/>
-                            <constraint firstItem="4hN-ed-k3L" firstAttribute="top" secondItem="28j-gR-XP8" secondAttribute="bottom" constant="10" id="hqS-xt-VJI"/>
+                            <constraint firstItem="4bg-LL-2pp" firstAttribute="top" secondItem="Rwi-Ai-jBm" secondAttribute="top" constant="25" id="hmJ-vg-wkb"/>
                             <constraint firstItem="GwJ-5j-84U" firstAttribute="top" secondItem="VbC-P1-Xbn" secondAttribute="bottom" constant="40" id="iZQ-zc-0hN"/>
+                            <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="4bg-LL-2pp" secondAttribute="trailing" constant="25" id="ity-Ww-t33"/>
                             <constraint firstItem="kKb-9b-k5g" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="kbc-m6-WuO"/>
                             <constraint firstItem="28j-gR-XP8" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="lwR-47-JdE"/>
                             <constraint firstItem="rPc-xB-qvc" firstAttribute="top" secondItem="3dg-50-2RO" secondAttribute="bottom" constant="10" id="mGv-1d-Vgg"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="top" secondItem="yhu-dY-puu" secondAttribute="bottom" id="noM-Ii-10l"/>
-                            <constraint firstItem="Rwi-Ai-jBm" firstAttribute="bottom" secondItem="4hN-ed-k3L" secondAttribute="bottom" constant="75" id="pHp-jo-qbu"/>
                             <constraint firstItem="kKb-9b-k5g" firstAttribute="top" secondItem="Rwi-Ai-jBm" secondAttribute="top" constant="50" id="pNh-ai-uRa"/>
+                            <constraint firstItem="eP6-ho-L1N" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="25" id="qT5-I9-2tF"/>
                             <constraint firstItem="6py-sJ-WBf" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="50" id="rWR-3f-LFk"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="6py-sJ-WBf" secondAttribute="trailing" constant="50" id="sf9-8c-L3K"/>
                             <constraint firstItem="VbC-P1-Xbn" firstAttribute="trailing" secondItem="ELg-WC-kR5" secondAttribute="trailing" id="sts-RB-Hyd"/>
@@ -3253,15 +3257,15 @@ please connect Apple Health</string>
                         <viewLayoutGuide key="safeArea" id="Rwi-Ai-jBm"/>
                     </view>
                     <connections>
+                        <outlet property="btnBack" destination="eP6-ho-L1N" id="8qE-GK-ag6"/>
                         <outlet property="btnConnect" destination="28j-gR-XP8" id="kCe-dl-8lv"/>
-                        <outlet property="btnLater" destination="4hN-ed-k3L" id="Lkj-Fh-G8k"/>
+                        <outlet property="btnProfile" destination="4bg-LL-2pp" id="0Sa-v5-Vps"/>
                         <outlet property="imgViewHeart" destination="chs-zo-rKz" id="l56-d5-44t"/>
                         <outlet property="lblC" destination="GR6-6b-EjB" id="2f7-Br-HCB"/>
                         <outlet property="lblCardio" destination="qPf-LE-l0E" id="QSC-4A-T30"/>
                         <outlet property="lblConnect" destination="GwJ-5j-84U" id="Pts-NT-7bV"/>
                         <outlet property="lblDesc" destination="ELg-WC-kR5" id="4w0-xo-0P5"/>
                         <outlet property="lblInfo" destination="yhu-dY-puu" id="GRY-WV-Ke6"/>
-                        <outlet property="lblPercentage" destination="J0D-1M-Hc6" id="2Wy-F4-zAg"/>
                         <outlet property="lblRisk" destination="3dg-50-2RO" id="lnb-MC-SgJ"/>
                         <outlet property="lblRiskValue" destination="QdX-Wl-wiP" id="6BW-fQ-z8E"/>
                         <outlet property="lblT" destination="zoi-P9-AmF" id="aeU-V3-Ps7"/>
@@ -3276,6 +3280,91 @@ please connect Apple Health</string>
             </objects>
             <point key="canvasLocation" x="8811.5942028985519" y="23.64130434782609"/>
         </scene>
+        <!--Profile Table View Controller-->
+        <scene sceneID="e1y-8r-faF">
+            <objects>
+                <tableViewController id="Rhv-bI-Og1" customClass="ProfileTableViewController" customModule="CardioTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9hH-1p-h2D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="Personal Information" id="lhR-Q1-BJT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6ua-gf-dm7">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ua-gf-dm7" id="Zlv-Ll-0nO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fdO-YN-7WL">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fdO-YN-7WL" id="wAf-er-AQq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jdA-bE-RgG">
+                                        <rect key="frame" x="0.0" y="116" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jdA-bE-RgG" id="4nt-pA-tBh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Clinical Information" id="sCU-Se-TXb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="C9d-aM-bSw">
+                                        <rect key="frame" x="0.0" y="188" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C9d-aM-bSw" id="I4d-4A-P6R">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Systolic Blood Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQ9-0T-3cZ">
+                                                    <rect key="frame" x="20" y="11.666666666666666" width="179.66666666666666" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unknown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tj-Ly-RZC">
+                                                    <rect key="frame" x="322" y="11.666666666666666" width="72" height="20.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7Tj-Ly-RZC" firstAttribute="top" secondItem="HQ9-0T-3cZ" secondAttribute="top" id="DmY-pw-wO4"/>
+                                                <constraint firstItem="7Tj-Ly-RZC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HQ9-0T-3cZ" secondAttribute="trailing" constant="8" symbolic="YES" id="LT4-R6-a9c"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Tj-Ly-RZC" secondAttribute="trailing" constant="20" id="av1-hG-rQ9"/>
+                                                <constraint firstItem="HQ9-0T-3cZ" firstAttribute="leading" secondItem="I4d-4A-P6R" secondAttribute="leading" constant="20" id="xiX-cv-EN2"/>
+                                                <constraint firstItem="HQ9-0T-3cZ" firstAttribute="centerY" secondItem="I4d-4A-P6R" secondAttribute="centerY" id="zbH-Tv-npF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Rhv-bI-Og1" id="7LE-1E-uBP"/>
+                            <outlet property="delegate" destination="Rhv-bI-Og1" id="coK-Dg-ssU"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="lblSystolicBloodPressure" destination="HQ9-0T-3cZ" id="I5G-hT-Iw6"/>
+                        <outlet property="lblValueSystolicBloodPressure" destination="7Tj-Ly-RZC" id="90X-wc-yFd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0D-5Z-dZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9569.5652173913059" y="23.64130434782609"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Back" width="21.333333969116211" height="21.333333969116211"/>
@@ -3284,8 +3373,8 @@ please connect Apple Health</string>
         <image name="Heart" width="78.333335876464844" height="71.333335876464844"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="knc-J4-o00"/>
-        <segue reference="QJO-zI-B1C"/>
+        <segue reference="TIQ-P1-Mjm"/>
+        <segue reference="bZK-mD-5Yk"/>
         <segue reference="0Dz-Lj-Tge"/>
         <segue reference="ZOd-zi-ymv"/>
     </inferredMetricsTieBreakers>

@@ -38,6 +38,7 @@ class ConditionsViewController: UIViewController {
     @IBOutlet weak var lblErectileDysfunction: UILabel!
     @IBOutlet weak var checkBoxErectileDysfunction: UIButton!
     
+    
     @IBOutlet weak var lblHealthy: UILabel!
     @IBOutlet weak var checkBoxHealthy: UIButton!
     
@@ -49,6 +50,14 @@ class ConditionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if RiskDataManager.shared.gender == .female {
+            lblErectileDysfunction.isHidden = true
+            checkBoxErectileDysfunction.isHidden = true
+        }
+        
+        btnNext.isEnabled = false
+        btnNext.alpha = 0.5
         
         //MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -75,6 +84,21 @@ class ConditionsViewController: UIViewController {
     
     
     //MARK: Button Methods
+    func enableNextBtn() {
+        btnNext.isEnabled = true
+        btnNext.alpha = 1.0
+    }
+    
+    func disableNextBtn() {
+        btnNext.isEnabled = false
+        btnNext.alpha = 0.5
+    }
+    
+    func deselectHealthyCheckBox() {
+        checkBoxHealthy.isSelected = false
+        setupBtnForEmptyCheckbox(button: checkBoxHealthy)
+    }
+    
     func setupBtnForEmptyCheckbox(button: UIButton){
         button.setImage(nil, for: .normal)
         let btnBorderColor = UIColor(red: 139/255, green: 30/255, blue: 22/255, alpha: 1).cgColor
@@ -97,9 +121,25 @@ class ConditionsViewController: UIViewController {
         if sender.isSelected {
             sender.isSelected = false
             setupBtnForEmptyCheckbox(button: sender)
+            
+            let arrButtons = [checkBoxHealthy, checkBoxErectileDysfunction,  checkBoxSevereMentalIllness, checkBoxSle, checkBoxRheumatoidArthritis, checkBoxMigraines, checkBoxAtrialFibrillation, checkBoxKidney]
+            
+            var selected = false
+            
+            for button in arrButtons {
+                if button!.isSelected {
+                    selected = true
+                }
+            }
+            
+            if selected == false {
+                disableNextBtn()
+            }
+            
         } else {
             sender.isSelected = true
             setupBtnForChecked(button: sender)
+            enableNextBtn()
         }
     }
     
@@ -107,6 +147,7 @@ class ConditionsViewController: UIViewController {
         checkBoxTapped(checkBoxKidney)
         if sender.isSelected {
             RiskDataManager.shared.chronicKidneyDisease = true
+            deselectHealthyCheckBox()
         }
     }
     
@@ -114,6 +155,7 @@ class ConditionsViewController: UIViewController {
         checkBoxTapped(checkBoxAtrialFibrillation)
         if sender.isSelected {
             RiskDataManager.shared.atrialFibrillation = true
+            deselectHealthyCheckBox()
         }
     }
     
@@ -121,6 +163,7 @@ class ConditionsViewController: UIViewController {
         checkBoxTapped(checkBoxMigraines)
         if sender.isSelected {
             RiskDataManager.shared.migraines = true
+            deselectHealthyCheckBox()
         }
     }
     
@@ -128,6 +171,7 @@ class ConditionsViewController: UIViewController {
         checkBoxTapped(checkBoxRheumatoidArthritis)
         if sender.isSelected {
             RiskDataManager.shared.rheumatoidArthritis = true
+            deselectHealthyCheckBox()
         }
     }
     
@@ -135,6 +179,7 @@ class ConditionsViewController: UIViewController {
         checkBoxTapped(checkBoxSle)
         if sender.isSelected {
             RiskDataManager.shared.systemicLupusErythematosus = true
+            deselectHealthyCheckBox()
         }
     }
     
@@ -142,6 +187,7 @@ class ConditionsViewController: UIViewController {
         checkBoxTapped(checkBoxSevereMentalIllness)
         if sender.isSelected {
             RiskDataManager.shared.severeMentalIllness = true
+            deselectHealthyCheckBox()
         }
     }
     
@@ -149,13 +195,24 @@ class ConditionsViewController: UIViewController {
         checkBoxTapped(checkBoxErectileDysfunction)
         if sender.isSelected {
             RiskDataManager.shared.erectileDysfunction = true
+            deselectHealthyCheckBox()
         }
+        
     }
+    
     
     
     @IBAction func checkBoxHealthySelected(_ sender: UIButton) {
         checkBoxTapped(checkBoxHealthy)
         if sender.isSelected {
+            
+            let arrButtons = [checkBoxErectileDysfunction,  checkBoxSevereMentalIllness, checkBoxSle, checkBoxRheumatoidArthritis, checkBoxMigraines, checkBoxAtrialFibrillation, checkBoxKidney]
+            
+            for buttons in arrButtons {
+                buttons!.isSelected = false
+                setupBtnForEmptyCheckbox(button: buttons!)
+            }
+            
             RiskDataManager.shared.noConditions = true
         }
     }

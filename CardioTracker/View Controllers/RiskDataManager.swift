@@ -58,7 +58,7 @@ final class RiskDataManager {
     
     static let shared = RiskDataManager()
     
-    var risk = 0.0
+    var computedRisk = 0.0
     
     var gender = Gender.male
     var age: Double = 0
@@ -89,8 +89,7 @@ final class RiskDataManager {
     var weight: Double = 0 {
         didSet {
             
-            risk = computeFemaleRisk()
-            print("")
+            computedRisk = computeFemaleRisk()
             
             //            if RiskDataManager.shared.gender == .male {
             //                computeMaleRisk()
@@ -102,9 +101,6 @@ final class RiskDataManager {
             //            }
         }
     }
-    
-    // Computed risk initialised
-    var computedRisk = 0.0
     
     //MARK: Methods
     static func getEthnicityFrom(strEthnicity: String) -> Ethnicity {
@@ -211,9 +207,21 @@ final class RiskDataManager {
         
         //MARK: QRISK3
         // Conditional Arrays
-        var ethnicityRisk: [Double] = [0, 0, 0.2804031433299542500000000, 0.5629899414207539800000000, 0.2959000085111651600000000, 0.0727853798779825450000000, -0.1707213550885731700000000, -0.3937104331487497100000000, -0.3263249528353027200000000, -0.1712705688324178400000000]
+        var ethnicityRisk: [Double] = [0,
+                                       0.2804031433299542500000000,
+                                       0.5629899414207539800000000,
+                                       0.2959000085111651600000000,
+                                       0.0727853798779825450000000,
+                                       -0.1707213550885731700000000,
+                                       -0.3937104331487497100000000,
+                                       -0.3263249528353027200000000,
+                                       -0.1712705688324178400000000]
         
-        var smokingRisk: [Double] = [0, 0.1338683378654626200000000, 0.5620085801243853700000000, 0.6674959337750254700000000, 0.8494817764483084700000000]
+        var smokingRisk: [Double] = [0,
+                                     0.1338683378654626200000000,
+                                     0.5620085801243853700000000,
+                                     0.6674959337750254700000000,
+                                     0.8494817764483084700000000]
         
         // Applying fractional polynomial transforms
         // Includes Scaling

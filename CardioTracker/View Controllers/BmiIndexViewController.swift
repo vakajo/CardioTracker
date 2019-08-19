@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BmiIndexViewController: UIViewController {
+class BmiIndexViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var btnBack: UIButton!
@@ -37,8 +37,14 @@ class BmiIndexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        btnFinish.isEnabled = false
+        btnFinish.alpha = 0.5
+        [txtFieldHeight, txtFieldWeight].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
+        
         txtFieldHeight.keyboardType = .numberPad
+        txtFieldHeight.delegate = self
         txtFieldWeight.keyboardType = .numberPad
+        txtFieldWeight.delegate = self
         self.addDoneButtonOnKeyboard()
         
         //MARK: Labels Layout
@@ -75,6 +81,25 @@ class BmiIndexViewController: UIViewController {
     @objc func doneButtonAction(){
         txtFieldHeight.resignFirstResponder()
         txtFieldWeight.resignFirstResponder()
+    }
+    
+    @objc func editingChanged(_ textField: UITextField) {
+        if textField.text?.count == 1 {
+            if textField.text?.first == " " {
+                textField.text = ""
+                return
+            }
+        }
+        guard
+            let height = txtFieldHeight.text, !height.isEmpty,
+            let weight = txtFieldWeight.text, !weight.isEmpty
+            else {
+                btnFinish.isEnabled = false
+                btnFinish.alpha = 0.5
+                return
+        }
+        btnFinish.isEnabled = true
+        btnFinish.alpha = 1.0
     }
     
     @IBAction func btnFinishSelected(_ sender: UIButton) {

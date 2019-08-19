@@ -35,6 +35,8 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         
         txtFieldAge.keyboardType = .numberPad
         txtFieldAge.delegate = self
+        btnNext.isEnabled = false
+        btnNext.alpha = 0.5
         self.addDoneButtonOnKeyboard()
         
         
@@ -54,6 +56,21 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         btnNext.layer.borderWidth = 1
         btnNext.layer.borderColor = (UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)).cgColor
         btnNext.setTitleColor(UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1), for: [])
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let text = (txtFieldAge.text! as NSString).replacingCharacters(in: range, with: string)
+        
+        if text.isEmpty {
+            btnNext.isEnabled = false
+            btnNext.alpha = 0.5
+        } else {
+            btnNext.isEnabled = true
+            btnNext.alpha = 1.0
+        }
+        
+        return true
     }
     
     func addDoneButtonOnKeyboard(){

@@ -40,6 +40,9 @@ class MedicationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        btnNext.isEnabled = false
+        btnNext.alpha = 0.5
+        
         //MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -63,6 +66,22 @@ class MedicationViewController: UIViewController {
     }
     
     //MARK: Button Methods
+    func enableNextBtn() {
+        btnNext.isEnabled = true
+        btnNext.alpha = 1.0
+    }
+    
+    func disableNextBtn() {
+        btnNext.isEnabled = false
+        btnNext.alpha = 0.5
+    }
+    
+    func deselectHealthyCheckBox() {
+        btnHealthy.isSelected = false
+        setupBtnForEmptyCheckbox(button: btnHealthy)
+    }
+    
+    
     func setupBtnForEmptyCheckbox(button: UIButton){
         button.setImage(nil, for: .normal)
         let btnBorderColor = UIColor(red: 139/255, green: 30/255, blue: 22/255, alpha: 1).cgColor
@@ -84,8 +103,24 @@ class MedicationViewController: UIViewController {
     func checkBoxTapped(_ sender: UIButton) {
         if sender.isSelected {
             sender.isSelected = false
+            
+            let arrButtons = [btnBloodPressureTreatment, btnAtypicalAntipsychotic, btnSteroidTablets, btnHealthy]
+            
+            var selected = false
+            
+            for button in arrButtons {
+                if button!.isSelected {
+                    selected = true
+                }
+            }
+            
+            if selected == false {
+                disableNextBtn()
+            }
+           
         } else {
             sender.isSelected = true
+            enableNextBtn()
         }
     }
     
@@ -94,6 +129,7 @@ class MedicationViewController: UIViewController {
         checkBoxTapped(btnBloodPressureTreatment)
         if sender.isSelected {
             RiskDataManager.shared.bloodPressureTreatment = true
+            deselectHealthyCheckBox()
         }
     }
     
@@ -101,6 +137,7 @@ class MedicationViewController: UIViewController {
         checkBoxTapped(btnAtypicalAntipsychotic)
         if sender.isSelected {
             RiskDataManager.shared.atypicalAntipsychoticMedication = true
+            deselectHealthyCheckBox()
         }
     }
     
@@ -108,12 +145,21 @@ class MedicationViewController: UIViewController {
         checkBoxTapped(btnSteroidTablets)
         if sender.isSelected {
             RiskDataManager.shared.regularSteroidTablets = true
+            deselectHealthyCheckBox()
         }
     }
     
     @IBAction func btnHealthySelected(_ sender: UIButton) {
         checkBoxTapped(btnHealthy)
         if sender.isSelected {
+            
+            let arrButtons = [btnBloodPressureTreatment, btnAtypicalAntipsychotic, btnSteroidTablets]
+            
+            for buttons in arrButtons {
+                buttons!.isSelected = false
+                setupBtnForEmptyCheckbox(button: buttons!)
+            }
+            
             RiskDataManager.shared.noMedications = true
         }
     }

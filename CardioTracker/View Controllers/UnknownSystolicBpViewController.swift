@@ -70,12 +70,12 @@ class UnknownSystolicBpViewController: UIViewController {
     
     @IBAction func btnAverageSelected(_ sender: UIButton) {
         buttonTapped(sender: btnAverage)
-        RiskDataManager.shared.systolicBloodPressure = 120
+        RiskDataManager.shared.systolicBloodPressure = 105
     }
     
     @IBAction func btnLowSelected(_ sender: UIButton) {
         buttonTapped(sender: btnLow)
-        RiskDataManager.shared.systolicBloodPressure = 90
+        RiskDataManager.shared.systolicBloodPressure = 80
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {
