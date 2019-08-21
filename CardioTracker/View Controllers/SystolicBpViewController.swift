@@ -12,14 +12,13 @@ class SystolicBpViewController: UIViewController {
 
     
     @IBOutlet weak var btnBack: UIButton!
-    @IBOutlet weak var viewContainer: UIView!
-    @IBOutlet weak var imgViewHeart: UIImageView!
+    
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
     
-    @IBOutlet weak var imgViewCircle: UIImageView!
+    @IBOutlet weak var btnCircle: UIButton!
     @IBOutlet weak var lblQuestions: UILabel!
     
     @IBOutlet weak var lblChooseSystolicBP: UILabel!
@@ -49,6 +48,8 @@ class SystolicBpViewController: UIViewController {
         lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblChooseSystolicBP.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
         lblDesc.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
+        lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
         
         
         //MARK: Buttons Layout
@@ -65,6 +66,10 @@ class SystolicBpViewController: UIViewController {
         btnUnknownSystolicBp!.titleLabel!.numberOfLines = 0
         btnUnknownSystolicBp.titleLabel!.textAlignment = NSTextAlignment.center
         
+        btnCircle.setImage(nil, for: .normal)
+        btnCircle.layer.borderColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1).cgColor
+        btnCircle.layer.borderWidth = 1.0
+        btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
     }
     
     func addDoneButtonOnKeyboard(){

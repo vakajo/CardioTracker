@@ -11,7 +11,7 @@ import HealthKit
 
 class UserHealthProfile {
     
-    var systolicBloodPressure: HKQuantityTypeIdentifier?
+    var systolicBloodPressure: Double = 0
 
     
 }

@@ -37,8 +37,8 @@
 		3DFBBAEC230A9FDB0003FC39 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFBBAEB230A9FDB0003FC39 /* HealthKit.framework */; };
 		3DFBBAEF230AB5820003FC39 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBBAEE230AB5820003FC39 /* HealthKitSetupAssistant.swift */; };
 		3DFBBAF5230AD08D0003FC39 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBBAF4230AD08D0003FC39 /* ProfileDataStore.swift */; };
-		3DFBBAF7230AD78D0003FC39 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBBAF6230AD78D0003FC39 /* ProfileTableViewController.swift */; };
 		3DFBBAFA230B0C910003FC39 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBBAF9230B0C910003FC39 /* UserHealthProfile.swift */; };
+		3DFBBAFC230B4C4D0003FC39 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBBAFB230B4C4D0003FC39 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +87,8 @@
 		3DFBBAED230A9FDB0003FC39 /* CardioTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CardioTracker.entitlements; sourceTree = "<group>"; };
 		3DFBBAEE230AB5820003FC39 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthKitSetupAssistant.swift; path = "View Controllers/HealthKitSetupAssistant.swift"; sourceTree = "<group>"; };
 		3DFBBAF4230AD08D0003FC39 /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
-		3DFBBAF6230AD78D0003FC39 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		3DFBBAF9230B0C910003FC39 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		3DFBBAFB230B4C4D0003FC39 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +188,7 @@
 				3DDB609F22FB073C00B5156A /* UnknownSystolicBpViewController.swift */,
 				3DDB60A122FB074B00B5156A /* BmiIndexViewController.swift */,
 				3DDB60A922FD7A4300B5156A /* CalculatedRiskViewController.swift */,
-				3DFBBAF6230AD78D0003FC39 /* ProfileTableViewController.swift */,
+				3DFBBAFB230B4C4D0003FC39 /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 				3DDA005D22F24C25005C23B3 /* WelcomeViewController.swift in Sources */,
 				3DDB609622FAC7AD00B5156A /* ConditionsViewController.swift in Sources */,
 				3DDB609C22FAFBEF00B5156A /* UnknownCholesterolViewController.swift in Sources */,
-				3DFBBAF7230AD78D0003FC39 /* ProfileTableViewController.swift in Sources */,
+				3DFBBAFC230B4C4D0003FC39 /* ProfileViewController.swift in Sources */,
 				3DDB60A022FB073C00B5156A /* UnknownSystolicBpViewController.swift in Sources */,
 				3DDB60AA22FD7A4300B5156A /* CalculatedRiskViewController.swift in Sources */,
 				3DDB609A22FAE75C00B5156A /* CholesterolViewController.swift in Sources */,

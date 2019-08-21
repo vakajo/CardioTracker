@@ -45,7 +45,4 @@ class ProfileDataStore {
         
         HKHealthStore().execute(sampleQuery)
     }
-    
-    
-    
 }

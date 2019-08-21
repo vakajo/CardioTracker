@@ -45,6 +45,8 @@ class WelcomeViewController: UIViewController {
             .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblGetStarted
             .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        lblCartdio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
+        lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
         
         
         //MARK: Button

@@ -7,9 +7,9 @@
 //
 import Foundation
 
-enum Gender {
-    case male
-    case female
+enum Gender: String {
+    case male = "Male"
+    case female = "Female"
 }
 
 enum Ethnicity: Int {
@@ -55,17 +55,15 @@ enum UnknownSystolicBloodPressure {
 final class RiskDataManager {
     
     private init() {   }
-    
     static let shared = RiskDataManager()
     
-    var computedRisk = 0.0
+    // Initialisation
     
+    // Personal Information:
+    var computedRisk = 0.0
     var gender = Gender.male
     var age: Double = 0
     var ethnicity = Ethnicity.white
-    var smokingStatus = SmokingStatus.nonSmoker
-    var diabetesStatus = DiabetesStatus.healthy
-    var familyHistory: Bool = false
     
     // Conditions:
     var chronicKidneyDisease: Bool = false
@@ -83,26 +81,30 @@ final class RiskDataManager {
     var regularSteroidTablets: Bool = false
     var noMedications: Bool = false
     
+    // Clinical information:
+    var smokingStatus = SmokingStatus.nonSmoker
+    var diabetesStatus = DiabetesStatus.healthy
+    var familyHistory: Bool = false
     var cholesterolHDL: Double = 0
     var systolicBloodPressure: Double = 0
     var height: Double = 0
     var weight: Double = 0 {
         didSet {
+
+            if RiskDataManager.shared.gender == .male {
+                computedRisk = computeMaleRisk()
+            }
+            else if RiskDataManager.shared.gender == .female {
+                computedRisk = computeFemaleRisk()
+            } else {
+                return
+            }
             
-            computedRisk = computeFemaleRisk()
-            
-            //            if RiskDataManager.shared.gender == .male {
-            //                computeMaleRisk()
-            //            }
-            //            else if RiskDataManager.shared.gender == .female {
-            //                var finalRisk = computeFemaleRisk()
-            //            } else {
-            //                return
-            //            }
         }
     }
     
-    //MARK: Methods
+    
+    //MARK: enum Methods
     static func getEthnicityFrom(strEthnicity: String) -> Ethnicity {
         
         if strEthnicity == "White" {
@@ -160,7 +162,7 @@ final class RiskDataManager {
     
     
     
-    //MARK: Compute Risk
+    //MARK: Compute Risk Methods
     func computeFemaleRisk() -> Double {
         
         // Calculation of BMI Index
@@ -182,7 +184,7 @@ final class RiskDataManager {
             diabetesType2 = 1
         }
         
-        var sbps5 = 8.9 // Er 10.8 hjá karlmönnum
+        var sbps5 = 8.9 // We assume this fixed number, taken from an United Arab Emirates Study
         var town: Double = 0
         
         if ethnicityCategory == 0 {
@@ -320,11 +322,164 @@ final class RiskDataManager {
     }
     
     
-    func computeMaleRisk() {
+    func computeMaleRisk() -> Double {
+        
+        // Calculation of BMI Index
+        let dblWeight = RiskDataManager.shared.weight
+        let dblHeight = RiskDataManager.shared.height/100
+        let bmiIndex = dblWeight / (pow(dblHeight,2))
+        
+        // Declaration of variables
+        var dblCholesterolHDLRatio = RiskDataManager.shared.cholesterolHDL
+        var dblSystolicBloodPressure = RiskDataManager.shared.systolicBloodPressure
+        let ethnicityCategory = RiskDataManager.shared.ethnicity.rawValue
+        let smokingCategory = RiskDataManager.shared.smokingStatus.rawValue
+        var diabetesType1: Double = 0
+        var diabetesType2: Double = 0
+        
+        if RiskDataManager.shared.diabetesStatus == .type1 {
+            diabetesType1 = 1
+        } else if RiskDataManager.shared.diabetesStatus == .type2 {
+            diabetesType2 = 1
+        }
+        
+        var sbps5 = 10.8 // We assume this fixed number, taken from an United Arab Emirates Study
+        var town: Double = 0
+        
+        if ethnicityCategory == 0 {
+            town = -0.5
+        } else if ethnicityCategory == 1 {
+            town = 1.1
+        } else if ethnicityCategory == 2 {
+            town = 2.6
+        } else if ethnicityCategory == 3 {
+            town = 5.5
+        } else if ethnicityCategory == 4 {
+            town = 2.2
+        } else if ethnicityCategory == 5 {
+            town = 3.7
+        } else if ethnicityCategory == 6 {
+            town = 4.3
+        } else if ethnicityCategory == 7 {
+            town = 2.5
+        } else if ethnicityCategory == 8 {
+            town = 3.0
+        }
+        
+        //MARK: QRISK3
+        // Conditional Arrays
+        var ethnicityRisk: [Double] = [0,
+                                       0.2771924876030827900000000,
+                                       0.4744636071493126800000000,
+                                       0.5296172991968937100000000,
+                                       0.0351001591862990170000000,
+                                       -0.3580789966932791900000000,
+                                       -0.4005648523216514000000000,
+                                       -0.4152279288983017300000000,
+                                       -0.2632134813474996700000000]
+        
+        var smokingRisk: [Double] = [0,
+                                     0.1912822286338898300000000,
+                                     0.5524158819264555200000000,
+                                     0.6383505302750607200000000,
+                                     0.7898381988185801900000000]
+        
+        // Applying fractional polynomial transforms
+        // Includes Scaling
+        let dblAge = RiskDataManager.shared.age/10.0
+        var age_1 = pow(dblAge,-1)
+        var age_2 = pow(dblAge,3)
+        let dBmi = bmiIndex/10.0
+        var bmi_1 = pow(dBmi,-2)
+        var bmi_2 = pow(dBmi,-2) * log(dBmi)
+        
+        // Centering the continuous variables
+        age_1 = age_1 - 0.234766781330109
+        age_2 = age_2 - 77.284080505371094
+        bmi_1 = bmi_1 - 0.149176135659218
+        bmi_2 = bmi_2 - 0.141913309693336
+        dblCholesterolHDLRatio = dblCholesterolHDLRatio - 4.300998687744141
+        dblSystolicBloodPressure = dblSystolicBloodPressure - 128.571578979492190
+        sbps5 = sbps5 - 8.756621360778809
+        town = town - 0.526304900646210
         
         
+        // Start of Sum
+        var sum: Double = 0
+        
+        // The conditional sums
+        sum += ethnicityRisk[ethnicityCategory]
+        sum += smokingRisk[smokingCategory]
+        
+        // Sum from continuous values
+        sum += age_1 * -17.8397816660055750000000000
+        sum += age_2 * 0.0022964880605765492000000
+        sum += bmi_1 * 2.4562776660536358000000000
+        sum += bmi_2 * -8.3011122314711354000000000
+        sum += dblCholesterolHDLRatio * 0.1734019685632711100000000
+        sum += dblSystolicBloodPressure * 0.0129101265425533050000000
+        sum += sbps5 * 0.0102519142912904560000000
+        sum += town * 0.0332682012772872950000000
+        
+        // Sum for boolean values
+        sum += atrialFibrillation.doubleValue * 0.8820923692805465700000000
+        sum += migraines.doubleValue * 0.2558417807415991300000000
+        sum += rheumatoidArthritis.doubleValue * 0.2097065801395656700000000
+        sum += chronicKidneyDisease.doubleValue * 0.7185326128827438400000000
+        sum += severeMentalIllness.doubleValue * 0.1213303988204716400000000
+        sum += systemicLupusErythematosus.doubleValue * 0.4401572174457522000000000
+        
+        sum += atypicalAntipsychoticMedication.doubleValue * 0.1304687985517351300000000
+        sum += regularSteroidTablets.doubleValue * 0.4548539975044554300000000
+        sum += bloodPressureTreatment.doubleValue * 0.5165987108269547400000000
+        sum += erectileDysfunction.doubleValue * 0.2225185908670538300000000
+        
+        sum += diabetesType1 * 1.2343425521675175000000000
+        sum += diabetesType2 * 0.8594207143093222100000000
+        
+        sum += familyHistory.doubleValue * 0.5405546900939015600000000
+        
+        // Sum from interaction terms
+        sum += age_1 * (smokingCategory == 1).doubleValue * -0.2101113393351634600000000
+        sum += age_1 * (smokingCategory == 2).doubleValue * 0.7526867644750319100000000
+        sum += age_1 * (smokingCategory == 3).doubleValue * 0.9931588755640579100000000
+        sum += age_1 * (smokingCategory == 4).doubleValue * 2.1331163414389076000000000
+        sum += age_1 * atrialFibrillation.doubleValue * 3.4896675530623207000000000
+        sum += age_1 * regularSteroidTablets.doubleValue * 1.1708133653489108000000000
+        sum += age_1 * erectileDysfunction.doubleValue * -1.5064009857454310000000000
+        sum += age_1 * migraines.doubleValue * 2.3491159871402441000000000
+        sum += age_1 * chronicKidneyDisease.doubleValue * -0.5065671632722369400000000
+        sum += age_1 * bloodPressureTreatment.doubleValue * 6.5114581098532671000000000
+        sum += age_1 * diabetesType1 * 5.3379864878006531000000000
+        sum += age_1 * diabetesType2 * 3.6461817406221311000000000
+        sum += age_1 * bmi_1 * 31.0049529560338860000000000
+        sum += age_1 * bmi_2 * -111.2915718439164300000000000
+        sum += age_1 * familyHistory.doubleValue * 2.7808628508531887000000000
+        sum += age_1 * dblSystolicBloodPressure * 0.0188585244698658530000000
+        //sum += age_1 * town * -0.1007554870063731000000000
+        
+        sum += age_2 * (smokingCategory == 1).doubleValue * -0.0004985487027532612100000
+        sum += age_2 * (smokingCategory == 2).doubleValue * -0.0007987563331738541400000
+        sum += age_2 * (smokingCategory == 3).doubleValue * -0.0008370618426625129600000
+        sum += age_2 * (smokingCategory == 4).doubleValue * -0.0007840031915563728900000
+        sum += age_2 * atrialFibrillation.doubleValue * -0.0003499560834063604900000
+        sum += age_2 * regularSteroidTablets.doubleValue * -0.0002496045095297166000000
+        sum += age_2 * erectileDysfunction.doubleValue * -0.0011058218441227373000000
+        sum += age_2 * migraines.doubleValue * 0.0001989644604147863100000
+        sum += age_2 * chronicKidneyDisease.doubleValue * -0.0018325930166498813000000
+        sum += age_2 * bloodPressureTreatment.doubleValue * 0.0006383805310416501300000
+        sum += age_2 * diabetesType1 * 0.0006409780808752897000000
+        sum += age_2 * diabetesType2 * -0.000246956955888683150000
+        sum += age_2 * bmi_1 * 0.0050380102356322029000000
+        sum += age_2 * bmi_2 * -0.0130744830025243190000000
+        sum += age_2 * familyHistory.doubleValue * -0.0002479180990739603700000
+        sum += age_2 * dblSystolicBloodPressure * -0.0000127187419158845700000
+        sum += age_2 * town * -0.0000932996423232728880000
+        
+        // Calculate the score itself
+        let riskScore: Double = 100.0 * (1 - pow(0.977268040180206, exp(sum)))
+        return riskScore
     }
-    
 }
 
 extension Bool {
@@ -332,7 +487,3 @@ extension Bool {
         return self ? 1 : 0
     }
 }
-
-
-
-

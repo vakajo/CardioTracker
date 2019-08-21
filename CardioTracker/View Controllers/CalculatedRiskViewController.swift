@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import HealthKit
 
 
 class CalculatedRiskViewController: UIViewController {
     
     @IBOutlet weak var btnBack: UIButton!
-    @IBOutlet weak var viewContainer: UIView!
-    @IBOutlet weak var imgViewHeart: UIImageView!
+    
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
+    
     @IBOutlet weak var lblRisk: UILabel!
     @IBOutlet weak var viewLabels: UIView!
     @IBOutlet weak var lblRiskValue: UILabel!
@@ -33,11 +34,28 @@ class CalculatedRiskViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+
         let risk = RiskDataManager.shared.computedRisk
         let roundedRisk = String(format: "%.1f", risk) + "%"
+        
+        // Hide Connect Button if Health Kit has already been authorised
+        let pressure = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodPressureSystolic)!
+        //let somethingElse = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height)!
+        
+        let statusPressure = HKHealthStore().authorizationStatus(for: pressure)
+        //let statusSomethingElse = HKHealthStore().authorizationStatus(for: somethingElse)
+        
+        
+        var status: HKAuthorizationStatus = .notDetermined
+        
+        if statusPressure == .sharingAuthorized /*&& statusSomethingElse == .sharingAuthorized*/ {
+            status = .sharingAuthorized
+        }
+        
+        if status == .sharingAuthorized {
+            lblConnect.isHidden = true
+            btnConnect.isHidden = true
+        }
         
         // MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -51,6 +69,8 @@ class CalculatedRiskViewController: UIViewController {
         lblInfo.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblDesc
             .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
+        lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
         
         let buttons = [btnConnect]
         
@@ -60,6 +80,8 @@ class CalculatedRiskViewController: UIViewController {
             button!.clipsToBounds = true
             button!.backgroundColor = UIColor(red: 190/255, green: 8/255, blue: 8/255, alpha: 1)
         }
+        
+        btnProfile.setTitleColor(UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1), for: .normal)
     }
     
     private func authoriseHealthKit() {
