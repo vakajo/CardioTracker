@@ -21,7 +21,9 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lblQuestions: UILabel!
     
     @IBOutlet weak var lblAge: UILabel!
-    @IBOutlet weak var txtFieldAge: UITextField!
+   
+    @IBOutlet weak var datePickerAge: UIDatePicker!
+    
     @IBOutlet weak var btnNext: UIButton!
     
     @IBOutlet weak var viewSepTop: UIView!
@@ -31,15 +33,11 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        txtFieldAge.keyboardType = .numberPad
-        txtFieldAge.delegate = self
+    
         btnNext.isEnabled = false
         btnNext.alpha = 0.5
-        self.addDoneButtonOnKeyboard()
         
-        
-        // MARK: Labels Layout
+        //MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -62,53 +60,41 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         btnCircle.layer.borderColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1).cgColor
         btnCircle.layer.borderWidth = 1.0
         btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
+        
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    func calculateAndStoreAge() {
         
-        let text = (txtFieldAge.text! as NSString).replacingCharacters(in: range, with: string)
+        let dateOfBirth = datePickerAge.date
+        let gregorian = Calendar(identifier: .gregorian)
+        let ageComponents = gregorian.dateComponents([.year], from: dateOfBirth, to: Date())
+        let age = ageComponents.year!
         
-        if text.isEmpty {
-            btnNext.isEnabled = false
-            btnNext.alpha = 0.5
-        } else {
+        RiskDataManager.shared.age = Double(age)
+    }
+    
+    
+    func enableBtnNext() {
+        
+        if RiskDataManager.shared.age >= 25 && RiskDataManager.shared.age <= 84 {
             btnNext.isEnabled = true
             btnNext.alpha = 1.0
+        } else {
+            btnNext.isEnabled = false
+            btnNext.alpha = 0.5
         }
-        
-        return true
     }
     
-    func addDoneButtonOnKeyboard(){
-        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
-        doneToolbar.barStyle = .default
-        
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
-        
-        let items = [flexSpace, done]
-        doneToolbar.items = items
-        doneToolbar.sizeToFit()
-        
-        txtFieldAge.inputAccessoryView = doneToolbar
-    }
     
-    @objc func doneButtonAction(){
-        txtFieldAge.resignFirstResponder()
+    //MARK: Date Picker View Methods
+    @IBAction func datePickerViewChanged(_ sender: UIDatePicker) {
+        calculateAndStoreAge()
+        enableBtnNext()
     }
     
     
     //MARK: Button Methods
     @IBAction func btnNextClicked(_ sender: UIButton) {
-        
-        if txtFieldAge.text == "" {
-            return
-        }
-        
-        guard let text = txtFieldAge.text else { return }
-        guard let dblAge = Double(text) else { return }
-        RiskDataManager.shared.age = dblAge
-        
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {

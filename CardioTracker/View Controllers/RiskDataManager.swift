@@ -85,8 +85,35 @@ final class RiskDataManager {
     var smokingStatus = SmokingStatus.nonSmoker
     var diabetesStatus = DiabetesStatus.healthy
     var familyHistory: Bool = false
-    var cholesterolHDL: Double = 0
-    var systolicBloodPressure: Double = 0
+    var cholesterolHDL: Double = 0 {
+        didSet {
+            
+            if RiskDataManager.shared.gender == .male {
+                computedRisk = computeMaleRisk()
+            }
+            else if RiskDataManager.shared.gender == .female {
+                computedRisk = computeFemaleRisk()
+            } else {
+                return
+            }
+            
+        }
+    }
+ 
+    var systolicBloodPressure: Double = 0 {
+        didSet {
+            
+            if RiskDataManager.shared.gender == .male {
+                computedRisk = computeMaleRisk()
+            }
+            else if RiskDataManager.shared.gender == .female {
+                computedRisk = computeFemaleRisk()
+            } else {
+                return
+            }
+        }
+    }
+    
     var height: Double = 0
     var weight: Double = 0 {
         didSet {
@@ -386,7 +413,7 @@ final class RiskDataManager {
         
         // Applying fractional polynomial transforms
         // Includes Scaling
-        let dblAge = RiskDataManager.shared.age/10.0
+        let dblAge = RiskDataManager.shared.age/10
         var age_1 = pow(dblAge,-1)
         var age_2 = pow(dblAge,3)
         let dBmi = bmiIndex/10.0

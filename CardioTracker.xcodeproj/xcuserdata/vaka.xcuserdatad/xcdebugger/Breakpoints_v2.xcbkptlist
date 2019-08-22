@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/GenderViewController.swift"
-            timestampString = "588073248.6046081"
+            timestampString = "588183397.114622"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
@@ -25,24 +25,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CardioTracker/View Controllers/AgeViewController.swift"
-            timestampString = "588075925.054213"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "btnNextClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/GenderViewController.swift"
-            timestampString = "588073248.605059"
+            timestampString = "588183397.114675"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
@@ -58,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/GenderViewController.swift"
-            timestampString = "588073248.605108"
+            timestampString = "588183397.114714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
@@ -90,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/RiskDataManager.swift"
-            timestampString = "588170073.304137"
+            timestampString = "588202282.227872"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252"
+            startingLineNumber = "278"
+            endingLineNumber = "278"
             landmarkName = "computeFemaleRisk()"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/RiskDataManager.swift"
-            timestampString = "588170073.304261"
+            timestampString = "588202282.228233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "computeFemaleRisk()"
             landmarkType = "7">
          </BreakpointContent>

@@ -32,6 +32,7 @@ class BmiIndexViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
     
+    var activeTextField = UITextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,8 @@ class BmiIndexViewController: UIViewController, UITextFieldDelegate {
         txtFieldWeight.keyboardType = .numberPad
         txtFieldWeight.delegate = self
         self.addDoneButtonOnKeyboard()
+        txtFieldHeight.returnKeyType = .done
+
         
         //MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -85,9 +88,24 @@ class BmiIndexViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func doneButtonAction(){
-        txtFieldHeight.resignFirstResponder()
-        txtFieldWeight.resignFirstResponder()
+        
+        if activeTextField == txtFieldHeight {
+            
+            if txtFieldWeight.text?.isEmpty == true {
+                txtFieldWeight.becomeFirstResponder()
+            } else {
+                txtFieldHeight.resignFirstResponder()
+            }
+        } else if activeTextField == txtFieldWeight {
+            txtFieldWeight.resignFirstResponder()
+        }
+        
     }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.activeTextField = textField
+    }
+
     
     @objc func editingChanged(_ textField: UITextField) {
         if textField.text?.count == 1 {

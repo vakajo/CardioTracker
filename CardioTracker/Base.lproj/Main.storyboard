@@ -306,14 +306,14 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBD-OX-CWJ">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEC-TC-iZZ">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -410,12 +410,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8S-ry-jrE">
-                                <rect key="frame" x="100" y="227" width="214" height="24"/>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVe-2y-ROj">
                                 <rect key="frame" x="50" y="555" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -440,17 +434,11 @@
                                     <constraint firstAttribute="height" constant="1" id="0PB-b4-Kit"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12C-Ty-foU">
-                                <rect key="frame" x="100" y="276" width="214" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="Ec0-qI-A70"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HH-z2-ZIZ">
-                                <rect key="frame" x="100" y="316" width="214" height="36"/>
+                                <rect key="frame" x="100" y="472" width="214" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="BOY-Qi-2RF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
@@ -459,7 +447,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzg-vs-5BS">
-                                <rect key="frame" x="193" y="178.66666666666666" width="28" height="21"/>
+                                <rect key="frame" x="193.33333333333334" y="179" width="27.666666666666657" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -492,15 +480,15 @@
                                             <constraint firstAttribute="width" constant="60" id="aVN-Ku-wub"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="444-qk-AVc">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="444-qk-AVc">
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8S-rj-23S">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -539,6 +527,21 @@
                                     <constraint firstAttribute="width" constant="160" id="uGQ-UA-Zgn"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your date of birth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8S-ry-jrE">
+                                <rect key="frame" x="70.666666666666686" y="227" width="273" height="24"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-53-k4a">
+                                <rect key="frame" x="55" y="251" width="304" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="588179923.87669098">
+                                    <!--2019-08-22 15:18:43 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerViewChanged:" destination="6nD-sr-owR" eventType="valueChanged" id="jGI-D4-TCY"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -547,8 +550,6 @@
                             <constraint firstItem="may-Av-iaq" firstAttribute="trailing" secondItem="xVe-2y-ROj" secondAttribute="trailing" id="4NI-hl-ql9"/>
                             <constraint firstItem="ffT-7b-lkj" firstAttribute="centerX" secondItem="Zzg-vs-5BS" secondAttribute="centerX" id="7mZ-gC-Tmw"/>
                             <constraint firstItem="v3T-k0-b2N" firstAttribute="centerX" secondItem="9sV-UX-4kf" secondAttribute="centerX" id="97V-wV-ngO"/>
-                            <constraint firstItem="12C-Ty-foU" firstAttribute="top" secondItem="v8S-ry-jrE" secondAttribute="bottom" constant="25" id="BxP-JG-s4d"/>
-                            <constraint firstItem="4HH-z2-ZIZ" firstAttribute="leading" secondItem="12C-Ty-foU" secondAttribute="leading" id="C90-yb-Gsg"/>
                             <constraint firstItem="ffT-7b-lkj" firstAttribute="centerX" secondItem="9sV-UX-4kf" secondAttribute="centerX" id="ELs-9s-kYa"/>
                             <constraint firstItem="ffT-7b-lkj" firstAttribute="top" secondItem="v3T-k0-b2N" secondAttribute="bottom" constant="37" id="Hyd-fP-G56"/>
                             <constraint firstItem="may-Av-iaq" firstAttribute="top" secondItem="xVe-2y-ROj" secondAttribute="bottom" constant="8" symbolic="YES" id="IQg-r2-tzE"/>
@@ -556,16 +557,17 @@
                             <constraint firstItem="9sV-UX-4kf" firstAttribute="trailing" secondItem="may-Av-iaq" secondAttribute="trailing" constant="50" id="Mtw-zD-EPd"/>
                             <constraint firstItem="v8S-ry-jrE" firstAttribute="top" secondItem="v3T-k0-b2N" secondAttribute="bottom" constant="100" id="P8B-Zz-rfH"/>
                             <constraint firstItem="MpN-aP-rIn" firstAttribute="leading" secondItem="may-Av-iaq" secondAttribute="leading" id="QMo-Qj-i0q"/>
-                            <constraint firstItem="12C-Ty-foU" firstAttribute="leading" secondItem="v8S-ry-jrE" secondAttribute="leading" id="SnE-xg-T6o"/>
                             <constraint firstItem="MpN-aP-rIn" firstAttribute="trailing" secondItem="may-Av-iaq" secondAttribute="trailing" id="TiJ-Yr-Mdz"/>
-                            <constraint firstItem="4HH-z2-ZIZ" firstAttribute="top" secondItem="12C-Ty-foU" secondAttribute="bottom" constant="10" id="XHT-On-dnd"/>
+                            <constraint firstItem="4HH-z2-ZIZ" firstAttribute="top" secondItem="gz0-53-k4a" secondAttribute="bottom" constant="5" id="Wvf-Of-As2"/>
                             <constraint firstItem="v3T-k0-b2N" firstAttribute="top" secondItem="9sV-UX-4kf" secondAttribute="top" constant="50" id="aa2-da-ZTO"/>
-                            <constraint firstItem="12C-Ty-foU" firstAttribute="centerX" secondItem="v8S-ry-jrE" secondAttribute="centerX" id="cmR-lW-FJ4"/>
                             <constraint firstItem="MpN-aP-rIn" firstAttribute="top" secondItem="may-Av-iaq" secondAttribute="bottom" constant="10" id="iOG-gN-9o1"/>
                             <constraint firstItem="9sV-UX-4kf" firstAttribute="bottom" secondItem="MpN-aP-rIn" secondAttribute="bottom" constant="75" id="khU-ia-uOb"/>
+                            <constraint firstItem="gz0-53-k4a" firstAttribute="leading" secondItem="9sV-UX-4kf" secondAttribute="leading" constant="55" id="mm7-KX-izV"/>
+                            <constraint firstItem="gz0-53-k4a" firstAttribute="top" secondItem="v8S-ry-jrE" secondAttribute="bottom" id="qJN-1r-sN6"/>
                             <constraint firstItem="may-Av-iaq" firstAttribute="leading" secondItem="xVe-2y-ROj" secondAttribute="leading" id="tJd-L8-bQN"/>
                             <constraint firstItem="LfJ-Nq-r1p" firstAttribute="leading" secondItem="9sV-UX-4kf" secondAttribute="leading" constant="25" id="tja-De-Qb6"/>
                             <constraint firstItem="4HH-z2-ZIZ" firstAttribute="centerX" secondItem="9sV-UX-4kf" secondAttribute="centerX" id="w2R-yT-Lgy"/>
+                            <constraint firstItem="9sV-UX-4kf" firstAttribute="trailing" secondItem="gz0-53-k4a" secondAttribute="trailing" constant="55" id="xvY-qa-Dtt"/>
                             <constraint firstItem="v8S-ry-jrE" firstAttribute="centerX" secondItem="9sV-UX-4kf" secondAttribute="centerX" id="yM5-bl-QI3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9sV-UX-4kf"/>
@@ -574,6 +576,7 @@
                         <outlet property="btnBack" destination="LfJ-Nq-r1p" id="me5-yS-t9X"/>
                         <outlet property="btnCircle" destination="ffT-7b-lkj" id="bQP-lB-HU4"/>
                         <outlet property="btnNext" destination="4HH-z2-ZIZ" id="c2A-O3-TX3"/>
+                        <outlet property="datePickerAge" destination="gz0-53-k4a" id="A70-t8-FOO"/>
                         <outlet property="lblAge" destination="v8S-ry-jrE" id="2WP-0Z-vHu"/>
                         <outlet property="lblC" destination="f8S-rj-23S" id="SLq-i5-TXq"/>
                         <outlet property="lblCardio" destination="444-qk-AVc" id="lYn-OD-yLl"/>
@@ -581,14 +584,13 @@
                         <outlet property="lblQuestions" destination="Zzg-vs-5BS" id="NW6-91-cV0"/>
                         <outlet property="lblT" destination="HWH-nl-TDb" id="766-71-CK5"/>
                         <outlet property="lblTracker" destination="G3r-Y7-xKm" id="Kq5-GD-ldb"/>
-                        <outlet property="txtFieldAge" destination="12C-Ty-foU" id="M5x-NA-lHU"/>
                         <outlet property="viewSepBottom" destination="MpN-aP-rIn" id="XC6-bf-dfq"/>
                         <outlet property="viewSepTop" destination="xVe-2y-ROj" id="VZD-eX-JXd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kzj-rN-2zG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757" y="24"/>
+            <point key="canvasLocation" x="1756.521739130435" y="23.64130434782609"/>
         </scene>
         <!--Ethnicity View Controller-->
         <scene sceneID="gya-wN-OgC">
@@ -632,7 +634,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smp-iT-tBb">
-                                <rect key="frame" x="100" y="477" width="214" height="36"/>
+                                <rect key="frame" x="100" y="450" width="214" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="nbv-bz-SBd"/>
                                 </constraints>
@@ -644,7 +646,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5et-Qm-AwB">
-                                <rect key="frame" x="193" y="178.66666666666666" width="28" height="21"/>
+                                <rect key="frame" x="193" y="179" width="28" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -678,14 +680,14 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbO-iv-wJJ">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqN-Iy-OHS">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -730,11 +732,11 @@
                             <constraint firstItem="av2-Tf-oo8" firstAttribute="leading" secondItem="d5e-Ff-cgd" secondAttribute="leading" constant="55" id="20I-dO-2Hd"/>
                             <constraint firstItem="cK7-r8-3dI" firstAttribute="leading" secondItem="pp4-mZ-VjY" secondAttribute="leading" id="26r-Fi-zdk"/>
                             <constraint firstItem="knB-tv-tTF" firstAttribute="leading" secondItem="pp4-mZ-VjY" secondAttribute="leading" id="3Dw-bP-gPB"/>
-                            <constraint firstItem="cK7-r8-3dI" firstAttribute="top" secondItem="smp-iT-tBb" secondAttribute="bottom" constant="40" id="4Hk-rj-iSp"/>
                             <constraint firstItem="d5e-Ff-cgd" firstAttribute="bottom" secondItem="knB-tv-tTF" secondAttribute="bottom" constant="75" id="4kA-Oa-j63"/>
                             <constraint firstItem="pp4-mZ-VjY" firstAttribute="centerX" secondItem="d5e-Ff-cgd" secondAttribute="centerX" id="6Dc-sX-aWc"/>
                             <constraint firstItem="knB-tv-tTF" firstAttribute="top" secondItem="pp4-mZ-VjY" secondAttribute="bottom" constant="10" id="7ey-Lw-g1i"/>
                             <constraint firstItem="I1P-dF-SNr" firstAttribute="top" secondItem="d5e-Ff-cgd" secondAttribute="top" constant="50" id="8Hv-WA-je3"/>
+                            <constraint firstItem="smp-iT-tBb" firstAttribute="top" secondItem="av2-Tf-oo8" secondAttribute="bottom" constant="-2" id="A3Z-sI-PkG"/>
                             <constraint firstItem="d5e-Ff-cgd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pp4-mZ-VjY" secondAttribute="trailing" symbolic="YES" id="E86-Db-oKR"/>
                             <constraint firstItem="bM3-Bx-lPF" firstAttribute="leading" secondItem="d5e-Ff-cgd" secondAttribute="leading" constant="25" id="EIB-ss-nxM"/>
                             <constraint firstItem="lCJ-H9-9Ev" firstAttribute="centerX" secondItem="5et-Qm-AwB" secondAttribute="centerX" id="J6w-6S-zRM"/>
@@ -794,7 +796,7 @@
                                 <rect key="frame" x="55" y="257" width="304" height="216"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9db-K2-On5">
-                                <rect key="frame" x="100" y="462.66666666666669" width="214" height="36"/>
+                                <rect key="frame" x="100" y="471" width="214" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="qZP-Bb-uKF"/>
                                 </constraints>
@@ -806,18 +808,18 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg5-gd-aVX">
-                                <rect key="frame" x="50" y="538.66666666666663" width="314" height="1"/>
+                                <rect key="frame" x="50" y="553" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="kD2-C4-ctP"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVj-gP-l3Y">
-                                <rect key="frame" x="50" y="549.66666666666663" width="314" height="100.33333333333337"/>
+                                <rect key="frame" x="50" y="564" width="314" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="xXZ-9F-BPO"/>
                                 </constraints>
-                                <string key="text">Smoking has a multiplicative effect on other cardiovascular risk factors such as cholesterol, hypertension and diabetes mellitus. Smoking also increases the risk of cardiovascular disease beyond effects on other risk factors. In general, smoking leads to atherosclerosis, where fat plaques narrow and eventually block the coronary arteries which supply the heart with blood, resulting in myocardial infarction.</string>
+                                <string key="text">Smoking has a multiplicative effect on other cardiovascular risk factors such as cholesterol, hypertension and diabetes mellitus. Smoking leads to atherosclerosis, where fat plaques narrow and eventually block the coronary arteries which supply the heart with blood, resulting in myocardial infarction.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -830,7 +832,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn7-i7-yK0">
-                                <rect key="frame" x="192.66666666666666" y="178.66666666666666" width="29" height="21"/>
+                                <rect key="frame" x="193" y="179" width="28.333333333333343" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -864,14 +866,14 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkZ-py-E5U">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1P0-IT-1ZK">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1P0-IT-1ZK">
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -924,7 +926,6 @@
                             <constraint firstItem="gqS-ra-fEQ" firstAttribute="top" secondItem="hBE-5n-8mb" secondAttribute="bottom" constant="37" id="Oi4-F3-4CW"/>
                             <constraint firstItem="pg5-gd-aVX" firstAttribute="trailing" secondItem="OVj-gP-l3Y" secondAttribute="trailing" id="PEV-B4-HgG"/>
                             <constraint firstItem="26Z-VT-OPg" firstAttribute="leading" secondItem="MGd-tY-d0N" secondAttribute="leading" constant="55" id="UbQ-gy-PaX"/>
-                            <constraint firstItem="pg5-gd-aVX" firstAttribute="top" secondItem="9db-K2-On5" secondAttribute="bottom" constant="40" id="WiF-U0-61T"/>
                             <constraint firstItem="gqS-ra-fEQ" firstAttribute="centerX" secondItem="fn7-i7-yK0" secondAttribute="centerX" id="Yjp-vl-pin"/>
                             <constraint firstItem="gqS-ra-fEQ" firstAttribute="centerY" secondItem="fn7-i7-yK0" secondAttribute="centerY" id="ZAi-UU-6o1"/>
                             <constraint firstItem="Lp8-TC-cab" firstAttribute="centerX" secondItem="MGd-tY-d0N" secondAttribute="centerX" id="bnj-hv-rGD"/>
@@ -937,6 +938,7 @@
                             <constraint firstItem="LD0-NU-rq9" firstAttribute="top" secondItem="MGd-tY-d0N" secondAttribute="top" constant="25" id="iR1-l6-snm"/>
                             <constraint firstItem="9db-K2-On5" firstAttribute="centerX" secondItem="MGd-tY-d0N" secondAttribute="centerX" id="j7E-V9-MZd"/>
                             <constraint firstItem="LD0-NU-rq9" firstAttribute="leading" secondItem="MGd-tY-d0N" secondAttribute="leading" constant="25" id="oxi-gv-y5U"/>
+                            <constraint firstItem="9db-K2-On5" firstAttribute="top" secondItem="26Z-VT-OPg" secondAttribute="bottom" constant="-2" id="rZY-FF-nTe"/>
                             <constraint firstItem="MGd-tY-d0N" firstAttribute="trailing" secondItem="26Z-VT-OPg" secondAttribute="trailing" constant="55" id="uBJ-VX-t09"/>
                             <constraint firstItem="Lp8-TC-cab" firstAttribute="top" secondItem="OVj-gP-l3Y" secondAttribute="bottom" constant="10" id="wxy-F3-i9w"/>
                             <constraint firstItem="3vR-ex-iw6" firstAttribute="top" secondItem="hBE-5n-8mb" secondAttribute="bottom" constant="100" id="xOk-0L-6od"/>
@@ -1011,7 +1013,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j16-EI-T4S">
-                                <rect key="frame" x="192.66666666666666" y="178.66666666666666" width="29" height="21"/>
+                                <rect key="frame" x="193" y="179" width="28.333333333333343" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1045,14 +1047,14 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQG-4T-Zap">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npO-2B-4i6">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1213,7 +1215,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BY-Dy-fHm">
-                                <rect key="frame" x="193" y="178.66666666666666" width="28" height="21"/>
+                                <rect key="frame" x="193" y="179" width="28" height="20"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1247,14 +1249,14 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7L-gd-krJ">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly4-pf-P9V">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1533,14 +1535,14 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsa-se-3u4">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbF-BB-naz">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2039,14 +2041,14 @@ Cholesterol/HDL ratio</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQs-RQ-ndz">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87N-yK-Pwx">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2259,14 +2261,14 @@ Systolic Blood Pressure </string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLZ-CP-6yg">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTj-Ik-blS">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2277,7 +2279,7 @@ Systolic Blood Pressure </string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iz-i7-4Za">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iz-i7-4Za">
                                         <rect key="frame" x="76" y="35.666666666666671" width="12.333333333333329" height="23.333333333333329"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-Light" family="Sukhumvit Set" pointSize="24"/>
                                         <nil key="textColor"/>
@@ -2473,14 +2475,14 @@ Low cholesterol/HDL ratio is  2:1</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4j-x2-PFT">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94w-d5-hP7">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2685,14 +2687,14 @@ Low blood pressure is  80 mmHg</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-MW-rLi">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-VB-wvs">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2821,7 +2823,7 @@ height and weight</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66o-KT-nyR">
-                                <rect key="frame" x="50" y="395.66666666666669" width="314" height="35"/>
+                                <rect key="frame" x="100" y="395.66666666666669" width="214" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="Gg1-Wv-g2T"/>
                                     <constraint firstAttribute="height" constant="35" id="Zzb-xw-RPK"/>
@@ -2906,14 +2908,14 @@ height and weight</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeq-HG-3Te">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRi-4z-AZs">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2959,10 +2961,8 @@ height and weight</string>
                             <constraint firstItem="uPJ-f8-PQQ" firstAttribute="trailing" secondItem="n02-ZW-MCm" secondAttribute="trailing" id="2jb-Y7-Qdw"/>
                             <constraint firstItem="WKE-ZU-Bi4" firstAttribute="leading" secondItem="ZY4-3X-lYo" secondAttribute="leading" id="5jP-HF-IMV"/>
                             <constraint firstItem="G3v-wo-9gs" firstAttribute="top" secondItem="S0w-hu-X2Q" secondAttribute="bottom" constant="10" id="71A-Sp-NkX"/>
-                            <constraint firstItem="66o-KT-nyR" firstAttribute="leading" secondItem="WKE-ZU-Bi4" secondAttribute="leading" id="A1Q-cf-LKb"/>
                             <constraint firstItem="ZY4-3X-lYo" firstAttribute="bottom" secondItem="S0w-hu-X2Q" secondAttribute="bottom" id="BdZ-Oh-B3u"/>
                             <constraint firstItem="PIJ-sb-mZT" firstAttribute="centerY" secondItem="XGl-FS-QlC" secondAttribute="centerY" id="Cwx-OU-eeT"/>
-                            <constraint firstItem="66o-KT-nyR" firstAttribute="trailing" secondItem="G3v-wo-9gs" secondAttribute="trailing" id="DdW-z9-4Vc"/>
                             <constraint firstItem="ZY4-3X-lYo" firstAttribute="leading" secondItem="aB1-sY-Cig" secondAttribute="leading" id="Htz-Ve-OWW"/>
                             <constraint firstItem="S0w-hu-X2Q" firstAttribute="leading" secondItem="ZY4-3X-lYo" secondAttribute="trailing" constant="10" id="J0n-63-WYJ"/>
                             <constraint firstItem="fyV-zQ-MY8" firstAttribute="trailing" secondItem="aB1-sY-Cig" secondAttribute="trailing" constant="50" id="Kph-ET-w79"/>
@@ -2973,6 +2973,7 @@ height and weight</string>
                             <constraint firstItem="vam-kb-5sb" firstAttribute="top" secondItem="fyV-zQ-MY8" secondAttribute="top" constant="50" id="Sr3-eB-rsE"/>
                             <constraint firstItem="aB1-sY-Cig" firstAttribute="leading" secondItem="fyV-zQ-MY8" secondAttribute="leading" constant="50" id="Tcb-jv-LX4"/>
                             <constraint firstItem="dCl-5V-d4T" firstAttribute="trailing" secondItem="uPJ-f8-PQQ" secondAttribute="trailing" id="UsL-vn-XAR"/>
+                            <constraint firstItem="66o-KT-nyR" firstAttribute="centerX" secondItem="fyV-zQ-MY8" secondAttribute="centerX" id="W8H-u9-POZ"/>
                             <constraint firstItem="vam-kb-5sb" firstAttribute="centerX" secondItem="fyV-zQ-MY8" secondAttribute="centerX" id="YK0-R7-zim"/>
                             <constraint firstItem="WKE-ZU-Bi4" firstAttribute="top" secondItem="ZY4-3X-lYo" secondAttribute="bottom" constant="10" id="any-eD-Luh"/>
                             <constraint firstItem="n02-ZW-MCm" firstAttribute="top" secondItem="66o-KT-nyR" secondAttribute="bottom" constant="40" id="b0W-b2-h2v"/>
@@ -3087,6 +3088,17 @@ please connect Apple Health</string>
                                     <action selector="btnConnectClicked:" destination="UlZ-Kx-xNA" eventType="touchUpInside" id="GSj-Yb-Ghk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1M-fK-ZBw">
+                                <rect key="frame" x="100" y="566" width="214" height="33"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="kMC-s5-oji"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="17"/>
+                                <state key="normal" title="TRACK RISK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-xB-qvc">
                                 <rect key="frame" x="110" y="238.33333333333334" width="194" height="77.666666666666657"/>
                                 <subviews>
@@ -3181,6 +3193,12 @@ please connect Apple Health</string>
                                     <constraint firstItem="G7a-re-aaJ" firstAttribute="top" secondItem="ueQ-jZ-ebe" secondAttribute="bottom" constant="4" id="yUc-Le-WgO"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is connected to the Health app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssd-c9-Ob7">
+                                <rect key="frame" x="118.66666666666667" y="624" width="176.66666666666663" height="12"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -3191,12 +3209,14 @@ please connect Apple Health</string>
                             <constraint firstItem="28j-gR-XP8" firstAttribute="top" secondItem="GwJ-5j-84U" secondAttribute="bottom" constant="25" id="CT4-Ix-Ig1"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="rPc-xB-qvc" secondAttribute="trailing" constant="110" id="CaC-Ib-MHy"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="leading" secondItem="yhu-dY-puu" secondAttribute="leading" id="Ifg-Da-km0"/>
+                            <constraint firstItem="g1M-fK-ZBw" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="Jzd-WV-opf"/>
                             <constraint firstItem="3dg-50-2RO" firstAttribute="top" secondItem="zF8-Ta-Hia" secondAttribute="bottom" constant="40.329999999999998" id="Ldn-4k-f05"/>
                             <constraint firstItem="GwJ-5j-84U" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="Ljk-iu-Upd"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="trailing" secondItem="yhu-dY-puu" secondAttribute="trailing" id="QxF-Nn-8LB"/>
                             <constraint firstItem="rPc-xB-qvc" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="110" id="SaL-7E-OhQ"/>
                             <constraint firstItem="zF8-Ta-Hia" firstAttribute="top" secondItem="Rwi-Ai-jBm" secondAttribute="top" constant="63" id="V17-55-dAk"/>
                             <constraint firstItem="4bg-LL-2pp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eP6-ho-L1N" secondAttribute="trailing" constant="8" symbolic="YES" id="Wff-Hl-6hf"/>
+                            <constraint firstItem="Rwi-Ai-jBm" firstAttribute="bottom" secondItem="ssd-c9-Ob7" secondAttribute="bottom" constant="100" id="bHy-X2-gGZ"/>
                             <constraint firstItem="VbC-P1-Xbn" firstAttribute="top" secondItem="ELg-WC-kR5" secondAttribute="bottom" constant="10" id="bjt-UB-9TF"/>
                             <constraint firstItem="3dg-50-2RO" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="fcF-AI-W9E"/>
                             <constraint firstItem="6py-sJ-WBf" firstAttribute="top" secondItem="rPc-xB-qvc" secondAttribute="bottom" constant="47" id="g7G-tU-0tm"/>
@@ -3205,12 +3225,14 @@ please connect Apple Health</string>
                             <constraint firstItem="GwJ-5j-84U" firstAttribute="top" secondItem="VbC-P1-Xbn" secondAttribute="bottom" constant="40" id="iZQ-zc-0hN"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="4bg-LL-2pp" secondAttribute="trailing" constant="25" id="ity-Ww-t33"/>
                             <constraint firstItem="zF8-Ta-Hia" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="jVb-86-l7G"/>
+                            <constraint firstItem="ssd-c9-Ob7" firstAttribute="top" secondItem="g1M-fK-ZBw" secondAttribute="bottom" constant="25" id="kCs-UZ-Dnh"/>
                             <constraint firstItem="28j-gR-XP8" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="lwR-47-JdE"/>
                             <constraint firstItem="rPc-xB-qvc" firstAttribute="top" secondItem="3dg-50-2RO" secondAttribute="bottom" constant="10" id="mGv-1d-Vgg"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="top" secondItem="yhu-dY-puu" secondAttribute="bottom" id="noM-Ii-10l"/>
                             <constraint firstItem="zF8-Ta-Hia" firstAttribute="top" secondItem="eP6-ho-L1N" secondAttribute="bottom" constant="8" id="oXp-ZN-kvH"/>
                             <constraint firstItem="eP6-ho-L1N" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="25" id="qT5-I9-2tF"/>
                             <constraint firstItem="6py-sJ-WBf" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="50" id="rWR-3f-LFk"/>
+                            <constraint firstItem="ssd-c9-Ob7" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="sdh-E3-Z5p"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="6py-sJ-WBf" secondAttribute="trailing" constant="50" id="sf9-8c-L3K"/>
                             <constraint firstItem="VbC-P1-Xbn" firstAttribute="trailing" secondItem="ELg-WC-kR5" secondAttribute="trailing" id="sts-RB-Hyd"/>
                             <constraint firstAttribute="bottom" secondItem="rPc-xB-qvc" secondAttribute="bottom" constant="420" id="wTu-mV-hv9"/>
@@ -3221,9 +3243,11 @@ please connect Apple Health</string>
                         <outlet property="btnBack" destination="eP6-ho-L1N" id="8qE-GK-ag6"/>
                         <outlet property="btnConnect" destination="28j-gR-XP8" id="kCe-dl-8lv"/>
                         <outlet property="btnProfile" destination="4bg-LL-2pp" id="0Sa-v5-Vps"/>
+                        <outlet property="btnTrack" destination="g1M-fK-ZBw" id="k86-Kw-aJm"/>
                         <outlet property="lblC" destination="wJz-li-Snw" id="md7-Vl-e3z"/>
                         <outlet property="lblCardio" destination="ueQ-jZ-ebe" id="6cl-m6-5YV"/>
                         <outlet property="lblConnect" destination="GwJ-5j-84U" id="Pts-NT-7bV"/>
+                        <outlet property="lblConnected" destination="ssd-c9-Ob7" id="Pbh-RJ-p32"/>
                         <outlet property="lblDesc" destination="ELg-WC-kR5" id="4w0-xo-0P5"/>
                         <outlet property="lblInfo" destination="yhu-dY-puu" id="GRY-WV-Ke6"/>
                         <outlet property="lblRisk" destination="3dg-50-2RO" id="lnb-MC-SgJ"/>
@@ -3340,7 +3364,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIi-DF-qaE">
-                                                <rect key="frame" x="10" y="217.99999999999997" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="216.99999999999997" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Smoking Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js9-su-o0N">
                                                         <rect key="frame" x="0.0" y="7.3333333333333712" width="121" height="20"/>
@@ -3370,7 +3394,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9F-zN-9aB">
-                                                <rect key="frame" x="10" y="261" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="260" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Diabetes Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDe-Fa-12F">
                                                         <rect key="frame" x="0.0" y="7" width="122" height="21"/>
@@ -3397,7 +3421,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jk-g6-DUV">
-                                                <rect key="frame" x="10" y="304" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="303" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzE-uy-Ysp">
                                                         <rect key="frame" x="345" y="2" width="42" height="31"/>
@@ -3430,13 +3454,13 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clinical Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-hP-av5">
-                                                <rect key="frame" x="10" y="188.99999999999997" width="394" height="21"/>
+                                                <rect key="frame" x="10" y="188.99999999999997" width="394" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-IG-LD3">
-                                                <rect key="frame" x="10" y="347" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="346" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Cholesterol/HDL Ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbR-kq-SaT">
                                                         <rect key="frame" x="0.0" y="7.3333333333332575" width="171" height="20"/>
@@ -3466,7 +3490,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="085-KD-SiK">
-                                                <rect key="frame" x="10" y="433" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="432" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Systolic Blood Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeF-v8-7kS">
                                                         <rect key="frame" x="0.0" y="7" width="180" height="21"/>
@@ -3493,7 +3517,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6u-b3-ArC">
-                                                <rect key="frame" x="10" y="476" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="475" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Estimated Systolic Blood Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cv-H5-q6D">
                                                         <rect key="frame" x="0.0" y="7" width="261" height="21"/>
@@ -3520,7 +3544,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaK-XL-Sjy">
-                                                <rect key="frame" x="10" y="519" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="518" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="BMI Index" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWg-JG-o1y">
                                                         <rect key="frame" x="0.0" y="7" width="76" height="21"/>
@@ -3547,13 +3571,13 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conditions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kG3-SM-aAO">
-                                                <rect key="frame" x="10" y="584" width="394" height="21"/>
+                                                <rect key="frame" x="10" y="583" width="394" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-OS-oyT">
-                                                <rect key="frame" x="10" y="613" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="611" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Chronic Kidney Disease (stage 3, 4 or 5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrb-jO-kaO">
                                                         <rect key="frame" x="0.0" y="7.3333333333332575" width="304" height="20"/>
@@ -3583,7 +3607,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZL-zV-qyA">
-                                                <rect key="frame" x="10" y="656" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="654" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Atrial Fibrillation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auT-Qg-eMD">
                                                         <rect key="frame" x="0.0" y="7" width="123" height="21"/>
@@ -3610,7 +3634,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEO-uI-Gvp">
-                                                <rect key="frame" x="10" y="699" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="697" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Migraines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVz-MW-J3f">
                                                         <rect key="frame" x="0.0" y="7" width="75" height="21"/>
@@ -3637,7 +3661,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ng8-bp-wJ7">
-                                                <rect key="frame" x="10" y="742" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="740" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Rheumatoid arthritis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SF-uv-qZD">
                                                         <rect key="frame" x="0.0" y="7" width="156" height="21"/>
@@ -3664,7 +3688,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OsQ-q4-uDx">
-                                                <rect key="frame" x="10" y="785" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="783" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Systemic Lupus Erythematosus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-bb-pdC">
                                                         <rect key="frame" x="0.0" y="7" width="241" height="21"/>
@@ -3691,7 +3715,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgM-Xp-2Uu">
-                                                <rect key="frame" x="10" y="828" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="826" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Severe Mental Illness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZv-m8-3KD">
                                                         <rect key="frame" x="0.0" y="6.9999999999998863" width="162" height="21"/>
@@ -3718,13 +3742,13 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medications" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mK-YT-fwf">
-                                                <rect key="frame" x="10" y="935.99999999999989" width="394" height="21"/>
+                                                <rect key="frame" x="10" y="933.99999999999989" width="394" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zik-e6-QGG">
-                                                <rect key="frame" x="10" y="964.99999999999989" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="961.99999999999989" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Blood Pressure Treatment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wx-6k-zEw">
                                                         <rect key="frame" x="0.0" y="7" width="199" height="21"/>
@@ -3751,7 +3775,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lk-Y4-XcR">
-                                                <rect key="frame" x="10" y="1008" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="1004.9999999999999" width="394" height="35.000000000000114"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Atypical Antipsychotic Medication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX3-XM-AXt">
                                                         <rect key="frame" x="0.0" y="7" width="259" height="21"/>
@@ -3778,7 +3802,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PY4-3X-epg">
-                                                <rect key="frame" x="10" y="1051" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="1048" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Regular Steroid Tablets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cz-yh-Vxp">
                                                         <rect key="frame" x="0.0" y="7" width="177" height="21"/>
@@ -3805,7 +3829,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h47-uP-Y61">
-                                                <rect key="frame" x="10" y="870.99999999999989" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="868.99999999999989" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Erectile Dysfunction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oed-eC-v9e">
                                                         <rect key="frame" x="0.0" y="7" width="154" height="21"/>
@@ -3832,13 +3856,13 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HealthKit Data" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtD-qE-KhY">
-                                                <rect key="frame" x="10" y="1132" width="394" height="21"/>
+                                                <rect key="frame" x="10" y="1129" width="394" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUA-cW-rvH">
-                                                <rect key="frame" x="10" y="1161" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="1157" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znm-hJ-mXR">
                                                         <rect key="frame" x="0.0" y="7" width="64" height="21"/>
@@ -3865,7 +3889,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aqv-VG-OwD">
-                                                <rect key="frame" x="10" y="1204" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="1200" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="VO2 max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4C-xA-xCW">
                                                         <rect key="frame" x="0.0" y="7" width="70" height="21"/>
@@ -3892,7 +3916,7 @@ please connect Apple Health</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9b-9z-ZyW">
-                                                <rect key="frame" x="10" y="390" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="389" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Estimated Cholesterol/HDL Ratio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAx-5r-cBc">
                                                         <rect key="frame" x="0.0" y="7.3333333333332575" width="251" height="20"/>
@@ -4062,14 +4086,14 @@ please connect Apple Health</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ARDlO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTb-Lz-0Eb">
-                                        <rect key="frame" x="92.333333333333343" y="5.0000000000000018" width="67.666666666666657" height="27.666666666666671"/>
+                                        <rect key="frame" x="91.333333333333343" y="5.0000000000000018" width="68.666666666666657" height="27.666666666666671"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWA-lB-qMn">
-                                        <rect key="frame" x="74" y="3.0000000000000018" width="17.333333333333329" height="28.666666666666671"/>
+                                        <rect key="frame" x="74" y="3.0000000000000018" width="16.333333333333329" height="28.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SukhumvitSet-SemiBold" family="Sukhumvit Set" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -4224,7 +4248,7 @@ please connect Apple Health</string>
         <image name="Heart" width="78.333335876464844" height="71.333335876464844"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TIQ-P1-Mjm"/>
+        <segue reference="knc-J4-o00"/>
         <segue reference="g3h-O6-aSv"/>
         <segue reference="0Dz-Lj-Tge"/>
         <segue reference="ZOd-zi-ymv"/>
