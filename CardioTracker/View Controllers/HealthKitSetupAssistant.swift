@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vaka Johannesdottir. All rights reserved.
 //
 
-//https://koenig-media.raywenderlich.com/uploads/2017/06/Prancercise-Tracker-Part-1-Final-2.zip
+// https://koenig-media.raywenderlich.com/uploads/2017/06/Prancercise-Tracker-Part-1-Final-2.zip
 // https://www.raywenderlich.com/459-healthkit-tutorial-with-swift-getting-started
 
 /**
@@ -49,6 +49,7 @@ class HealthKitSetupAssistant {
         case dataTypeNotAvailable
     }
     
+    
     class func authorizeHealthKit(completion: @escaping (Bool, Error?) -> Swift.Void) {
         
         //1. Check to see if HealthKit Is Available on this device
@@ -83,6 +84,7 @@ class HealthKitSetupAssistant {
                                                 completion(success, error)
         }
     }
+    
     
     class func getMostRecentSample(for sampleType: HKSampleType,
                                    completion: @escaping (HKQuantitySample?, Error?) -> Swift.Void) {

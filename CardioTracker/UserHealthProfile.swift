@@ -12,6 +12,7 @@ import HealthKit
 class UserHealthProfile {
     
     var systolicBloodPressure: Double = 0
-
+    var exerciseMinutes: Int = 0
+    var vo2max: Double = 0
     
 }

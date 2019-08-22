@@ -11,6 +11,8 @@ import HealthKit
 
 class ProfileDataStore {
     
+    
+    
     class func getMostRecentSample(for sampleType: HKSampleType,
                                    completion: @escaping (HKQuantitySample?, Error?) -> Swift.Void) {
         
@@ -19,6 +21,7 @@ class ProfileDataStore {
                                                               end: Date(),
                                                               options: .strictEndDate)
         
+
         let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierStartDate,
                                               ascending: false)
         
@@ -45,4 +48,8 @@ class ProfileDataStore {
         
         HKHealthStore().execute(sampleQuery)
     }
+    
+    
+    
+    
 }
