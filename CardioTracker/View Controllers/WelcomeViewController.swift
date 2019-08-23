@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HealthKit
 
 class WelcomeViewController: UIViewController {
     
@@ -53,7 +54,11 @@ class WelcomeViewController: UIViewController {
         btnStart.layer.cornerRadius = 15
         btnStart.clipsToBounds = true
         btnStart.backgroundColor = UIColor(red: 190/255, green: 8/255, blue: 8/255, alpha: 1)
+        
+    
     }
+    
+    
     
     @IBAction func btnStartedClicked(_ sender: UIButton){
     }

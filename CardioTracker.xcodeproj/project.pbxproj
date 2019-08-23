@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D859DD123104F700014AD2B /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DD023104F700014AD2B /* ConnectViewController.swift */; };
 		3DA734B923087F1200B300FD /* CardioTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA734B823087F1200B300FD /* CardioTrackerTests.swift */; };
 		3DDA005B22F24C25005C23B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA005A22F24C25005C23B3 /* AppDelegate.swift */; };
 		3DDA005D22F24C25005C23B3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA005C22F24C25005C23B3 /* WelcomeViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D859DD023104F700014AD2B /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		3DA734B623087F1200B300FD /* CardioTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardioTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA734B823087F1200B300FD /* CardioTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioTrackerTests.swift; sourceTree = "<group>"; };
 		3DA734BA23087F1200B300FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				3DDA005C22F24C25005C23B3 /* WelcomeViewController.swift */,
+				3D859DD023104F700014AD2B /* ConnectViewController.swift */,
 				3DDA007E22F42897005C23B3 /* GenderViewController.swift */,
 				3DDA008022F454D7005C23B3 /* AgeViewController.swift */,
 				3DDA008222F87272005C23B3 /* EthnicityViewController.swift */,
@@ -336,6 +339,7 @@
 				3DDB60A222FB074B00B5156A /* BmiIndexViewController.swift in Sources */,
 				3DDB609E22FB022D00B5156A /* SystolicBpViewController.swift in Sources */,
 				3DFBBAFA230B0C910003FC39 /* UserHealthProfile.swift in Sources */,
+				3D859DD123104F700014AD2B /* ConnectViewController.swift in Sources */,
 				3DDA008722F9A700005C23B3 /* DiabetesViewController.swift in Sources */,
 				3DDA005B22F24C25005C23B3 /* AppDelegate.swift in Sources */,
 				3DDB609822FADE7800B5156A /* MedicationViewController.swift in Sources */,

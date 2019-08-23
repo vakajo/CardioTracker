@@ -42,33 +42,28 @@ class CalculatedRiskViewController: UIViewController {
         
         lblConnected.isHidden = true
         btnTrack.isHidden = true
-
+        
+        RiskDataManager.shared.loadMostRecentVo2maxData()
         let risk = RiskDataManager.shared.computedRisk
         let roundedRisk = String(format: "%.1f", risk) + "%"
         
-        // Hide Connect Button if Health Kit has already been authorised
-        //let pressure = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodPressureSystolic)!
-        let vo2max = HKSampleType.quantityType(forIdentifier: .vo2Max)!
-        //let somethingElse = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height)!
         
-        //let statusPressure = HKHealthStore().authorizationStatus(for: pressure)
-        let statusVo2Max = HKHealthStore().authorizationStatus(for: vo2max)
-        //let statusSomethingElse = HKHealthStore().authorizationStatus(for: somethingElse)
+        // Hide Connect Button if Health Kit has already been authorised.
+        // We will use pressure to indicate this.
         
-        var status: HKAuthorizationStatus = .notDetermined
+        let pressure = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic)!
+        let statusPressure = HKHealthStore().authorizationStatus(for: pressure)
         
-        if statusVo2Max == .sharingAuthorized /*&& statusSomethingElse == .sharingAuthorized*/ {
-            status = .sharingAuthorized
-        }
-        
-        if status == .sharingAuthorized {
+        if statusPressure == .sharingAuthorized {
             lblConnect.isHidden = true
             lblConnected.isEnabled = false
             btnConnect.isHidden = true
             lblConnected.isHidden = false
             btnTrack.isHidden = false
-            print("Risk after connecting \(RiskDataManager.shared.computedRisk)")
         }
+
+        
+        
         
         // MARK: Labels Layout
         lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
@@ -85,7 +80,7 @@ class CalculatedRiskViewController: UIViewController {
             .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
         lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
-        lblConnected.attributedText = NSAttributedString(string: "This app is connected to the Health app.",attributes:[ NSAttributedString.Key.kern: 1.02])
+        lblConnected.attributedText = NSAttributedString(string: "This app is connected to the Health app.",attributes:[ NSAttributedString.Key.kern: 1.0])
         
         
         //MARK: Buttons
@@ -129,11 +124,7 @@ class CalculatedRiskViewController: UIViewController {
     
     //IF Health Kit has been connected, hide button!
     @IBAction func btnConnectClicked(_ sender: UIButton) {
-        print("Risk is first \(RiskDataManager.shared.computedRisk)")
-
-        authoriseHealthKit()
-        
-        print("Risk is then \(RiskDataManager.shared.computedRisk)")
+        //authoriseHealthKit()
     }
     
     @IBAction func btnProfile(_ sender: UIButton) {

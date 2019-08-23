@@ -6,6 +6,8 @@
 //  Copyright © 2019 Vaka Johannesdottir. All rights reserved.
 //
 import Foundation
+import UIKit
+import HealthKit
 
 enum Gender: String {
     case male = "Male"
@@ -56,8 +58,14 @@ final class RiskDataManager {
     
     private init() {   }
     static let shared = RiskDataManager()
+    private let userHealthProfile = UserHealthProfile()
+    let healthStore = HKHealthStore()
     
     // Initialisation
+    
+    //HealthKit Variables
+    var vo2max: Double = 0.0
+    
     
     // Personal Information:
     var computedRisk = 0.0
@@ -96,9 +104,9 @@ final class RiskDataManager {
             } else {
                 return
             }
-            
         }
     }
+    var estimatedCholesterolHDLRatio: Double = 0
  
     var systolicBloodPressure: Double = 0 {
         didSet {
@@ -113,6 +121,7 @@ final class RiskDataManager {
             }
         }
     }
+    var estimatedSystolicBP: Double = 0
     
     var height: Double = 0
     var weight: Double = 0 {
@@ -188,6 +197,137 @@ final class RiskDataManager {
     }
     
     
+    //MARK: Load VO2max
+    func loadMostRecentVo2maxData() {
+        
+        //1. Use HealthKit to create the Sample Types
+        guard let vo2maxSampleType = HKSampleType.quantityType(forIdentifier: .vo2Max) else {
+            print("VO2 Max Sample Type is no longer available in HealthKit")
+            return
+        }
+        
+        //2. Get Most Recent Input for VO2 Max
+        ProfileDataStore.getMostRecentSample(for: vo2maxSampleType) {
+            
+            (sample, error) in
+            
+            guard let sample = sample else {
+                
+                if let error = error {
+                    self.displayAlert(for: error)
+                }
+                return
+            }
+            
+            //3. Update variables
+            self.userHealthProfile.vo2max = sample.quantity.doubleValue(for: HKUnit(from: "ml/kg*min"))
+            self.vo2max = self.userHealthProfile.vo2max
+            self.computeEstimatedCholesterolHDLRatio(vo2max: self.userHealthProfile.vo2max)
+            self.computeEstimatedSystolicBloodPressure(vo2max: self.userHealthProfile.vo2max)
+        }
+    }
+    
+    //MARK: Compute Estimated Cholesterol & Blood Pressure
+    func computeEstimatedCholesterolHDLRatio(vo2max: Double) {
+        
+        if userHealthProfile.vo2max != 0 {
+            if RiskDataManager.shared.gender == .male {
+                if RiskDataManager.shared.age < 30 {
+                    estimatedCholesterolHDLRatio = -0.067485933 * userHealthProfile.vo2max + 7.592286
+                } else if RiskDataManager.shared.age < 40 {
+                    estimatedCholesterolHDLRatio = -0.067533297 * userHealthProfile.vo2max + 7.4998629
+                } else if RiskDataManager.shared.age < 50 {
+                    estimatedCholesterolHDLRatio = -0.068197554 * userHealthProfile.vo2max + 7.4036849
+                } else if RiskDataManager.shared.age < 60 {
+                    estimatedCholesterolHDLRatio = -0.070411246 * userHealthProfile.vo2max + 7.2774996
+                } else if RiskDataManager.shared.age < 70 {
+                    estimatedCholesterolHDLRatio = -0.07058193 * userHealthProfile.vo2max + 7.0464451
+                } else {
+                    estimatedCholesterolHDLRatio = -0.067414031 * userHealthProfile.vo2max + 6.742634
+                }
+            } else if RiskDataManager.shared.gender == .female {
+                if RiskDataManager.shared.age < 30 {
+                    estimatedCholesterolHDLRatio = -0.045261257 * userHealthProfile.vo2max + 5.162926
+                } else if RiskDataManager.shared.age < 40 {
+                    estimatedCholesterolHDLRatio = -0.046145395 * userHealthProfile.vo2max + 5.1189159
+                } else if RiskDataManager.shared.age < 50 {
+                    estimatedCholesterolHDLRatio = -0.049796652 * userHealthProfile.vo2max + 5.1686111
+                } else if RiskDataManager.shared.age < 60 {
+                    estimatedCholesterolHDLRatio = -0.055426845 * userHealthProfile.vo2max + 5.1912109
+                } else if RiskDataManager.shared.age < 70 {
+                    estimatedCholesterolHDLRatio = -0.059123207 * userHealthProfile.vo2max + 5.1510323
+                } else {
+                    estimatedCholesterolHDLRatio = -0.059350659 * userHealthProfile.vo2max + 5.0664835
+                }
+            }
+            else {
+                return
+            }
+            
+            RiskDataManager.shared.estimatedCholesterolHDLRatio = estimatedCholesterolHDLRatio
+            print("Estimated Cholesterol i RiskDataManager er nu \(RiskDataManager.shared.estimatedCholesterolHDLRatio)")
+            //updateLabelsEstimatedCholesterolHDL(newRatio: estimatedCholesterolHDLRatio)
+        }
+    }
+    
+    
+    func computeEstimatedSystolicBloodPressure(vo2max: Double) {
+        
+        if userHealthProfile.vo2max != 0 {
+            if RiskDataManager.shared.gender == .male {
+                
+                if RiskDataManager.shared.age < 30 {
+                    estimatedSystolicBP = -0.729058848 * userHealthProfile.vo2max + 157.35281
+                } else if RiskDataManager.shared.age < 40 {
+                    estimatedSystolicBP = -0.73225255 * userHealthProfile.vo2max + 156.47084
+                } else if RiskDataManager.shared.age < 50 {
+                    estimatedSystolicBP = -0.736210478 * userHealthProfile.vo2max + 155.29302
+                } else if RiskDataManager.shared.age < 60 {
+                    estimatedSystolicBP = -0.758369813 * userHealthProfile.vo2max + 153.8639
+                } else if RiskDataManager.shared.age < 70 {
+                    estimatedSystolicBP = -0.761476778 * userHealthProfile.vo2max + 151.41988
+                } else {
+                    estimatedSystolicBP = -0.724048623 * userHealthProfile.vo2max + 148.0655
+                }
+            } else if RiskDataManager.shared.gender == .female {
+                
+                if RiskDataManager.shared.age < 30 {
+                    estimatedSystolicBP = -0.658822159 * userHealthProfile.vo2max + 140.66112
+                } else if RiskDataManager.shared.age < 40 {
+                    estimatedSystolicBP = -0.668375755 * userHealthProfile.vo2max + 139.897
+                } else if RiskDataManager.shared.age < 50 {
+                    estimatedSystolicBP = -0.722122387 * userHealthProfile.vo2max + 140.64738
+                } else if RiskDataManager.shared.age < 60 {
+                    estimatedSystolicBP = -0.803249362 * userHealthProfile.vo2max + 140.95834
+                } else if RiskDataManager.shared.age < 70 {
+                    estimatedSystolicBP = -0.854672208 * userHealthProfile.vo2max + 140.31254
+                } else {
+                    estimatedSystolicBP = -0.857142857 * userHealthProfile.vo2max + 139.07143
+                }
+            } else {
+                return
+            }
+            
+            RiskDataManager.shared.estimatedSystolicBP = estimatedSystolicBP
+            //updateLabelsEstimatedSystolicBP(newSbp: estimatedSystolicBP)
+        }
+    }
+    
+    private func displayAlert(for error: Error) {
+        
+        let alert = UIAlertController(title: nil,
+                                      message: error.localizedDescription,
+                                      preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "O.K.",
+                                      style: .default,
+                                      handler: nil))
+        
+        CalculatedRiskViewController().present(alert, animated: true, completion: nil)
+    }
+    
+    
+    
     
     //MARK: Compute Risk Methods
     func computeFemaleRisk() -> Double {
@@ -198,8 +338,17 @@ final class RiskDataManager {
         let bmiIndex = dblWeight / (pow(dblHeight,2))
         
         // Declaration of variables
+        
         var dblCholesterolHDLRatio = RiskDataManager.shared.cholesterolHDL
+        if RiskDataManager.shared.estimatedCholesterolHDLRatio != 0 {
+            dblCholesterolHDLRatio = RiskDataManager.shared.estimatedCholesterolHDLRatio
+        }
+        
         var dblSystolicBloodPressure = RiskDataManager.shared.systolicBloodPressure
+        if RiskDataManager.shared.estimatedSystolicBP != 0 {
+            dblSystolicBloodPressure = RiskDataManager.shared.estimatedSystolicBP
+        }
+        
         let ethnicityCategory = RiskDataManager.shared.ethnicity.rawValue
         let smokingCategory = RiskDataManager.shared.smokingStatus.rawValue
         var diabetesType1: Double = 0
