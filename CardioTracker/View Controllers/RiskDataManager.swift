@@ -63,6 +63,10 @@ final class RiskDataManager {
     
     // Initialisation
     
+    // Risk Array - User Defaults & Graph
+    var riskArr: [Double] = []
+    var dateArr: [String] = []
+    
     //HealthKit Variables
     var vo2max: Double = 0.0
     
@@ -233,31 +237,31 @@ final class RiskDataManager {
         if userHealthProfile.vo2max != 0 {
             if RiskDataManager.shared.gender == .male {
                 if RiskDataManager.shared.age < 30 {
-                    estimatedCholesterolHDLRatio = -0.067485933 * userHealthProfile.vo2max + 7.592286
+                    estimatedCholesterolHDLRatio = -0.0553 * userHealthProfile.vo2max + 6.90
                 } else if RiskDataManager.shared.age < 40 {
-                    estimatedCholesterolHDLRatio = -0.067533297 * userHealthProfile.vo2max + 7.4998629
+                    estimatedCholesterolHDLRatio = -0.0553 * userHealthProfile.vo2max + 6.82
                 } else if RiskDataManager.shared.age < 50 {
-                    estimatedCholesterolHDLRatio = -0.068197554 * userHealthProfile.vo2max + 7.4036849
+                    estimatedCholesterolHDLRatio = -0.0558 * userHealthProfile.vo2max + 6.74
                 } else if RiskDataManager.shared.age < 60 {
-                    estimatedCholesterolHDLRatio = -0.070411246 * userHealthProfile.vo2max + 7.2774996
+                    estimatedCholesterolHDLRatio = -0.0578 * userHealthProfile.vo2max + 6.64
                 } else if RiskDataManager.shared.age < 70 {
-                    estimatedCholesterolHDLRatio = -0.07058193 * userHealthProfile.vo2max + 7.0464451
+                    estimatedCholesterolHDLRatio = -0.0579 * userHealthProfile.vo2max + 6.45
                 } else {
-                    estimatedCholesterolHDLRatio = -0.067414031 * userHealthProfile.vo2max + 6.742634
+                    estimatedCholesterolHDLRatio = -0.0554 * userHealthProfile.vo2max + 6.21
                 }
             } else if RiskDataManager.shared.gender == .female {
                 if RiskDataManager.shared.age < 30 {
-                    estimatedCholesterolHDLRatio = -0.045261257 * userHealthProfile.vo2max + 5.162926
+                    estimatedCholesterolHDLRatio = -0.0282 * userHealthProfile.vo2max + 4.59
                 } else if RiskDataManager.shared.age < 40 {
-                    estimatedCholesterolHDLRatio = -0.046145395 * userHealthProfile.vo2max + 5.1189159
+                    estimatedCholesterolHDLRatio = -0.0284 * userHealthProfile.vo2max + 4.55
                 } else if RiskDataManager.shared.age < 50 {
-                    estimatedCholesterolHDLRatio = -0.049796652 * userHealthProfile.vo2max + 5.1686111
+                    estimatedCholesterolHDLRatio = -0.0308 * userHealthProfile.vo2max + 4.59
                 } else if RiskDataManager.shared.age < 60 {
-                    estimatedCholesterolHDLRatio = -0.055426845 * userHealthProfile.vo2max + 5.1912109
+                    estimatedCholesterolHDLRatio = -0.0342 * userHealthProfile.vo2max + 4.60
                 } else if RiskDataManager.shared.age < 70 {
-                    estimatedCholesterolHDLRatio = -0.059123207 * userHealthProfile.vo2max + 5.1510323
+                    estimatedCholesterolHDLRatio = -0.05362 * userHealthProfile.vo2max + 4.57
                 } else {
-                    estimatedCholesterolHDLRatio = -0.059350659 * userHealthProfile.vo2max + 5.0664835
+                    estimatedCholesterolHDLRatio = -0.0363 * userHealthProfile.vo2max + 4.51
                 }
             }
             else {
@@ -265,7 +269,6 @@ final class RiskDataManager {
             }
             
             RiskDataManager.shared.estimatedCholesterolHDLRatio = estimatedCholesterolHDLRatio
-            print("Estimated Cholesterol i RiskDataManager er nu \(RiskDataManager.shared.estimatedCholesterolHDLRatio)")
             //updateLabelsEstimatedCholesterolHDL(newRatio: estimatedCholesterolHDLRatio)
         }
     }
@@ -663,3 +666,7 @@ extension Bool {
         return self ? 1 : 0
     }
 }
+
+
+
+

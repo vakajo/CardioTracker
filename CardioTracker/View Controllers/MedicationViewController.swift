@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MedicationViewController: UIViewController {
+class MedicationViewController: UIViewController, UINavigationControllerDelegate {
 
     
     @IBOutlet weak var btnBack: UIButton!
@@ -35,9 +35,12 @@ class MedicationViewController: UIViewController {
     
     @IBOutlet weak var btnNext: UIButton!
     
+    var viewControllerToInsertBelow : UIViewController?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.delegate = self
         
         btnNext.isEnabled = false
         btnNext.alpha = 0.5
@@ -69,7 +72,27 @@ class MedicationViewController: UIViewController {
         btnCircle.layer.borderColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1).cgColor
         btnCircle.layer.borderWidth = 1.0
         btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
+        
+        //pushTwoViewControllers()
     }
+    
+//    func pushTwoViewControllers() {
+//        if let viewController2 = self.storyboard?.instantiateViewController(withIdentifier: "DummyViewController"),
+//            let viewController3 = self.storyboard?.instantiateViewController(withIdentifier: "BmiIndexViewController") { //change this to your identifiers
+//            self.viewControllerToInsertBelow = viewController2
+//            self.navigationController?.pushViewController(viewController3, animated: true)
+//        }
+//    }
+//
+//    //MARK: - UINavigationControllerDelegate
+//    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+//        if let vc = viewControllerToInsertBelow {
+//            viewControllerToInsertBelow = nil
+//            let index = navigationController.viewControllers.firstIndex(of: viewController)!
+//            navigationController.viewControllers.insert(vc, at: index)
+//        }
+//    }
+    
     
     //MARK: Button Methods
     func enableNextBtn() {
@@ -171,6 +194,20 @@ class MedicationViewController: UIViewController {
     }
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
+        
+        
+
+        
+        
+//        let mainStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
+//
+//        guard let bmiNavigationVC = mainStoryBoard.instantiateViewController(withIdentifier: "BmiIndexViewController") as? BmiIndexViewController else {
+//            return
+//        }
+//
+//        present(bmiNavigationVC, animated: true, completion: nil)
+        
+        
     }
     
     @IBAction func backBtnPressed(_ sender: UIButton) {

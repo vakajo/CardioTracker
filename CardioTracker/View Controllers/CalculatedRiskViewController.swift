@@ -26,8 +26,6 @@ class CalculatedRiskViewController: UIViewController {
     @IBOutlet weak var lblInfo: UILabel!
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
-    @IBOutlet weak var lblConnect: UILabel! //IF Health Kit has been connected, hide label!
-    @IBOutlet weak var btnConnect: UIButton! //IF Health Kit has been connected, hide button!
     @IBOutlet weak var btnProfile: UIButton!
     
     @IBOutlet weak var btnTrack: UIButton!
@@ -35,34 +33,39 @@ class CalculatedRiskViewController: UIViewController {
     @IBOutlet weak var lblConnected: UILabel!
     
     
+    let defaults = UserDefaults.standard
+    
+    struct Keys {
+        static let updatedRisk = "updatedRisk"
+        static let updatedDate = "updatedDate"
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lblConnected.isHidden = true
-        btnTrack.isHidden = true
+        //lblConnected.isHidden = true
+        //btnTrack.isHidden = true
         
         RiskDataManager.shared.loadMostRecentVo2maxData()
+        
         let risk = RiskDataManager.shared.computedRisk
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy.MM.dd HH:mm:ss"
+        
+        let dateString = formatter.string(from: date)
+        let yourDate = formatter.date(from: dateString)
+        formatter.dateFormat = "dd.MM.yyyy"
+        let finalDateString = formatter.string(from: yourDate!)
+        print(finalDateString)
+        
+        retrieveRiskAndDateArrs()
+        RiskDataManager.shared.riskArr.append(risk)
+        RiskDataManager.shared.dateArr.append(finalDateString)
+        storeRiskAndDateArrs()
+        
         let roundedRisk = String(format: "%.1f", risk) + "%"
-        
-        
-        // Hide Connect Button if Health Kit has already been authorised.
-        // We will use pressure to indicate this.
-        
-        let pressure = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic)!
-        let statusPressure = HKHealthStore().authorizationStatus(for: pressure)
-        
-        if statusPressure == .sharingAuthorized {
-            lblConnect.isHidden = true
-            lblConnected.isEnabled = false
-            btnConnect.isHidden = true
-            lblConnected.isHidden = false
-            btnTrack.isHidden = false
-        }
-
-        
         
         
         // MARK: Labels Layout
@@ -73,7 +76,6 @@ class CalculatedRiskViewController: UIViewController {
         lblRisk.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblRiskValue.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         lblRiskValue.text = String(roundedRisk)
-        lblConnect.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblConnected.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblInfo.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         lblDesc
@@ -84,7 +86,7 @@ class CalculatedRiskViewController: UIViewController {
         
         
         //MARK: Buttons
-        let buttons = [btnConnect, btnTrack]
+        let buttons = [btnTrack]
         
         for button in buttons {
             button!.layer.cornerRadius = 15
@@ -93,29 +95,20 @@ class CalculatedRiskViewController: UIViewController {
         }
         
         btnProfile.setTitleColor(UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1), for: .normal)
+        
+        // Hide Track Button if Not connected to HealthKit
+//        let pressure = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic)!
+//        let statusPressure = HKHealthStore().authorizationStatus(for: pressure)
+//
+//        if statusPressure == .sharingAuthorized {
+//            btnTrack.isHidden = true
+//            lblConnected.isHidden = true
+//        }
+        
+        
     }
     
-    private func authoriseHealthKit() {
-        
-        HealthKitSetupAssistant.authorizeHealthKit { (authorized, error) in
-            
-            guard authorized else {
-                
-                let baseMessage = "HealthKit Authorization Failed"
-                
-                if let error = error {
-                    print("\(baseMessage). Reason: \(error.localizedDescription)")
-                } else {
-                    print(baseMessage)
-                }
-                
-                return
-            }
-            
-            print("HealthKit Successfully Authorized.")
-        }
-        
-    }
+    
     
     
     @IBAction func btnBackClicked(_ sender: UIButton) {
@@ -123,17 +116,26 @@ class CalculatedRiskViewController: UIViewController {
     }
     
     //IF Health Kit has been connected, hide button!
-    @IBAction func btnConnectClicked(_ sender: UIButton) {
-        //authoriseHealthKit()
-    }
+    
     
     @IBAction func btnProfile(_ sender: UIButton) {
-        
+    }
+    
+    
+    @IBAction func btnTrackClicked(_ sender: UIButton) {
+    }
+    
+    func storeRiskAndDateArrs() {
+        defaults.set(RiskDataManager.shared.riskArr, forKey: Keys.updatedRisk)
+        defaults.set(RiskDataManager.shared.dateArr, forKey: Keys.updatedDate)
+    }
+    
+    func retrieveRiskAndDateArrs() {
+        RiskDataManager.shared.riskArr = defaults.array(forKey: Keys.updatedRisk) as? [Double] ?? [Double]()
+        RiskDataManager.shared.dateArr = defaults.array(forKey: Keys.updatedDate) as? [String] ?? [String]()
     }
     
     
     
     
-
-
 }

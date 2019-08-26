@@ -8,6 +8,7 @@
 
 import UIKit
 import HealthKit
+import Charts
 
 class WelcomeViewController: UIViewController {
     

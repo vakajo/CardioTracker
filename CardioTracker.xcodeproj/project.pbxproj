@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3D859DD123104F700014AD2B /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DD023104F700014AD2B /* ConnectViewController.swift */; };
+		3D859DD3231074240014AD2B /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DD2231074240014AD2B /* TrackingViewController.swift */; };
+		3D859DD7231082670014AD2B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D859DD6231082670014AD2B /* Charts.framework */; };
+		3D859DDB2311F06F0014AD2B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DDA2311F06F0014AD2B /* DummyViewController.swift */; };
+		3D859DDD231288340014AD2B /* MainNavicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DDC231288340014AD2B /* MainNavicationViewController.swift */; };
 		3DA734B923087F1200B300FD /* CardioTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA734B823087F1200B300FD /* CardioTrackerTests.swift */; };
 		3DDA005B22F24C25005C23B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA005A22F24C25005C23B3 /* AppDelegate.swift */; };
 		3DDA005D22F24C25005C23B3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA005C22F24C25005C23B3 /* WelcomeViewController.swift */; };
@@ -40,6 +44,8 @@
 		3DFBBAF5230AD08D0003FC39 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBBAF4230AD08D0003FC39 /* ProfileDataStore.swift */; };
 		3DFBBAFA230B0C910003FC39 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBBAF9230B0C910003FC39 /* UserHealthProfile.swift */; };
 		3DFBBAFC230B4C4D0003FC39 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFBBAFB230B4C4D0003FC39 /* ProfileViewController.swift */; };
+		4E50BC04DC0B8145D49ED0AF /* Pods_CardioTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F8296E40353E32D607AEF /* Pods_CardioTrackerTests.framework */; };
+		A99B5EA16E62796DED30D090 /* Pods_CardioTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9D37751D4FB4B4734CADA3 /* Pods_CardioTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,11 @@
 
 /* Begin PBXFileReference section */
 		3D859DD023104F700014AD2B /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		3D859DD2231074240014AD2B /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		3D859DD4231081FD0014AD2B /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D859DD6231082670014AD2B /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D859DDA2311F06F0014AD2B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		3D859DDC231288340014AD2B /* MainNavicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavicationViewController.swift; sourceTree = "<group>"; };
 		3DA734B623087F1200B300FD /* CardioTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardioTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA734B823087F1200B300FD /* CardioTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioTrackerTests.swift; sourceTree = "<group>"; };
 		3DA734BA23087F1200B300FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +102,12 @@
 		3DFBBAF4230AD08D0003FC39 /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
 		3DFBBAF9230B0C910003FC39 /* UserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
 		3DFBBAFB230B4C4D0003FC39 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5E296106A1824ACE7A7E82B5 /* Pods-CardioTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardioTracker.release.xcconfig"; path = "Target Support Files/Pods-CardioTracker/Pods-CardioTracker.release.xcconfig"; sourceTree = "<group>"; };
+		B346DBCEDB5EDEF9C432E945 /* Pods-CardioTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardioTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-CardioTrackerTests/Pods-CardioTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD9D37751D4FB4B4734CADA3 /* Pods_CardioTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardioTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14F8296E40353E32D607AEF /* Pods_CardioTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardioTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F156480CE7544A279F480731 /* Pods-CardioTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardioTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-CardioTrackerTests/Pods-CardioTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F97906D0DF8D6BDFD891F95E /* Pods-CardioTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardioTracker.debug.xcconfig"; path = "Target Support Files/Pods-CardioTracker/Pods-CardioTracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E50BC04DC0B8145D49ED0AF /* Pods_CardioTrackerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +123,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D859DD7231082670014AD2B /* Charts.framework in Frameworks */,
 				3DFBBAEC230A9FDB0003FC39 /* HealthKit.framework in Frameworks */,
+				A99B5EA16E62796DED30D090 /* Pods_CardioTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +150,7 @@
 				3DDA005822F24C25005C23B3 /* Products */,
 				3DDA006F22F2D60E005C23B3 /* Fonts */,
 				3DFBBAEA230A9FDB0003FC39 /* Frameworks */,
+				8CB3405F3E5B32B9E6F9E869 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,13 +206,16 @@
 				3DDB609322F9B52400B5156A /* FamHistoryViewController.swift */,
 				3DDB609522FAC7AD00B5156A /* ConditionsViewController.swift */,
 				3DDB609722FADE7800B5156A /* MedicationViewController.swift */,
+				3D859DDA2311F06F0014AD2B /* DummyViewController.swift */,
 				3DDB609922FAE75C00B5156A /* CholesterolViewController.swift */,
 				3DDB609B22FAFBEF00B5156A /* UnknownCholesterolViewController.swift */,
 				3DDB609D22FB022D00B5156A /* SystolicBpViewController.swift */,
 				3DDB609F22FB073C00B5156A /* UnknownSystolicBpViewController.swift */,
 				3DDB60A122FB074B00B5156A /* BmiIndexViewController.swift */,
 				3DDB60A922FD7A4300B5156A /* CalculatedRiskViewController.swift */,
+				3D859DD2231074240014AD2B /* TrackingViewController.swift */,
 				3DFBBAFB230B4C4D0003FC39 /* ProfileViewController.swift */,
+				3D859DDC231288340014AD2B /* MainNavicationViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -199,9 +223,24 @@
 		3DFBBAEA230A9FDB0003FC39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D859DD6231082670014AD2B /* Charts.framework */,
+				3D859DD4231081FD0014AD2B /* Charts.framework */,
 				3DFBBAEB230A9FDB0003FC39 /* HealthKit.framework */,
+				DD9D37751D4FB4B4734CADA3 /* Pods_CardioTracker.framework */,
+				F14F8296E40353E32D607AEF /* Pods_CardioTrackerTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CB3405F3E5B32B9E6F9E869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F97906D0DF8D6BDFD891F95E /* Pods-CardioTracker.debug.xcconfig */,
+				5E296106A1824ACE7A7E82B5 /* Pods-CardioTracker.release.xcconfig */,
+				F156480CE7544A279F480731 /* Pods-CardioTrackerTests.debug.xcconfig */,
+				B346DBCEDB5EDEF9C432E945 /* Pods-CardioTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DA734BF23087F1200B300FD /* Build configuration list for PBXNativeTarget "CardioTrackerTests" */;
 			buildPhases = (
+				FC46B77FD815F76716B09FB7 /* [CP] Check Pods Manifest.lock */,
 				3DA734B223087F1200B300FD /* Sources */,
 				3DA734B323087F1200B300FD /* Frameworks */,
 				3DA734B423087F1200B300FD /* Resources */,
+				B11439AAA5EF687A6BB31B80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DDA006922F24C26005C23B3 /* Build configuration list for PBXNativeTarget "CardioTracker" */;
 			buildPhases = (
+				1F7C4E21DE2B5DB827D71005 /* [CP] Check Pods Manifest.lock */,
 				3DDA005322F24C25005C23B3 /* Sources */,
 				3DDA005422F24C25005C23B3 /* Frameworks */,
 				3DDA005522F24C25005C23B3 /* Resources */,
+				706E3B5D380C5104E1420DED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +354,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F7C4E21DE2B5DB827D71005 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardioTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		706E3B5D380C5104E1420DED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardioTracker/Pods-CardioTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardioTracker/Pods-CardioTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CardioTracker/Pods-CardioTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B11439AAA5EF687A6BB31B80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardioTrackerTests/Pods-CardioTrackerTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardioTrackerTests/Pods-CardioTrackerTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CardioTrackerTests/Pods-CardioTrackerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC46B77FD815F76716B09FB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardioTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3DA734B223087F1200B300FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -331,17 +455,20 @@
 				3DDB609622FAC7AD00B5156A /* ConditionsViewController.swift in Sources */,
 				3DDB609C22FAFBEF00B5156A /* UnknownCholesterolViewController.swift in Sources */,
 				3DFBBAFC230B4C4D0003FC39 /* ProfileViewController.swift in Sources */,
+				3D859DDB2311F06F0014AD2B /* DummyViewController.swift in Sources */,
 				3DDB60A022FB073C00B5156A /* UnknownSystolicBpViewController.swift in Sources */,
 				3DDB60AA22FD7A4300B5156A /* CalculatedRiskViewController.swift in Sources */,
 				3DDB609A22FAE75C00B5156A /* CholesterolViewController.swift in Sources */,
 				3DDA008122F454D7005C23B3 /* AgeViewController.swift in Sources */,
 				3DFBBAEF230AB5820003FC39 /* HealthKitSetupAssistant.swift in Sources */,
 				3DDB60A222FB074B00B5156A /* BmiIndexViewController.swift in Sources */,
+				3D859DDD231288340014AD2B /* MainNavicationViewController.swift in Sources */,
 				3DDB609E22FB022D00B5156A /* SystolicBpViewController.swift in Sources */,
 				3DFBBAFA230B0C910003FC39 /* UserHealthProfile.swift in Sources */,
 				3D859DD123104F700014AD2B /* ConnectViewController.swift in Sources */,
 				3DDA008722F9A700005C23B3 /* DiabetesViewController.swift in Sources */,
 				3DDA005B22F24C25005C23B3 /* AppDelegate.swift in Sources */,
+				3D859DD3231074240014AD2B /* TrackingViewController.swift in Sources */,
 				3DDB609822FADE7800B5156A /* MedicationViewController.swift in Sources */,
 				3DDB609422F9B52400B5156A /* FamHistoryViewController.swift in Sources */,
 				3DDB60A422FCDB3800B5156A /* RiskDataManager.swift in Sources */,
@@ -381,6 +508,7 @@
 /* Begin XCBuildConfiguration section */
 		3DA734BD23087F1200B300FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F156480CE7544A279F480731 /* Pods-CardioTrackerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -401,6 +529,7 @@
 		};
 		3DA734BE23087F1200B300FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B346DBCEDB5EDEF9C432E945 /* Pods-CardioTrackerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +666,7 @@
 		};
 		3DDA006A22F24C26005C23B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97906D0DF8D6BDFD891F95E /* Pods-CardioTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CardioTracker/CardioTracker.entitlements;
@@ -556,6 +686,7 @@
 		};
 		3DDA006B22F24C26005C23B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E296106A1824ACE7A7E82B5 /* Pods-CardioTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CardioTracker/CardioTracker.entitlements;

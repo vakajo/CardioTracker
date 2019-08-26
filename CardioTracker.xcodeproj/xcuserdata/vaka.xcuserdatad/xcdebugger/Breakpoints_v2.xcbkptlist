@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/RiskDataManager.swift"
-            timestampString = "588270802.466576"
+            timestampString = "588533213.486218"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "428"
-            endingLineNumber = "428"
+            startingLineNumber = "431"
+            endingLineNumber = "431"
             landmarkName = "computeFemaleRisk()"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/RiskDataManager.swift"
-            timestampString = "588270802.466658"
+            timestampString = "588533213.493469"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "495"
-            endingLineNumber = "495"
+            startingLineNumber = "498"
+            endingLineNumber = "498"
             landmarkName = "computeFemaleRisk()"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/ConnectViewController.swift"
-            timestampString = "588277945.699156"
+            timestampString = "588380203.3388751"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/ConnectViewController.swift"
-            timestampString = "588277945.6992249"
+            timestampString = "588380203.338921"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "85"
@@ -134,31 +134,31 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CardioTracker.ConnectViewController.(authoriseHealthKit in _D532BE12717F183053BC186AB0F3B00A)() -&gt; Swift.Bool"
+                  symbolName = "CardioTracker.ConnectViewController.(authoriseHealthKit in _D532BE12717F183053BC186AB0F3B00A)() -&gt; ()"
                   moduleName = "CardioTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vaka/Documents/Developer/CardioTracker/CardioTracker/CardioTracker/View%20Controllers/ConnectViewController.swift"
-                  timestampString = "588274149.708143"
+                  timestampString = "588287357.39062"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "76">
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "56">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CardioTracker.ConnectViewController.(authoriseHealthKit in _D532BE12717F183053BC186AB0F3B00A)() -&gt; Swift.Bool"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CardioTracker.ConnectViewController.(authoriseHealthKit in _D532BE12717F183053BC186AB0F3B00A)() -&gt; ()"
                   moduleName = "CardioTracker"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vaka/Documents/Developer/CardioTracker/CardioTracker/CardioTracker/View%20Controllers/ConnectViewController.swift"
-                  timestampString = "588274149.7101361"
+                  timestampString = "588287357.393685"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "220">
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "188">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CardioTracker/View Controllers/ConnectViewController.swift"
-            timestampString = "588277945.699277"
+            timestampString = "588380203.3389651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "100"

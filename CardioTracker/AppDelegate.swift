@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        if(UserDefaults.standard.bool(forKey: "notFirstInApp") == false){
+//            UserDefaults.standard.set(true, forKey: "notFirstInApp")
+//            window?.rootViewController = CalculatedRiskViewController()
+//        }else{
+//            window?.rootViewController = WelcomeViewController()
+//        }
+        
         return true
     }
 
