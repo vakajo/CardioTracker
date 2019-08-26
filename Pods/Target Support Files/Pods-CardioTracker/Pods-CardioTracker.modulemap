@@ -1,0 +1,6 @@
+framework module Pods_CardioTracker {
+  umbrella header "Pods-CardioTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

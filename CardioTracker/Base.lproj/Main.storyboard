@@ -1707,6 +1707,7 @@
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
+                                    <action selector="btnNextSelected:" destination="Y15-aS-0jS" eventType="touchUpInside" id="7dl-Me-c0p"/>
                                     <segue destination="mTI-Gd-3Kf" kind="show" id="811-s6-OUC"/>
                                 </connections>
                             </button>

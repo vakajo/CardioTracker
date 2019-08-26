@@ -74,6 +74,9 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
         btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
         
         //pushTwoViewControllers()
+        
+
+        
     }
     
 //    func pushTwoViewControllers() {
@@ -193,9 +196,16 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
         }
     }
     
+    
+    
     @IBAction func btnNextSelected(_ sender: UIButton) {
         
+
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "BmiIndexViewController") as! BmiIndexViewController
+        self.navigationController?.pushViewController(newViewController, animated: true)
         
+        //present(newViewController, animated: true, completion: nil)
 
         
         
