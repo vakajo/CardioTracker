@@ -104,19 +104,18 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var constraintMedications: NSLayoutConstraint!
     
     
+    
     private let userHealthProfile = UserHealthProfile()
     let healthStore = HKHealthStore()
     let exerciseType = HKSampleType.quantityType(forIdentifier: .appleExerciseTime)
     
     var estimatedCholesterolHDLRatio: Double = 0
     var estimatedSystolicBP: Double = 0
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Profile"
         
         if RiskDataManager.shared.gender == .female {
             constraintMedications.constant = 30
@@ -216,6 +215,23 @@ class ProfileViewController: UIViewController {
             lblErectileValue.isHidden = true
             viewErectile.isHidden = true
         }
+        
+        let pressure = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic)!
+        let statusPressure = HKHealthStore().authorizationStatus(for: pressure)
+        
+        if statusPressure != .sharingAuthorized {
+            lblHealthKitData.isHidden = true
+            viewExercise.isHidden = true
+            lblExercise.isHidden = true
+            lblExerciseValue.isHidden = true
+            viewVo2max.isHidden = true
+            lblVo2max.isHidden = true
+            lblVo2maxValue.isHidden = true
+            viewEstimatedRisk.isHidden = true
+            lblEstimatedRisk.isHidden = true
+            lblEstimatedRiskValue.isHidden = true
+        }
+
         
         let dblWeight = RiskDataManager.shared.weight
         let dblHeight = RiskDataManager.shared.height/100

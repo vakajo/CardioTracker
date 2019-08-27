@@ -10,7 +10,6 @@ import UIKit
 
 class UnknownSystolicBpViewController: UIViewController {
 
-    @IBOutlet weak var btnBack: UIButton!
     
     
     @IBOutlet weak var lblC: UILabel!
@@ -83,13 +82,6 @@ class UnknownSystolicBpViewController: UIViewController {
         buttonTapped(sender: btnLow)
         RiskDataManager.shared.systolicBloodPressure = 80
     }
-    
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
-    
     
 
 

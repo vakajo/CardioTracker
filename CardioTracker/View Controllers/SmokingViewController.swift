@@ -29,10 +29,9 @@ class SmokingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
     
-    
-    
     // Declare array for Picker View
     var pickerData: [String] = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

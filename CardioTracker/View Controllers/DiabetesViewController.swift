@@ -33,7 +33,6 @@ class DiabetesViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     // Declare array for Picker View
     var pickerData: [String] = [String]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

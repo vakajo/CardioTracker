@@ -19,7 +19,6 @@ class ConnectViewController: UIViewController {
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
     
-    
     @IBOutlet weak var lblAutomaticallyConnect: UILabel!
     @IBOutlet weak var lblVariables1: UILabel!
     @IBOutlet weak var lblVariables2: UILabel!
@@ -30,9 +29,8 @@ class ConnectViewController: UIViewController {
     
     @IBOutlet weak var btnConnect: UIButton!
     @IBOutlet weak var btnContinue: UIButton!
-    @IBOutlet weak var btnBack: UIButton!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -117,9 +115,7 @@ class ConnectViewController: UIViewController {
     }
     
     
-    @IBAction func btnBackClicked(_ sender: UIButton) {
-    }
-    
+   
     
 
     

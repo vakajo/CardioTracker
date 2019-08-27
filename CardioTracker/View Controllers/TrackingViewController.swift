@@ -34,6 +34,7 @@ class TrackingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Overview"
         
         //MARK: Labels
         let lblArr = [lblC, lblCardio, lblT, lblTracker, lblChange]
@@ -41,6 +42,7 @@ class TrackingViewController: UIViewController {
         for lbl in lblArr {
             lbl?.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         }
+        
         
         let lblGrayArr = [lblOverview, lblChange]
         

@@ -29,7 +29,6 @@ class FamHistoryViewController: UIViewController {
     @IBOutlet weak var viewSepBottom: UIView!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

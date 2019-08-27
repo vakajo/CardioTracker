@@ -7,11 +7,9 @@
 //
 
 import UIKit
+import HealthKit
 
 class MedicationViewController: UIViewController, UINavigationControllerDelegate {
-
-    
-    @IBOutlet weak var btnBack: UIButton!
 
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
@@ -22,7 +20,6 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
     @IBOutlet weak var lblQuestions: UILabel!
     
     @IBOutlet weak var lblMedication: UILabel!
-    
     
     @IBOutlet weak var lblBloodPressureTreatment: UILabel!
     @IBOutlet weak var btnBloodPressureTreatment: UIButton!
@@ -73,28 +70,7 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
         btnCircle.layer.borderWidth = 1.0
         btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
         
-        //pushTwoViewControllers()
-        
-
-        
     }
-    
-//    func pushTwoViewControllers() {
-//        if let viewController2 = self.storyboard?.instantiateViewController(withIdentifier: "DummyViewController"),
-//            let viewController3 = self.storyboard?.instantiateViewController(withIdentifier: "BmiIndexViewController") { //change this to your identifiers
-//            self.viewControllerToInsertBelow = viewController2
-//            self.navigationController?.pushViewController(viewController3, animated: true)
-//        }
-//    }
-//
-//    //MARK: - UINavigationControllerDelegate
-//    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-//        if let vc = viewControllerToInsertBelow {
-//            viewControllerToInsertBelow = nil
-//            let index = navigationController.viewControllers.firstIndex(of: viewController)!
-//            navigationController.viewControllers.insert(vc, at: index)
-//        }
-//    }
     
     
     //MARK: Button Methods
@@ -200,28 +176,19 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
         
-
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "BmiIndexViewController") as! BmiIndexViewController
-        self.navigationController?.pushViewController(newViewController, animated: true)
         
-        //present(newViewController, animated: true, completion: nil)
+        let healthKit = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic)!
+        let status = HKHealthStore().authorizationStatus(for: healthKit)
+        
+        if status == .sharingAuthorized {
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "BmiIndexViewController") as! BmiIndexViewController
+            self.navigationController?.pushViewController(newViewController, animated: true)
+        } else {
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "CholesterolViewController") as! CholesterolViewController
+            self.navigationController?.pushViewController(newViewController, animated: true)
+        }
+    }
+    
 
-        
-        
-//        let mainStoryBoard: UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
-//
-//        guard let bmiNavigationVC = mainStoryBoard.instantiateViewController(withIdentifier: "BmiIndexViewController") as? BmiIndexViewController else {
-//            return
-//        }
-//
-//        present(bmiNavigationVC, animated: true, completion: nil)
-        
-        
-    }
-    
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    
 }

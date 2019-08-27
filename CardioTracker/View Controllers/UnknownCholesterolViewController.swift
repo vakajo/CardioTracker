@@ -11,8 +11,6 @@ import UIKit
 class UnknownCholesterolViewController: UIViewController {
 
     
-    @IBOutlet weak var btnBack: UIButton!
-   
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
@@ -27,12 +25,11 @@ class UnknownCholesterolViewController: UIViewController {
     @IBOutlet weak var btnAverage: UIButton!
     @IBOutlet weak var btnLow: UIButton!
     
-
-    
     @IBOutlet weak var viewSepTop: UIView!
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,10 +83,6 @@ class UnknownCholesterolViewController: UIViewController {
     @IBAction func btnLowSelected(_ sender: UIButton) {
         buttonTapped(sender: btnLow)
         RiskDataManager.shared.cholesterolHDL = 2
-    }
-    
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
     }
     
 }

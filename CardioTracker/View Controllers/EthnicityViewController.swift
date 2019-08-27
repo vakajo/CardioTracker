@@ -107,10 +107,6 @@ class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     }
     
     
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     @IBAction func btnNextSelected(_ sender: UIButton) {
     }
 }

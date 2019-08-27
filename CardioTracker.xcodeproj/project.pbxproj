@@ -10,7 +10,6 @@
 		3D859DD123104F700014AD2B /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DD023104F700014AD2B /* ConnectViewController.swift */; };
 		3D859DD3231074240014AD2B /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DD2231074240014AD2B /* TrackingViewController.swift */; };
 		3D859DD7231082670014AD2B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D859DD6231082670014AD2B /* Charts.framework */; };
-		3D859DDB2311F06F0014AD2B /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DDA2311F06F0014AD2B /* DummyViewController.swift */; };
 		3D859DDD231288340014AD2B /* MainNavicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DDC231288340014AD2B /* MainNavicationViewController.swift */; };
 		3DA734B923087F1200B300FD /* CardioTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA734B823087F1200B300FD /* CardioTrackerTests.swift */; };
 		3DDA005B22F24C25005C23B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA005A22F24C25005C23B3 /* AppDelegate.swift */; };
@@ -63,7 +62,6 @@
 		3D859DD2231074240014AD2B /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		3D859DD4231081FD0014AD2B /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D859DD6231082670014AD2B /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D859DDA2311F06F0014AD2B /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		3D859DDC231288340014AD2B /* MainNavicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavicationViewController.swift; sourceTree = "<group>"; };
 		3DA734B623087F1200B300FD /* CardioTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardioTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA734B823087F1200B300FD /* CardioTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioTrackerTests.swift; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				3DDB609322F9B52400B5156A /* FamHistoryViewController.swift */,
 				3DDB609522FAC7AD00B5156A /* ConditionsViewController.swift */,
 				3DDB609722FADE7800B5156A /* MedicationViewController.swift */,
-				3D859DDA2311F06F0014AD2B /* DummyViewController.swift */,
 				3DDB609922FAE75C00B5156A /* CholesterolViewController.swift */,
 				3DDB609B22FAFBEF00B5156A /* UnknownCholesterolViewController.swift */,
 				3DDB609D22FB022D00B5156A /* SystolicBpViewController.swift */,
@@ -455,7 +452,6 @@
 				3DDB609622FAC7AD00B5156A /* ConditionsViewController.swift in Sources */,
 				3DDB609C22FAFBEF00B5156A /* UnknownCholesterolViewController.swift in Sources */,
 				3DFBBAFC230B4C4D0003FC39 /* ProfileViewController.swift in Sources */,
-				3D859DDB2311F06F0014AD2B /* DummyViewController.swift in Sources */,
 				3DDB60A022FB073C00B5156A /* UnknownSystolicBpViewController.swift in Sources */,
 				3DDB60AA22FD7A4300B5156A /* CalculatedRiskViewController.swift in Sources */,
 				3DDB609A22FAE75C00B5156A /* CholesterolViewController.swift in Sources */,

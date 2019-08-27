@@ -10,9 +10,6 @@ import UIKit
 
 class SystolicBpViewController: UIViewController {
 
-    
-    @IBOutlet weak var btnBack: UIButton!
-    
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
@@ -31,6 +28,7 @@ class SystolicBpViewController: UIViewController {
     @IBOutlet weak var viewSepTop: UIView!
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
+    
     
     
     override func viewDidLoad() {
@@ -132,11 +130,6 @@ class SystolicBpViewController: UIViewController {
         guard let dblSystolicBloodPressure = Double(text) else { return }
         RiskDataManager.shared.systolicBloodPressure = dblSystolicBloodPressure
         
-    }
-    
-    
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion:     nil)
     }
    
 

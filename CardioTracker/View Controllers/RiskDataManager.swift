@@ -34,10 +34,10 @@ enum SmokingStatus: Int {
     case heavySmoker = 4
 }
 
-enum DiabetesStatus {
-    case healthy
-    case type1
-    case type2
+enum DiabetesStatus: String {
+    case healthy = "Healthy"
+    case type1 = "Type 1"
+    case type2 = "Type 2"
 }
 
 enum UnknownCholesterolHDL {
@@ -58,6 +58,7 @@ final class RiskDataManager {
     
     private init() {   }
     static let shared = RiskDataManager()
+    
     private let userHealthProfile = UserHealthProfile()
     let healthStore = HKHealthStore()
     
@@ -70,10 +71,10 @@ final class RiskDataManager {
     //HealthKit Variables
     var vo2max: Double = 0.0
     
-    
     // Personal Information:
     var computedRisk = 0.0
     var gender = Gender.male
+    var dateOfBirth = Date()
     var age: Double = 0
     var ethnicity = Ethnicity.white
     
@@ -97,34 +98,9 @@ final class RiskDataManager {
     var smokingStatus = SmokingStatus.nonSmoker
     var diabetesStatus = DiabetesStatus.healthy
     var familyHistory: Bool = false
-    var cholesterolHDL: Double = 0 {
-        didSet {
-            
-            if RiskDataManager.shared.gender == .male {
-                computedRisk = computeMaleRisk()
-            }
-            else if RiskDataManager.shared.gender == .female {
-                computedRisk = computeFemaleRisk()
-            } else {
-                return
-            }
-        }
-    }
+    var cholesterolHDL: Double = 0
     var estimatedCholesterolHDLRatio: Double = 0
- 
-    var systolicBloodPressure: Double = 0 {
-        didSet {
-            
-            if RiskDataManager.shared.gender == .male {
-                computedRisk = computeMaleRisk()
-            }
-            else if RiskDataManager.shared.gender == .female {
-                computedRisk = computeFemaleRisk()
-            } else {
-                return
-            }
-        }
-    }
+    var systolicBloodPressure: Double = 0
     var estimatedSystolicBP: Double = 0
     
     var height: Double = 0
@@ -199,6 +175,17 @@ final class RiskDataManager {
         
         return .healthy
     }
+
+    //MARK: Calculate age from date of birth
+    
+    func calculateAndStoreAge() {
+        
+        let gregorian = Calendar(identifier: .gregorian)
+        let ageComponents = gregorian.dateComponents([.year], from: dateOfBirth, to: Date())
+        let age = ageComponents.year!
+        
+        RiskDataManager.shared.age = Double(age)
+    }
     
     
     //MARK: Load VO2max
@@ -233,6 +220,8 @@ final class RiskDataManager {
     
     //MARK: Compute Estimated Cholesterol & Blood Pressure
     func computeEstimatedCholesterolHDLRatio(vo2max: Double) {
+        
+        print("Er að reikna cholesterol")
         
         if userHealthProfile.vo2max != 0 {
             if RiskDataManager.shared.gender == .male {
@@ -269,6 +258,7 @@ final class RiskDataManager {
             }
             
             RiskDataManager.shared.estimatedCholesterolHDLRatio = estimatedCholesterolHDLRatio
+            print("Estimated CholesterolHDL from RiskDataManager: \(RiskDataManager.shared.estimatedCholesterolHDLRatio)")
             //updateLabelsEstimatedCholesterolHDL(newRatio: estimatedCholesterolHDLRatio)
         }
     }
@@ -312,6 +302,7 @@ final class RiskDataManager {
             }
             
             RiskDataManager.shared.estimatedSystolicBP = estimatedSystolicBP
+            print("Estimated SBP from RiskDataManager: \(RiskDataManager.shared.estimatedSystolicBP)")
             //updateLabelsEstimatedSystolicBP(newSbp: estimatedSystolicBP)
         }
     }
@@ -335,6 +326,13 @@ final class RiskDataManager {
     //MARK: Compute Risk Methods
     func computeFemaleRisk() -> Double {
         
+        let pressure = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic)!
+        let statusPressure = HKHealthStore().authorizationStatus(for: pressure)
+        
+        if statusPressure == .sharingAuthorized {
+            RiskDataManager.shared.loadMostRecentVo2maxData() // Þetta ætti að setja estimatedCholesterolHDLRatio og estimatedSystolicBloodPressure en gerir það ekki!
+        }
+        
         // Calculation of BMI Index
         let dblWeight = RiskDataManager.shared.weight
         let dblHeight = RiskDataManager.shared.height/100
@@ -347,10 +345,12 @@ final class RiskDataManager {
             dblCholesterolHDLRatio = RiskDataManager.shared.estimatedCholesterolHDLRatio
         }
         
+        
         var dblSystolicBloodPressure = RiskDataManager.shared.systolicBloodPressure
         if RiskDataManager.shared.estimatedSystolicBP != 0 {
             dblSystolicBloodPressure = RiskDataManager.shared.estimatedSystolicBP
         }
+        print("Systolic Blood pressure notaður er: \(dblSystolicBloodPressure)")
         
         let ethnicityCategory = RiskDataManager.shared.ethnicity.rawValue
         let smokingCategory = RiskDataManager.shared.smokingStatus.rawValue
@@ -497,7 +497,6 @@ final class RiskDataManager {
         // Calculate the score itself
         let riskScore: Double = 100.0 * (1 - pow(0.988876402378082, exp(sum)))
         return riskScore
-        
     }
     
     

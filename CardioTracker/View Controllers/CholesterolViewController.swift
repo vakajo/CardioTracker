@@ -10,9 +10,6 @@ import UIKit
 
 class CholesterolViewController: UIViewController {
 
-    
-    @IBOutlet weak var btnBack: UIButton!
-    
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
@@ -131,10 +128,6 @@ class CholesterolViewController: UIViewController {
         guard let dblCholesterolHDL = Double(text) else { return }
         RiskDataManager.shared.cholesterolHDL = dblCholesterolHDL
         
-    }
-    
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
     }
 
 }

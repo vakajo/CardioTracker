@@ -37,14 +37,10 @@ class ConditionsViewController: UIViewController {
     @IBOutlet weak var lblErectileDysfunction: UILabel!
     @IBOutlet weak var checkBoxErectileDysfunction: UIButton!
     
-    
     @IBOutlet weak var lblHealthy: UILabel!
     @IBOutlet weak var checkBoxHealthy: UIButton!
     
-    
-    
     @IBOutlet weak var btnNext: UIButton!
-    
     
     
     override func viewDidLoad() {

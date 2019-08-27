@@ -30,6 +30,7 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +62,9 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
         btnCircle.layer.borderWidth = 1.0
         btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
         
+        //Methods
+        
+        
     }
     
     func calculateAndStoreAge() {
@@ -75,7 +79,6 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     
     
     func enableBtnNext() {
-        
         if RiskDataManager.shared.age >= 25 && RiskDataManager.shared.age <= 84 {
             btnNext.isEnabled = true
             btnNext.alpha = 1.0
@@ -88,7 +91,8 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: Date Picker View Methods
     @IBAction func datePickerViewChanged(_ sender: UIDatePicker) {
-        calculateAndStoreAge()
+        RiskDataManager.shared.dateOfBirth = datePickerAge.date
+        RiskDataManager.shared.calculateAndStoreAge()
         enableBtnNext()
     }
     
@@ -97,7 +101,5 @@ class AgeViewController: UIViewController, UITextFieldDelegate {
     @IBAction func btnNextClicked(_ sender: UIButton) {
     }
     
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
 }
+
