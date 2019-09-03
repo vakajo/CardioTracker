@@ -11,8 +11,6 @@ import HealthKit
 
 class ProfileDataStore {
     
-    
-    
     class func getMostRecentSample(for sampleType: HKSampleType,
                                    completion: @escaping (HKQuantitySample?, Error?) -> Swift.Void) {
         
@@ -49,7 +47,25 @@ class ProfileDataStore {
         HKHealthStore().execute(sampleQuery)
     }
     
-    
-    
+    func saveBloodPressureMeasurement(systolic: Double, date: Date) {
+        // 1
+        let startDate = Date()
+        let endDate = startDate
+        // 2
+        let systolicType = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic)!
+        let systolicQuantity = HKQuantity(unit: HKUnit.millimeterOfMercury(), doubleValue: systolic)
+        let systolicSample = HKQuantitySample(type: systolicType, quantity: systolicQuantity, start: startDate, end: endDate)
+        
+        // 3
+        HKHealthStore().save(systolicSample) { (success, error) in
+            
+            if let error = error {
+                print("Error Saving BMI Sample: \(error.localizedDescription)")
+            } else {
+                print("Successfully saved Systolic Blood Pressure Sample")
+            }
+        }
+
+    }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D08D4CC231687530093A577 /* DisclaimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D08D4CB231687530093A577 /* DisclaimerViewController.swift */; };
 		3D859DD123104F700014AD2B /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DD023104F700014AD2B /* ConnectViewController.swift */; };
 		3D859DD3231074240014AD2B /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D859DD2231074240014AD2B /* TrackingViewController.swift */; };
 		3D859DD7231082670014AD2B /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D859DD6231082670014AD2B /* Charts.framework */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D08D4CB231687530093A577 /* DisclaimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerViewController.swift; sourceTree = "<group>"; };
 		3D859DD023104F700014AD2B /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		3D859DD2231074240014AD2B /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		3D859DD4231081FD0014AD2B /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +214,7 @@
 				3DDB60A922FD7A4300B5156A /* CalculatedRiskViewController.swift */,
 				3D859DD2231074240014AD2B /* TrackingViewController.swift */,
 				3DFBBAFB230B4C4D0003FC39 /* ProfileViewController.swift */,
+				3D08D4CB231687530093A577 /* DisclaimerViewController.swift */,
 				3D859DDC231288340014AD2B /* MainNavicationViewController.swift */,
 			);
 			path = "View Controllers";
@@ -448,6 +451,7 @@
 				3DDA007F22F42897005C23B3 /* GenderViewController.swift in Sources */,
 				3DDA008322F87272005C23B3 /* EthnicityViewController.swift in Sources */,
 				3DFBBAF5230AD08D0003FC39 /* ProfileDataStore.swift in Sources */,
+				3D08D4CC231687530093A577 /* DisclaimerViewController.swift in Sources */,
 				3DDA005D22F24C25005C23B3 /* WelcomeViewController.swift in Sources */,
 				3DDB609622FAC7AD00B5156A /* ConditionsViewController.swift in Sources */,
 				3DDB609C22FAFBEF00B5156A /* UnknownCholesterolViewController.swift in Sources */,

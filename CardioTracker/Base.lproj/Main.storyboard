@@ -36,19 +36,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHa-RH-GMz">
-                                <rect key="frame" x="128" y="139" width="158.33333333333337" height="42"/>
+                                <rect key="frame" x="128" y="134" width="158.33333333333337" height="42"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="35"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gid-U5-Duf">
-                                <rect key="frame" x="197.66666666666666" y="189" width="18.666666666666657" height="19.333333333333343"/>
+                                <rect key="frame" x="197.66666666666666" y="183" width="18.666666666666657" height="19.333333333333343"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIt-ho-KfT">
-                                <rect key="frame" x="127" y="233.33333333333337" width="160" height="57"/>
+                                <rect key="frame" x="127" y="209.33333333333334" width="160" height="57.000000000000028"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="nl9-mv-Qd7">
                                         <rect key="frame" x="8" y="5" width="60" height="52"/>
@@ -105,40 +105,40 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lx-Kh-mCl">
-                                <rect key="frame" x="50" y="340.33333333333331" width="314" height="1"/>
+                                <rect key="frame" x="50" y="316.33333333333331" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="LHI-lj-Bl1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqy-fX-KF7" userLabel="View Sep Bottom">
-                                <rect key="frame" x="50" y="546" width="314" height="1"/>
+                                <rect key="frame" x="50" y="540.33333333333337" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="pIY-yb-kvW"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT THE APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eph-7O-fwx">
-                                <rect key="frame" x="50" y="351.33333333333331" width="314" height="17"/>
+                                <rect key="frame" x="50" y="327.33333333333331" width="314" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYB-OM-zeN">
-                                <rect key="frame" x="50" y="368.33333333333331" width="314" height="114.66666666666669"/>
+                                <rect key="frame" x="50" y="344.33333333333331" width="314" height="124.33333333333331"/>
                                 <string key="text">CardioTracker is a mobile app that allows individuals to estimate and monitor their cardiovascular health. By connecting the app to a wearable device, one's cardiovascular risk can be continuously automatically estimated. The app also provides information about risk factors that affect cardiovascular health. The app is intended for apparently healthy individuals that have not been diagnosed with any cardiovascular conditions.</string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To get started, you will need to answer a few questions to calculate your 10-year risk for developing cardiovascular disease" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbZ-zR-rDO">
-                                <rect key="frame" x="100" y="547.33333333333337" width="214" height="39.666666666666629"/>
+                                <rect key="frame" x="100" y="560.33333333333337" width="214" height="39.666666666666629"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJh-3b-w1j">
-                                <rect key="frame" x="100" y="595" width="214" height="36"/>
+                                <rect key="frame" x="100" y="610" width="214" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="do0-fK-sbA"/>
@@ -153,9 +153,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiR-o3-HBN">
-                                <rect key="frame" x="50" y="488" width="314" height="43"/>
+                                <rect key="frame" x="50" y="478.66666666666669" width="314" height="46.666666666666686"/>
                                 <string key="text">Disclaimer: This app is for guidance only. For medical advice, please consult your physician or other health care professionals.</string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -169,27 +169,27 @@
                             <constraint firstItem="gid-U5-Duf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8gM-gC-YWm"/>
                             <constraint firstItem="Dqy-fX-KF7" firstAttribute="leading" secondItem="rYB-OM-zeN" secondAttribute="leading" id="994-yt-RqT"/>
                             <constraint firstItem="rYB-OM-zeN" firstAttribute="leading" secondItem="Eph-7O-fwx" secondAttribute="leading" id="Dp9-4V-b7c"/>
-                            <constraint firstItem="fHa-RH-GMz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="Fzy-Pm-RPG"/>
+                            <constraint firstItem="fHa-RH-GMz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="Fzy-Pm-RPG"/>
                             <constraint firstItem="SbZ-zR-rDO" firstAttribute="trailing" secondItem="AJh-3b-w1j" secondAttribute="trailing" id="JEk-K1-tSz"/>
                             <constraint firstItem="OiR-o3-HBN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rYB-OM-zeN" secondAttribute="trailing" id="Omh-wP-mkl"/>
                             <constraint firstItem="Eph-7O-fwx" firstAttribute="trailing" secondItem="2Lx-Kh-mCl" secondAttribute="trailing" id="Qq2-ZR-NAN"/>
                             <constraint firstItem="Dqy-fX-KF7" firstAttribute="top" secondItem="OiR-o3-HBN" secondAttribute="bottom" constant="15" id="RCt-A8-WB9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AJh-3b-w1j" secondAttribute="bottom" constant="105" id="Sy7-gf-muN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AJh-3b-w1j" secondAttribute="bottom" constant="90" id="Sy7-gf-muN"/>
                             <constraint firstItem="2Lx-Kh-mCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="TqU-Mg-tYG"/>
-                            <constraint firstItem="OiR-o3-HBN" firstAttribute="top" secondItem="rYB-OM-zeN" secondAttribute="bottom" constant="5" id="Uci-LY-CBi"/>
+                            <constraint firstItem="OiR-o3-HBN" firstAttribute="top" secondItem="rYB-OM-zeN" secondAttribute="bottom" constant="10" id="Uci-LY-CBi"/>
                             <constraint firstItem="rYB-OM-zeN" firstAttribute="top" secondItem="Eph-7O-fwx" secondAttribute="bottom" id="Vwt-JH-ZIo"/>
                             <constraint firstItem="nIt-ho-KfT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ylv-6U-i78"/>
                             <constraint firstItem="Eph-7O-fwx" firstAttribute="leading" secondItem="2Lx-Kh-mCl" secondAttribute="leading" id="aSO-qi-S8y"/>
-                            <constraint firstItem="gid-U5-Duf" firstAttribute="top" secondItem="fHa-RH-GMz" secondAttribute="bottom" constant="8" id="bRU-7M-T7i"/>
+                            <constraint firstItem="gid-U5-Duf" firstAttribute="top" secondItem="fHa-RH-GMz" secondAttribute="bottom" constant="7" id="bRU-7M-T7i"/>
                             <constraint firstItem="Eph-7O-fwx" firstAttribute="top" secondItem="2Lx-Kh-mCl" secondAttribute="bottom" constant="10" id="f4Y-eU-qhu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Lx-Kh-mCl" secondAttribute="trailing" constant="50" id="hZy-SF-K9N"/>
                             <constraint firstItem="AJh-3b-w1j" firstAttribute="trailing" secondItem="Dqy-fX-KF7" secondAttribute="trailing" constant="-50" id="jcQ-aJ-n93"/>
-                            <constraint firstItem="AJh-3b-w1j" firstAttribute="top" secondItem="SbZ-zR-rDO" secondAttribute="bottom" constant="8" id="pKB-Sn-mXn"/>
+                            <constraint firstItem="AJh-3b-w1j" firstAttribute="top" secondItem="SbZ-zR-rDO" secondAttribute="bottom" constant="10" id="pKB-Sn-mXn"/>
                             <constraint firstItem="rYB-OM-zeN" firstAttribute="trailing" secondItem="Eph-7O-fwx" secondAttribute="trailing" id="qvR-t2-lNe"/>
                             <constraint firstItem="AJh-3b-w1j" firstAttribute="leading" secondItem="Dqy-fX-KF7" secondAttribute="leading" constant="50" id="s3G-l4-O5e"/>
                             <constraint firstItem="Dqy-fX-KF7" firstAttribute="trailing" secondItem="rYB-OM-zeN" secondAttribute="trailing" id="sF1-XY-6U2"/>
                             <constraint firstItem="fHa-RH-GMz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vO5-Hs-RWS"/>
-                            <constraint firstItem="nIt-ho-KfT" firstAttribute="top" secondItem="gid-U5-Duf" secondAttribute="bottom" constant="25" id="y1g-fa-8Ux"/>
+                            <constraint firstItem="nIt-ho-KfT" firstAttribute="top" secondItem="gid-U5-Duf" secondAttribute="bottom" constant="7" id="y1g-fa-8Ux"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -255,16 +255,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTD-1l-L4E">
-                                <rect key="frame" x="50" y="561.33333333333337" width="314" height="1"/>
+                                <rect key="frame" x="50" y="579" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="DVL-aQ-8zP"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gg-5j-q0K">
-                                <rect key="frame" x="50" y="572.33333333333337" width="314" height="77.666666666666629"/>
+                                <rect key="frame" x="50" y="590" width="314" height="60"/>
                                 <string key="text">Cardiovascular disease develops 7-10 years later in women than in men. For that reason, cardiovascular disease in women is often underestimated.  It is however still the major cause of death in women over 65 years old.</string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -401,19 +401,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVe-2y-ROj">
-                                <rect key="frame" x="50" y="555" width="314" height="1"/>
+                                <rect key="frame" x="50" y="566.33333333333337" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="PEb-tM-TI0"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="may-Av-iaq">
-                                <rect key="frame" x="50" y="564" width="314" height="86"/>
+                                <rect key="frame" x="50" y="575.33333333333337" width="314" height="74.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="46g-zH-k9A"/>
                                 </constraints>
-                                <string key="text">Higher age is associated with greater risk of cardiovascular disease. Aging can cause changes in the heart and blood vessels. In addition, at a higher age, individuals have less time to modify other cardiovascular risk factors by altering their lifestyle. Therefore, people aged 65 and older are more likely to develop cardiovascular disease.</string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
+                                <string key="text">Higher age is associated with greater risk of cardiovascular disease. Aging can cause changes in the heart and blood vessels. In addition, at a higher age, individuals have less time to modify other cardiovascular risk factors by altering their lifestyle.</string>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -586,19 +586,19 @@
                                 <rect key="frame" x="55" y="260" width="304" height="216"/>
                             </pickerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cK7-r8-3dI">
-                                <rect key="frame" x="50" y="553" width="309" height="1"/>
+                                <rect key="frame" x="50" y="549.33333333333337" width="309" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="cd3-Rd-i8B"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp4-mZ-VjY">
-                                <rect key="frame" x="50" y="564" width="314" height="86"/>
+                                <rect key="frame" x="50" y="560.33333333333337" width="314" height="89.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="qnN-FH-KEf"/>
                                 </constraints>
-                                <string key="text">Cardiovascular risk varies greatly between ethnic groups. Migrants of South Asian migrants (including Indian, Bangladeshi and Pakistani) have elevated risk of developing cardiovascular disease. On the contrary, Black African and Chinese have a low risk of developing cardiovascular disease compared to the other ethnic groups. </string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
+                                <string key="text">Cardiovascular risk varies greatly between ethnic groups. Migrants of South Asian migrants (including Indian, Bangladeshi and Pakistani) have elevated risk of developing cardiovascular disease. On the contrary, Black African and Chinese have a low risk of developing cardiovascular disease.</string>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -770,19 +770,19 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg5-gd-aVX">
-                                <rect key="frame" x="50" y="553" width="314" height="1"/>
+                                <rect key="frame" x="50" y="549.33333333333337" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="kD2-C4-ctP"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVj-gP-l3Y">
-                                <rect key="frame" x="50" y="564" width="314" height="86"/>
+                                <rect key="frame" x="50" y="560.33333333333337" width="314" height="89.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="xXZ-9F-BPO"/>
                                 </constraints>
                                 <string key="text">Smoking has a multiplicative effect on other cardiovascular risk factors such as cholesterol, hypertension and diabetes mellitus. Smoking leads to atherosclerosis, where fat plaques narrow and eventually block the coronary arteries which supply the heart with blood, resulting in myocardial infarction.</string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -937,19 +937,19 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2j-XE-Ciz">
-                                <rect key="frame" x="50" y="553" width="314" height="1"/>
+                                <rect key="frame" x="50" y="549.33333333333337" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="I1t-de-e6a"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyB-LP-KnJ">
-                                <rect key="frame" x="50" y="564" width="314" height="86"/>
+                                <rect key="frame" x="50" y="560.33333333333337" width="314" height="89.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="cgD-JO-lHc"/>
                                 </constraints>
                                 <string key="text">Over time, high blood glucose can damage blood vessels and the nervous system controlling the circulatory system. Therefore, Diabetes Mellitus increases cardiovascular risk greatly. Cardiovascular disease events are more common and occur earlier in patients with diabetes than in nondiabetic individuals.</string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1125,19 +1125,19 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHj-L1-9XG">
-                                <rect key="frame" x="50" y="553" width="314" height="1"/>
+                                <rect key="frame" x="50" y="549.33333333333337" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="cJH-sC-6ny"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0h-uI-AvL">
-                                <rect key="frame" x="50" y="564" width="314" height="86"/>
+                                <rect key="frame" x="50" y="560.33333333333337" width="314" height="89.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="5cK-kl-ryO"/>
                                 </constraints>
                                 <string key="text">Family medical history can be an indicator of cardiovascular disease. Genes can carry conditions such as high blood pressure or high cholesterol, thus increasing cardiovascular risk. Family lifestyle and environment, i.e. growing up in a smoking household or eating a fast food diet, affects blood pressure and cholesterol.</string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1296,7 +1296,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rv1-ck-doR">
-                                <rect key="frame" x="334" y="373.33333333333331" width="30" height="30"/>
+                                <rect key="frame" x="334" y="372.33333333333331" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2dd-mY-ZE4"/>
                                     <constraint firstAttribute="width" constant="30" id="ILX-vv-BYK"/>
@@ -1306,7 +1306,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-jO-zTe">
-                                <rect key="frame" x="334" y="405.33333333333331" width="30" height="30"/>
+                                <rect key="frame" x="334" y="403.33333333333331" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dnw-bH-pEy"/>
                                     <constraint firstAttribute="width" constant="30" id="jxV-rb-cwz"/>
@@ -1316,7 +1316,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="276-Ft-saI">
-                                <rect key="frame" x="334" y="437.33333333333331" width="30" height="30"/>
+                                <rect key="frame" x="334" y="434.33333333333331" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="0JO-N2-Qle"/>
                                     <constraint firstAttribute="height" constant="30" id="dJ3-lj-b8D"/>
@@ -1326,7 +1326,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sp2-JL-mzJ">
-                                <rect key="frame" x="334" y="469.33333333333331" width="30" height="30"/>
+                                <rect key="frame" x="334" y="465.33333333333331" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="CzS-2v-X9G"/>
                                     <constraint firstAttribute="height" constant="30" id="fKu-Nn-hEb"/>
@@ -1336,7 +1336,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-oA-clw">
-                                <rect key="frame" x="334" y="501.33333333333326" width="30" height="30"/>
+                                <rect key="frame" x="334" y="496.33333333333331" width="30" height="29.999999999999943"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="C9N-p4-ETb"/>
                                     <constraint firstAttribute="height" constant="30" id="EzU-Yl-Ya3"/>
@@ -1352,31 +1352,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atrial Fibrillation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7f-Zp-5yN">
-                                <rect key="frame" x="50" y="379.66666666666669" width="274" height="17"/>
+                                <rect key="frame" x="50" y="378.66666666666669" width="274" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Migraines" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4x-V8-TZi">
-                                <rect key="frame" x="50" y="411.66666666666669" width="274" height="17"/>
+                                <rect key="frame" x="50" y="409.66666666666669" width="274" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rheumatoid Arthritis" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce2-5y-qWf">
-                                <rect key="frame" x="50" y="443.66666666666669" width="274" height="17"/>
+                                <rect key="frame" x="50" y="440.66666666666669" width="274" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Systemic Lupus Erythematosus (SLE)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR2-EC-b72">
-                                <rect key="frame" x="50" y="475.66666666666669" width="274" height="17"/>
+                                <rect key="frame" x="50" y="471.66666666666669" width="274" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Severe Mental Illness" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vI-Q2-V6g">
-                                <rect key="frame" x="50" y="507.66666666666674" width="276" height="17"/>
+                                <rect key="frame" x="50" y="502.66666666666669" width="276" height="17.000000000000057"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1411,13 +1411,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erectile Dysfunction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSA-2E-hJb">
-                                <rect key="frame" x="50" y="539.66666666666663" width="276" height="17"/>
+                                <rect key="frame" x="50" y="533.66666666666663" width="276" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s25-8B-PMh">
-                                <rect key="frame" x="334" y="533.33333333333337" width="30" height="30"/>
+                                <rect key="frame" x="334" y="527.33333333333337" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="M2t-jD-AGD"/>
                                     <constraint firstAttribute="width" constant="30" id="VRU-aj-ind"/>
@@ -1496,10 +1496,10 @@
                             <constraint firstItem="sp2-JL-mzJ" firstAttribute="leading" secondItem="aR2-EC-b72" secondAttribute="trailing" constant="10" id="15I-qD-WlG"/>
                             <constraint firstItem="dpb-4Z-qin" firstAttribute="leading" secondItem="gCG-WV-BMa" secondAttribute="trailing" constant="8" id="2fy-KS-fgO"/>
                             <constraint firstItem="TWn-6b-wuu" firstAttribute="leading" secondItem="whg-xB-BnC" secondAttribute="leading" id="4oB-hl-2eV"/>
-                            <constraint firstItem="7j3-jO-zTe" firstAttribute="top" secondItem="Rv1-ck-doR" secondAttribute="bottom" constant="2" id="5I3-Hi-kdf"/>
+                            <constraint firstItem="7j3-jO-zTe" firstAttribute="top" secondItem="Rv1-ck-doR" secondAttribute="bottom" constant="1" id="5I3-Hi-kdf"/>
                             <constraint firstItem="8S8-sl-W6M" firstAttribute="trailing" secondItem="whg-xB-BnC" secondAttribute="trailing" constant="50" id="6Hg-v2-Gmp"/>
                             <constraint firstItem="c7G-oA-clw" firstAttribute="trailing" secondItem="sp2-JL-mzJ" secondAttribute="trailing" id="7CA-c0-HkI"/>
-                            <constraint firstItem="276-Ft-saI" firstAttribute="top" secondItem="7j3-jO-zTe" secondAttribute="bottom" constant="2" id="7iZ-i7-FzT"/>
+                            <constraint firstItem="276-Ft-saI" firstAttribute="top" secondItem="7j3-jO-zTe" secondAttribute="bottom" constant="1" id="7iZ-i7-FzT"/>
                             <constraint firstItem="276-Ft-saI" firstAttribute="trailing" secondItem="7j3-jO-zTe" secondAttribute="trailing" id="7ky-vN-G3X"/>
                             <constraint firstItem="gCG-WV-BMa" firstAttribute="centerY" secondItem="dpb-4Z-qin" secondAttribute="centerY" id="7wy-lx-GBu"/>
                             <constraint firstItem="c7G-oA-clw" firstAttribute="leading" secondItem="sp2-JL-mzJ" secondAttribute="leading" id="9Ed-Q4-ETF"/>
@@ -1509,8 +1509,8 @@
                             <constraint firstItem="S9W-fl-GgC" firstAttribute="centerX" secondItem="hYu-cU-eCj" secondAttribute="centerX" id="CiF-pm-I3k"/>
                             <constraint firstItem="Rv1-ck-doR" firstAttribute="leading" secondItem="w7f-Zp-5yN" secondAttribute="trailing" constant="10" id="D8L-zZ-gHT"/>
                             <constraint firstItem="8S8-sl-W6M" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Igu-TL-21J" secondAttribute="trailing" symbolic="YES" id="F2e-wr-GGz"/>
-                            <constraint firstItem="c7G-oA-clw" firstAttribute="top" secondItem="sp2-JL-mzJ" secondAttribute="bottom" constant="2" id="Gu5-zj-AnK"/>
-                            <constraint firstItem="s25-8B-PMh" firstAttribute="top" secondItem="c7G-oA-clw" secondAttribute="bottom" constant="2" id="Jy0-8c-r9o"/>
+                            <constraint firstItem="c7G-oA-clw" firstAttribute="top" secondItem="sp2-JL-mzJ" secondAttribute="bottom" constant="1" id="Gu5-zj-AnK"/>
+                            <constraint firstItem="s25-8B-PMh" firstAttribute="top" secondItem="c7G-oA-clw" secondAttribute="bottom" constant="1" id="Jy0-8c-r9o"/>
                             <constraint firstItem="dpb-4Z-qin" firstAttribute="trailing" secondItem="c7G-oA-clw" secondAttribute="trailing" id="M1t-1R-cYc"/>
                             <constraint firstItem="276-Ft-saI" firstAttribute="leading" secondItem="7j3-jO-zTe" secondAttribute="leading" id="NYd-nL-7Rc"/>
                             <constraint firstItem="ce2-5y-qWf" firstAttribute="centerY" secondItem="276-Ft-saI" secondAttribute="centerY" id="OMM-vW-siG"/>
@@ -1527,9 +1527,9 @@
                             <constraint firstItem="w7f-Zp-5yN" firstAttribute="centerY" secondItem="Rv1-ck-doR" secondAttribute="centerY" id="W8W-Dx-M8q"/>
                             <constraint firstItem="TWn-6b-wuu" firstAttribute="top" secondItem="whg-xB-BnC" secondAttribute="bottom" constant="25" id="WNP-Ab-DAH"/>
                             <constraint firstItem="Igu-TL-21J" firstAttribute="top" secondItem="gCG-WV-BMa" secondAttribute="bottom" constant="25" id="XZq-zF-6nH"/>
-                            <constraint firstItem="sp2-JL-mzJ" firstAttribute="top" secondItem="276-Ft-saI" secondAttribute="bottom" constant="2" id="YSR-y8-RY0"/>
+                            <constraint firstItem="sp2-JL-mzJ" firstAttribute="top" secondItem="276-Ft-saI" secondAttribute="bottom" constant="1" id="YSR-y8-RY0"/>
                             <constraint firstItem="f4x-V8-TZi" firstAttribute="centerY" secondItem="7j3-jO-zTe" secondAttribute="centerY" id="Ycd-wW-BqM"/>
-                            <constraint firstItem="Rv1-ck-doR" firstAttribute="top" secondItem="eF2-ZU-Nhf" secondAttribute="bottom" constant="2" id="aEX-Hu-urc"/>
+                            <constraint firstItem="Rv1-ck-doR" firstAttribute="top" secondItem="eF2-ZU-Nhf" secondAttribute="bottom" constant="1" id="aEX-Hu-urc"/>
                             <constraint firstItem="eF2-ZU-Nhf" firstAttribute="trailing" secondItem="whg-xB-BnC" secondAttribute="trailing" id="av7-VW-kKh"/>
                             <constraint firstItem="s25-8B-PMh" firstAttribute="leading" secondItem="FSA-2E-hJb" secondAttribute="trailing" constant="8" id="b4j-bh-C4F"/>
                             <constraint firstItem="whg-xB-BnC" firstAttribute="top" secondItem="Cjg-hx-ahu" secondAttribute="bottom" constant="100" id="cot-Yj-cup"/>
@@ -1848,7 +1848,7 @@ height and weight</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66o-KT-nyR">
-                                <rect key="frame" x="100" y="424.33333333333331" width="214" height="35"/>
+                                <rect key="frame" x="100" y="444.33333333333331" width="214" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="Gg1-Wv-g2T"/>
                                     <constraint firstAttribute="height" constant="35" id="Zzb-xw-RPK"/>
@@ -1863,24 +1863,24 @@ height and weight</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n02-ZW-MCm">
-                                <rect key="frame" x="50" y="499.33333333333331" width="314" height="1"/>
+                                <rect key="frame" x="50" y="519.33333333333337" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="SyN-qx-FaB"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPJ-f8-PQQ">
-                                <rect key="frame" x="50" y="510.33333333333331" width="314" height="114.66666666666669"/>
+                                <rect key="frame" x="50" y="530.33333333333337" width="314" height="119.66666666666663"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="qLR-44-jrM"/>
                                 </constraints>
                                 <string key="text">Excess weight increases the risk for cardiovascular disease, as it can lead to fatty plaques building up in the arteries. People carrying weight around the middle are at higher risk than people that carry weight around their hips and bottom, as they contain visceral fat around the organs rather than subcutaneous fat under the skin. To manage their weight, people can eat suitable portion sizes, eat a healthier diet and become more physically active.</string>
-                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCl-5V-d4T" userLabel="View Sep Bottom">
-                                <rect key="frame" x="50" y="635" width="314" height="1"/>
+                                <rect key="frame" x="50" y="660" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="IVw-WC-w1H"/>
@@ -1999,7 +1999,7 @@ height and weight</string>
                             <constraint firstItem="aB1-sY-Cig" firstAttribute="top" secondItem="vam-kb-5sb" secondAttribute="bottom" constant="100" id="lcb-6j-hRQ"/>
                             <constraint firstItem="fyV-zQ-MY8" firstAttribute="trailing" secondItem="dCl-5V-d4T" secondAttribute="trailing" constant="50" id="mLZ-fZ-oR3"/>
                             <constraint firstItem="ZY4-3X-lYo" firstAttribute="top" secondItem="S0w-hu-X2Q" secondAttribute="top" id="mTt-CW-TBr"/>
-                            <constraint firstItem="fyV-zQ-MY8" firstAttribute="bottom" secondItem="dCl-5V-d4T" secondAttribute="bottom" constant="100" id="nPZ-5d-tfl"/>
+                            <constraint firstItem="fyV-zQ-MY8" firstAttribute="bottom" secondItem="dCl-5V-d4T" secondAttribute="bottom" constant="75" id="nPZ-5d-tfl"/>
                             <constraint firstItem="G3v-wo-9gs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WKE-ZU-Bi4" secondAttribute="trailing" constant="8" symbolic="YES" id="pDm-NI-qih"/>
                             <constraint firstItem="dCl-5V-d4T" firstAttribute="top" secondItem="uPJ-f8-PQQ" secondAttribute="bottom" constant="10" id="qRP-P7-mpQ"/>
                             <constraint firstItem="WKE-ZU-Bi4" firstAttribute="height" secondItem="ZY4-3X-lYo" secondAttribute="height" id="syh-TM-sub"/>
@@ -2030,6 +2030,52 @@ height and weight</string>
             </objects>
             <point key="canvasLocation" x="7636.2318840579719" y="23.64130434782609"/>
         </scene>
+        <!--Disclaimer View Controller-->
+        <scene sceneID="cBG-yg-2Zb">
+            <objects>
+                <viewController id="v8N-o8-MCz" customClass="DisclaimerViewController" customModule="CardioTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yNk-jr-V5a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DISCLAIMER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcm-I8-eWM">
+                                <rect key="frame" x="153" y="120" width="108.33333333333331" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="JMQ-Kv-9Mi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul0-by-djy">
+                                <rect key="frame" x="50" y="192.99999999999997" width="314" height="267.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="Qfc-Rd-jPV"/>
+                                </constraints>
+                                <string key="text">The initial version of this file, to be found at http://svn.clinrisk.co.uk/opensource/qrisk2, faithfully implements QRISK3-2017. ClinRisk Ltd. have released this code under the GNU Lesser General Public License to enable others to implement the algorithm faithfully. However, the nature of the GNU Lesser General Public License is such that we cannot prevent, for example, someone accidentally altering the coefficients, getting the inputs wrong, or just poor programming. ClinRisk Ltd. stress, therefore, that it is the responsibility of the end user to check that the source that they receive produces the same results as the original code found at https://qrisk.org. Inaccurate implementations of risk scores can lead to wrong patients being given the wrong treatment.</string>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bcm-I8-eWM" firstAttribute="centerX" secondItem="8PM-Zl-hzq" secondAttribute="centerX" id="5hC-es-MLX"/>
+                            <constraint firstItem="bcm-I8-eWM" firstAttribute="top" secondItem="8PM-Zl-hzq" secondAttribute="top" constant="100" id="Ms6-yP-nUq"/>
+                            <constraint firstItem="ul0-by-djy" firstAttribute="top" secondItem="bcm-I8-eWM" secondAttribute="bottom" constant="25" id="ULG-2z-qIX"/>
+                            <constraint firstItem="ul0-by-djy" firstAttribute="centerX" secondItem="8PM-Zl-hzq" secondAttribute="centerX" id="nog-Cw-gfo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8PM-Zl-hzq"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblDesc" destination="ul0-by-djy" id="pQ3-ht-j37"/>
+                        <outlet property="lblDisclaimer" destination="bcm-I8-eWM" id="Qsk-9b-on1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDP-Zo-YEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8394" y="-664"/>
+        </scene>
         <!--Calculated Risk View Controller-->
         <scene sceneID="R7J-tt-dx6">
             <objects>
@@ -2039,34 +2085,34 @@ height and weight</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6py-sJ-WBf">
-                                <rect key="frame" x="50" y="364.66666666666669" width="314" height="1"/>
+                                <rect key="frame" x="50" y="366.66666666666669" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="viL-hu-VOg"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-P1-Xbn" userLabel="View Sep Bottom">
-                                <rect key="frame" x="50" y="460" width="314" height="1"/>
+                                <rect key="frame" x="50" y="462" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="yvf-zk-e7U"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information about the results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhu-dY-puu">
-                                <rect key="frame" x="50" y="375.66666666666669" width="314" height="17"/>
+                                <rect key="frame" x="50" y="377.66666666666669" width="314" height="17"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-WC-kR5">
-                                <rect key="frame" x="50" y="392.66666666666669" width="314" height="57.333333333333314"/>
+                                <rect key="frame" x="50" y="394.66666666666669" width="314" height="57.333333333333314"/>
                                 <string key="text">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dg-50-2RO">
-                                <rect key="frame" x="114" y="182" width="186" height="48"/>
+                                <rect key="frame" x="114" y="167" width="186" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="vpS-hq-G3V"/>
                                 </constraints>
@@ -2092,7 +2138,7 @@ cardiovascular risk is</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-xB-qvc">
-                                <rect key="frame" x="110" y="239.99999999999997" width="194" height="77.666666666666657"/>
+                                <rect key="frame" x="110" y="224.99999999999997" width="194" height="77.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdX-Wl-wiP">
                                         <rect key="frame" x="79" y="0.0" width="36.333333333333343" height="77.666666666666671"/>
@@ -2171,6 +2217,20 @@ cardiovascular risk is</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab5-to-lF5">
+                                <rect key="frame" x="167" y="307.66666666666669" width="80" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="jUu-7c-7Nq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFCompactDisplay-Semibold" family="SF Compact Display" pointSize="10"/>
+                                <state key="normal" title="DISCLAIMER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="v8N-o8-MCz" kind="show" id="Vsx-Sk-Wtx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -2180,27 +2240,30 @@ cardiovascular risk is</string>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="rPc-xB-qvc" secondAttribute="trailing" constant="110" id="CaC-Ib-MHy"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="leading" secondItem="yhu-dY-puu" secondAttribute="leading" id="Ifg-Da-km0"/>
                             <constraint firstItem="g1M-fK-ZBw" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="Jzd-WV-opf"/>
-                            <constraint firstItem="3dg-50-2RO" firstAttribute="top" secondItem="zF8-Ta-Hia" secondAttribute="bottom" constant="75" id="Ldn-4k-f05"/>
+                            <constraint firstItem="3dg-50-2RO" firstAttribute="top" secondItem="zF8-Ta-Hia" secondAttribute="bottom" constant="60" id="Ldn-4k-f05"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="trailing" secondItem="yhu-dY-puu" secondAttribute="trailing" id="QxF-Nn-8LB"/>
                             <constraint firstItem="rPc-xB-qvc" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="110" id="SaL-7E-OhQ"/>
                             <constraint firstItem="zF8-Ta-Hia" firstAttribute="top" secondItem="Rwi-Ai-jBm" secondAttribute="top" constant="30" id="V17-55-dAk"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="bottom" secondItem="ssd-c9-Ob7" secondAttribute="bottom" constant="100" id="bHy-X2-gGZ"/>
                             <constraint firstItem="VbC-P1-Xbn" firstAttribute="top" secondItem="ELg-WC-kR5" secondAttribute="bottom" constant="10" id="bjt-UB-9TF"/>
+                            <constraint firstItem="6py-sJ-WBf" firstAttribute="top" secondItem="Ab5-to-lF5" secondAttribute="bottom" constant="35" id="eHy-4O-T7b"/>
                             <constraint firstItem="3dg-50-2RO" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="fcF-AI-W9E"/>
-                            <constraint firstItem="6py-sJ-WBf" firstAttribute="top" secondItem="rPc-xB-qvc" secondAttribute="bottom" constant="47" id="g7G-tU-0tm"/>
                             <constraint firstItem="yhu-dY-puu" firstAttribute="trailing" secondItem="6py-sJ-WBf" secondAttribute="trailing" id="hWn-gw-TVF"/>
                             <constraint firstItem="zF8-Ta-Hia" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="jVb-86-l7G"/>
                             <constraint firstItem="ssd-c9-Ob7" firstAttribute="top" secondItem="g1M-fK-ZBw" secondAttribute="bottom" constant="25" id="kCs-UZ-Dnh"/>
                             <constraint firstItem="rPc-xB-qvc" firstAttribute="top" secondItem="3dg-50-2RO" secondAttribute="bottom" constant="10" id="mGv-1d-Vgg"/>
                             <constraint firstItem="ELg-WC-kR5" firstAttribute="top" secondItem="yhu-dY-puu" secondAttribute="bottom" id="noM-Ii-10l"/>
                             <constraint firstItem="6py-sJ-WBf" firstAttribute="leading" secondItem="Rwi-Ai-jBm" secondAttribute="leading" constant="50" id="rWR-3f-LFk"/>
+                            <constraint firstItem="Ab5-to-lF5" firstAttribute="top" secondItem="rPc-xB-qvc" secondAttribute="bottom" constant="5" id="sAH-6K-4DE"/>
                             <constraint firstItem="ssd-c9-Ob7" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="sdh-E3-Z5p"/>
                             <constraint firstItem="Rwi-Ai-jBm" firstAttribute="trailing" secondItem="6py-sJ-WBf" secondAttribute="trailing" constant="50" id="sf9-8c-L3K"/>
                             <constraint firstItem="VbC-P1-Xbn" firstAttribute="trailing" secondItem="ELg-WC-kR5" secondAttribute="trailing" id="sts-RB-Hyd"/>
+                            <constraint firstItem="Ab5-to-lF5" firstAttribute="centerX" secondItem="Rwi-Ai-jBm" secondAttribute="centerX" id="wJo-eV-NzB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rwi-Ai-jBm"/>
                     </view>
                     <connections>
+                        <outlet property="BtnDisclaimer" destination="Ab5-to-lF5" id="mdU-Ad-UT1"/>
                         <outlet property="btnTrack" destination="g1M-fK-ZBw" id="k86-Kw-aJm"/>
                         <outlet property="lblC" destination="wJz-li-Snw" id="md7-Vl-e3z"/>
                         <outlet property="lblCardio" destination="ueQ-jZ-ebe" id="6cl-m6-5YV"/>
@@ -2894,35 +2957,8 @@ cardiovascular risk is</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUA-cW-rvH">
-                                                <rect key="frame" x="10" y="1071" width="394" height="35"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znm-hJ-mXR">
-                                                        <rect key="frame" x="0.0" y="7" width="64" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymx-Qj-vZ3">
-                                                        <rect key="frame" x="345" y="7" width="42" height="21"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Znm-hJ-mXR" secondAttribute="trailing" constant="20" symbolic="YES" id="0Uf-e7-IxA"/>
-                                                    <constraint firstItem="ymx-Qj-vZ3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fUA-cW-rvH" secondAttribute="leading" priority="500" constant="50" id="0bD-C0-5sV"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ymx-Qj-vZ3" secondAttribute="trailing" constant="7" id="27P-Pk-Umi"/>
-                                                    <constraint firstItem="Znm-hJ-mXR" firstAttribute="leading" secondItem="fUA-cW-rvH" secondAttribute="leading" id="80B-yM-7Ii"/>
-                                                    <constraint firstItem="ymx-Qj-vZ3" firstAttribute="centerY" secondItem="fUA-cW-rvH" secondAttribute="centerY" id="cs2-ut-0IB"/>
-                                                    <constraint firstItem="Znm-hJ-mXR" firstAttribute="centerY" secondItem="fUA-cW-rvH" secondAttribute="centerY" id="eq8-3q-OX8"/>
-                                                    <constraint firstAttribute="height" constant="35" id="gUG-r2-ogU"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aqv-VG-OwD">
-                                                <rect key="frame" x="10" y="1114" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="1071" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="VO2 max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4C-xA-xCW">
                                                         <rect key="frame" x="0.0" y="7" width="70" height="21"/>
@@ -2979,7 +3015,7 @@ cardiovascular risk is</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loM-bK-baO">
-                                                <rect key="frame" x="10" y="1157" width="394" height="35"/>
+                                                <rect key="frame" x="10" y="1114" width="394" height="35"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Estimated Risk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awB-Cz-dpF">
                                                         <rect key="frame" x="0.0" y="7" width="113" height="21"/>
@@ -3017,7 +3053,6 @@ cardiovascular risk is</string>
                                             <constraint firstItem="h47-uP-Y61" firstAttribute="trailing" secondItem="fgM-Xp-2Uu" secondAttribute="trailing" id="6ed-UN-5Ub"/>
                                             <constraint firstItem="loM-bK-baO" firstAttribute="leading" secondItem="Aqv-VG-OwD" secondAttribute="leading" id="7pa-UB-nw6"/>
                                             <constraint firstItem="fgM-Xp-2Uu" firstAttribute="top" secondItem="OsQ-q4-uDx" secondAttribute="bottom" constant="8" id="7xg-AA-xBa"/>
-                                            <constraint firstItem="fUA-cW-rvH" firstAttribute="leading" secondItem="TtD-qE-KhY" secondAttribute="leading" id="95Q-0P-pSU"/>
                                             <constraint firstItem="TtD-qE-KhY" firstAttribute="top" secondItem="PY4-3X-epg" secondAttribute="bottom" constant="46" id="9rJ-pM-lTU"/>
                                             <constraint firstItem="pEd-7e-etU" firstAttribute="trailing" secondItem="EPF-na-OXc" secondAttribute="trailing" id="AzI-Wy-vaR"/>
                                             <constraint firstItem="CxG-p2-uh3" firstAttribute="top" secondItem="pEd-7e-etU" secondAttribute="bottom" constant="8" id="B5k-fX-AQZ"/>
@@ -3038,18 +3073,18 @@ cardiovascular risk is</string>
                                             <constraint firstItem="PaK-XL-Sjy" firstAttribute="trailing" secondItem="e6u-b3-ArC" secondAttribute="trailing" id="LHA-o4-Eoe"/>
                                             <constraint firstItem="OsQ-q4-uDx" firstAttribute="top" secondItem="Ng8-bp-wJ7" secondAttribute="bottom" constant="8" id="LWP-rl-x9Q"/>
                                             <constraint firstItem="EPF-na-OXc" firstAttribute="leading" secondItem="UzE-sb-70l" secondAttribute="leading" id="Lcv-Aj-tWy"/>
-                                            <constraint firstItem="Aqv-VG-OwD" firstAttribute="top" secondItem="fUA-cW-rvH" secondAttribute="bottom" constant="8" id="NRq-gb-yxL"/>
                                             <constraint firstAttribute="trailing" secondItem="UzE-sb-70l" secondAttribute="trailing" constant="10" id="NvH-ku-mfQ"/>
                                             <constraint firstItem="e6u-b3-ArC" firstAttribute="trailing" secondItem="x9b-9z-ZyW" secondAttribute="trailing" id="ONT-lj-Ffw"/>
                                             <constraint firstItem="Ng8-bp-wJ7" firstAttribute="leading" secondItem="oEO-uI-Gvp" secondAttribute="leading" id="OrA-2h-4fW"/>
+                                            <constraint firstItem="Aqv-VG-OwD" firstAttribute="top" secondItem="TtD-qE-KhY" secondAttribute="bottom" constant="8" id="RHI-nj-inq"/>
                                             <constraint firstItem="fgM-Xp-2Uu" firstAttribute="leading" secondItem="OsQ-q4-uDx" secondAttribute="leading" id="SpE-C5-vll"/>
                                             <constraint firstItem="qaH-hP-av5" firstAttribute="top" secondItem="CxG-p2-uh3" secondAttribute="bottom" constant="30" id="UiQ-r3-MEH"/>
                                             <constraint firstItem="CxG-p2-uh3" firstAttribute="trailing" secondItem="pEd-7e-etU" secondAttribute="trailing" id="WEg-C1-jKH"/>
                                             <constraint firstItem="1jk-g6-DUV" firstAttribute="trailing" secondItem="j9F-zN-9aB" secondAttribute="trailing" id="Wiy-Pz-lzc"/>
                                             <constraint firstAttribute="trailing" secondItem="84D-7z-rV4" secondAttribute="trailing" constant="125" id="WwO-vg-nyK"/>
-                                            <constraint firstItem="Aqv-VG-OwD" firstAttribute="leading" secondItem="fUA-cW-rvH" secondAttribute="leading" id="YAY-0a-dCZ"/>
-                                            <constraint firstItem="Aqv-VG-OwD" firstAttribute="trailing" secondItem="fUA-cW-rvH" secondAttribute="trailing" id="ZR0-sp-cHT"/>
+                                            <constraint firstItem="Aqv-VG-OwD" firstAttribute="trailing" secondItem="TtD-qE-KhY" secondAttribute="trailing" id="YAP-Pu-d89"/>
                                             <constraint firstItem="PY4-3X-epg" firstAttribute="trailing" secondItem="5lk-Y4-XcR" secondAttribute="trailing" id="ZVW-K0-JWz"/>
+                                            <constraint firstItem="Aqv-VG-OwD" firstAttribute="leading" secondItem="TtD-qE-KhY" secondAttribute="leading" id="Zrr-xN-bbi"/>
                                             <constraint firstItem="kG3-SM-aAO" firstAttribute="trailing" secondItem="PaK-XL-Sjy" secondAttribute="trailing" id="a1h-ww-7GK"/>
                                             <constraint firstItem="PY4-3X-epg" firstAttribute="leading" secondItem="5lk-Y4-XcR" secondAttribute="leading" id="aL1-NZ-xMf"/>
                                             <constraint firstItem="0mK-YT-fwf" firstAttribute="trailing" secondItem="fgM-Xp-2Uu" secondAttribute="trailing" id="cqN-4M-yw5"/>
@@ -3075,8 +3110,6 @@ cardiovascular risk is</string>
                                             <constraint firstItem="j9F-zN-9aB" firstAttribute="top" secondItem="kIi-DF-qaE" secondAttribute="bottom" constant="8" id="o3b-wp-8pO"/>
                                             <constraint firstItem="oEO-uI-Gvp" firstAttribute="trailing" secondItem="UZL-zV-qyA" secondAttribute="trailing" id="pHc-Cx-7SF"/>
                                             <constraint firstItem="pEd-7e-etU" firstAttribute="top" secondItem="EPF-na-OXc" secondAttribute="bottom" constant="8" id="qcW-U0-14K"/>
-                                            <constraint firstItem="fUA-cW-rvH" firstAttribute="top" secondItem="TtD-qE-KhY" secondAttribute="bottom" constant="8" id="qdX-Jr-aZJ"/>
-                                            <constraint firstItem="fUA-cW-rvH" firstAttribute="trailing" secondItem="TtD-qE-KhY" secondAttribute="trailing" id="s9G-9H-JEB"/>
                                             <constraint firstItem="pEd-7e-etU" firstAttribute="leading" secondItem="EPF-na-OXc" secondAttribute="leading" id="shy-NK-jov"/>
                                             <constraint firstItem="qaH-hP-av5" firstAttribute="trailing" secondItem="UzE-sb-70l" secondAttribute="trailing" id="tV6-ld-I9I"/>
                                             <constraint firstItem="UzE-sb-70l" firstAttribute="leading" secondItem="e7g-2D-HGM" secondAttribute="leading" constant="10" id="uEq-mj-U5W"/>
@@ -3202,8 +3235,6 @@ cardiovascular risk is</string>
                         <outlet property="lblEstimatedSystolicBPValue" destination="EKo-m8-l6n" id="KUk-n4-7ni"/>
                         <outlet property="lblEthnicity" destination="zVw-8D-Tmh" id="GVq-23-gSz"/>
                         <outlet property="lblEthnicityValue" destination="M7Z-0I-ESd" id="aMN-1a-eIJ"/>
-                        <outlet property="lblExercise" destination="Znm-hJ-mXR" id="tyZ-ie-aEN"/>
-                        <outlet property="lblExerciseValue" destination="ymx-Qj-vZ3" id="d9J-oc-usx"/>
                         <outlet property="lblFamHistory" destination="jPf-Td-msL" id="gug-QA-ADw"/>
                         <outlet property="lblFamHistoryValue" destination="tzE-uy-Ysp" id="9Qv-UA-5Tz"/>
                         <outlet property="lblFibrillation" destination="auT-Qg-eMD" id="ceh-LP-sLX"/>
@@ -3240,7 +3271,6 @@ cardiovascular risk is</string>
                         <outlet property="viewEstimatedRisk" destination="loM-bK-baO" id="bFf-sz-Qcu"/>
                         <outlet property="viewEstimatedSystolicBP" destination="e6u-b3-ArC" id="nNX-El-3xp"/>
                         <outlet property="viewEthnicity" destination="CxG-p2-uh3" id="VoW-qs-gzk"/>
-                        <outlet property="viewExercise" destination="fUA-cW-rvH" id="wuv-zl-Kpl"/>
                         <outlet property="viewFamHistory" destination="1jk-g6-DUV" id="SEf-zG-mdR"/>
                         <outlet property="viewFibrillation" destination="UZL-zV-qyA" id="dDW-MD-ZC5"/>
                         <outlet property="viewGender" destination="EPF-na-OXc" id="QI2-7l-QJ8"/>
@@ -3266,7 +3296,7 @@ cardiovascular risk is</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7M-s5-YXK">
-                                <rect key="frame" x="127" y="94" width="160" height="57"/>
+                                <rect key="frame" x="127" y="114" width="160" height="57"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="9ew-gh-lYd">
                                         <rect key="frame" x="8" y="5" width="60" height="52"/>
@@ -3323,7 +3353,7 @@ cardiovascular risk is</string>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqi-Af-r1e">
-                                <rect key="frame" x="100" y="506" width="214" height="36"/>
+                                <rect key="frame" x="100" y="526" width="214" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="f9K-dU-ePG"/>
@@ -3338,7 +3368,7 @@ cardiovascular risk is</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59y-hE-f2F">
-                                <rect key="frame" x="100" y="550" width="214" height="36"/>
+                                <rect key="frame" x="100" y="570" width="214" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="JVm-2g-j2o"/>
@@ -3354,7 +3384,7 @@ cardiovascular risk is</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaJ-u7-bzx">
-                                <rect key="frame" x="50" y="227" width="314" height="33.666666666666686"/>
+                                <rect key="frame" x="50" y="246.99999999999997" width="314" height="33.666666666666657"/>
                                 <string key="text">To automatically monitor your cardiovascular risk,
 please connect to the Health App.*</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="14"/>
@@ -3362,26 +3392,26 @@ please connect to the Health App.*</string>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Variables already stored in the Health app will be used for the risk calculations." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beM-1V-2Tc">
-                                <rect key="frame" x="50" y="275.66666666666669" width="314" height="33.666666666666686"/>
+                                <rect key="frame" x="50" y="295.66666666666669" width="314" height="33.666666666666686"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4q3-fX-QwC">
-                                <rect key="frame" x="50" y="324.33333333333331" width="314" height="50.333333333333314"/>
+                                <rect key="frame" x="50" y="344.33333333333331" width="314" height="50.333333333333314"/>
                                 <string key="text">Variables that have not been stored in the Health app will be recorded in the Health app as the following questions will be answered.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you wish to calculate your one-time cardiovascular risk without connecting to the Health app, please click 'Continue'." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXT-T6-p2d">
-                                <rect key="frame" x="50" y="389.66666666666669" width="314" height="50.333333333333314"/>
+                                <rect key="frame" x="50" y="409.66666666666669" width="314" height="50.333333333333314"/>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Light" family="SF Compact Display" pointSize="14"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ2-cq-ebu">
-                                <rect key="frame" x="80" y="608" width="254" height="24"/>
+                                <rect key="frame" x="80" y="628" width="254" height="24"/>
                                 <string key="text">*Automatic monitoring is only available
 for Apple Watch users.</string>
                                 <fontDescription key="fontDescription" name="SFCompactDisplay-Medium" family="SF Compact Display" pointSize="10"/>
@@ -3389,21 +3419,21 @@ for Apple Watch users.</string>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1q-gF-5az">
-                                <rect key="frame" x="50" y="211" width="314" height="1"/>
+                                <rect key="frame" x="50" y="231" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="fxv-AY-Bj4"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mz-h6-rUp">
-                                <rect key="frame" x="50" y="455" width="314" height="1"/>
+                                <rect key="frame" x="50" y="475" width="314" height="1"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="QAA-By-Mw5"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OK-vm-QmD">
-                                <rect key="frame" x="100" y="508.00000000000006" width="214" height="28.666666666666686"/>
+                                <rect key="frame" x="100" y="528" width="214" height="28.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="214" id="azP-Eb-wF4"/>
                                 </constraints>
@@ -3443,7 +3473,7 @@ Please click 'Continue' to proceed.</string>
                             <constraint firstItem="beM-1V-2Tc" firstAttribute="trailing" secondItem="KaJ-u7-bzx" secondAttribute="trailing" id="uJr-nT-ZXp"/>
                             <constraint firstItem="cJW-yd-q9z" firstAttribute="trailing" secondItem="KaJ-u7-bzx" secondAttribute="trailing" constant="50" id="utx-nr-fqh"/>
                             <constraint firstItem="FXT-T6-p2d" firstAttribute="trailing" secondItem="4q3-fX-QwC" secondAttribute="trailing" id="vKp-6s-JRB"/>
-                            <constraint firstItem="B7M-s5-YXK" firstAttribute="top" secondItem="cJW-yd-q9z" secondAttribute="top" constant="30" id="vQE-37-sQY"/>
+                            <constraint firstItem="B7M-s5-YXK" firstAttribute="top" secondItem="cJW-yd-q9z" secondAttribute="top" constant="50" id="vQE-37-sQY"/>
                             <constraint firstItem="2Mz-h6-rUp" firstAttribute="leading" secondItem="FXT-T6-p2d" secondAttribute="leading" id="y88-rM-Ko9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cJW-yd-q9z"/>

@@ -52,15 +52,46 @@ enum UnknownSystolicBloodPressure {
     case low
 }
 
-
+struct Keys {
+    static let gender = "gender"
+    static let dateOfBirth = "dateOfBirth"
+    static let ethnicity = "ethnicity"
+    static let smokingStatus = "smokingStatus"
+    static let diabetesStatus = "diabetesStatus"
+    static let famHistory = "famHistory"
+    static let kidney = "kidney"
+    static let atrial = "atrial"
+    static let migraines = "migraines"
+    static let arthritis = "arthritis"
+    static let sle = "sle"
+    static let mental = "mental"
+    static let erectile = "erectile"
+    static let noConditions = "noConditions"
+    static let bpTreatment = "bpTreatment"
+    static let antiPsychotic = "antiPsychotic"
+    static let steroids = "steroids"
+    static let noMedications = "noMedications"
+    static let height = "height"
+    static let weight = "weight"
+    static let updatedRisk = "updatedRisk"
+    static let updatedDate = "updatedDate"
+    static let connected = "connected"
+}
 
 final class RiskDataManager {
     
     private init() {   }
     static let shared = RiskDataManager()
+    let defaults = UserDefaults.standard
     
     private let userHealthProfile = UserHealthProfile()
     let healthStore = HKHealthStore()
+    
+    var connectedClicked: Bool? {
+        didSet {
+            storeConnection()
+        }
+    }
     
     // Initialisation
     
@@ -104,20 +135,7 @@ final class RiskDataManager {
     var estimatedSystolicBP: Double = 0
     
     var height: Double = 0
-    var weight: Double = 0 {
-        didSet {
-
-            if RiskDataManager.shared.gender == .male {
-                computedRisk = computeMaleRisk()
-            }
-            else if RiskDataManager.shared.gender == .female {
-                computedRisk = computeFemaleRisk()
-            } else {
-                return
-            }
-            
-        }
-    }
+    var weight: Double = 0
     
     
     //MARK: enum Methods
@@ -177,7 +195,6 @@ final class RiskDataManager {
     }
 
     //MARK: Calculate age from date of birth
-    
     func calculateAndStoreAge() {
         
         let gregorian = Calendar(identifier: .gregorian)
@@ -189,7 +206,7 @@ final class RiskDataManager {
     
     
     //MARK: Load VO2max
-    func loadMostRecentVo2maxData() {
+    func loadMostRecentVo2maxDataAndCalculateRisk(completion: @escaping () -> ()) {
         
         //1. Use HealthKit to create the Sample Types
         guard let vo2maxSampleType = HKSampleType.quantityType(forIdentifier: .vo2Max) else {
@@ -215,13 +232,20 @@ final class RiskDataManager {
             self.vo2max = self.userHealthProfile.vo2max
             self.computeEstimatedCholesterolHDLRatio(vo2max: self.userHealthProfile.vo2max)
             self.computeEstimatedSystolicBloodPressure(vo2max: self.userHealthProfile.vo2max)
+            
+            if RiskDataManager.shared.gender == .female {
+                RiskDataManager.shared.computedRisk = RiskDataManager.shared.computeFemaleRisk()
+            } else if RiskDataManager.shared.gender == .male {
+                RiskDataManager.shared.computedRisk = RiskDataManager.shared.computeMaleRisk()
+            }
+            
+             completion()
+            
         }
     }
     
     //MARK: Compute Estimated Cholesterol & Blood Pressure
     func computeEstimatedCholesterolHDLRatio(vo2max: Double) {
-        
-        print("Er að reikna cholesterol")
         
         if userHealthProfile.vo2max != 0 {
             if RiskDataManager.shared.gender == .male {
@@ -258,8 +282,6 @@ final class RiskDataManager {
             }
             
             RiskDataManager.shared.estimatedCholesterolHDLRatio = estimatedCholesterolHDLRatio
-            print("Estimated CholesterolHDL from RiskDataManager: \(RiskDataManager.shared.estimatedCholesterolHDLRatio)")
-            //updateLabelsEstimatedCholesterolHDL(newRatio: estimatedCholesterolHDLRatio)
         }
     }
     
@@ -270,40 +292,38 @@ final class RiskDataManager {
             if RiskDataManager.shared.gender == .male {
                 
                 if RiskDataManager.shared.age < 30 {
-                    estimatedSystolicBP = -0.729058848 * userHealthProfile.vo2max + 157.35281
+                    estimatedSystolicBP = -0.239 * userHealthProfile.vo2max + 130
                 } else if RiskDataManager.shared.age < 40 {
-                    estimatedSystolicBP = -0.73225255 * userHealthProfile.vo2max + 156.47084
+                    estimatedSystolicBP = -0.240 * userHealthProfile.vo2max + 129
                 } else if RiskDataManager.shared.age < 50 {
-                    estimatedSystolicBP = -0.736210478 * userHealthProfile.vo2max + 155.29302
+                    estimatedSystolicBP = -0.241 * userHealthProfile.vo2max + 129
                 } else if RiskDataManager.shared.age < 60 {
-                    estimatedSystolicBP = -0.758369813 * userHealthProfile.vo2max + 153.8639
+                    estimatedSystolicBP = -0.248 * userHealthProfile.vo2max + 128
                 } else if RiskDataManager.shared.age < 70 {
-                    estimatedSystolicBP = -0.761476778 * userHealthProfile.vo2max + 151.41988
+                    estimatedSystolicBP = -0.250 * userHealthProfile.vo2max + 128
                 } else {
-                    estimatedSystolicBP = -0.724048623 * userHealthProfile.vo2max + 148.0655
+                    estimatedSystolicBP = -0.237 * userHealthProfile.vo2max + 126
                 }
             } else if RiskDataManager.shared.gender == .female {
                 
                 if RiskDataManager.shared.age < 30 {
-                    estimatedSystolicBP = -0.658822159 * userHealthProfile.vo2max + 140.66112
+                    estimatedSystolicBP = -0.0754 * userHealthProfile.vo2max + 115
                 } else if RiskDataManager.shared.age < 40 {
-                    estimatedSystolicBP = -0.668375755 * userHealthProfile.vo2max + 139.897
+                    estimatedSystolicBP = -0.0769 * userHealthProfile.vo2max + 115
                 } else if RiskDataManager.shared.age < 50 {
-                    estimatedSystolicBP = -0.722122387 * userHealthProfile.vo2max + 140.64738
+                    estimatedSystolicBP = -0.0830 * userHealthProfile.vo2max + 115
                 } else if RiskDataManager.shared.age < 60 {
-                    estimatedSystolicBP = -0.803249362 * userHealthProfile.vo2max + 140.95834
+                    estimatedSystolicBP = -0.0924 * userHealthProfile.vo2max + 115
                 } else if RiskDataManager.shared.age < 70 {
-                    estimatedSystolicBP = -0.854672208 * userHealthProfile.vo2max + 140.31254
+                    estimatedSystolicBP = -0.0985 * userHealthProfile.vo2max + 115
                 } else {
-                    estimatedSystolicBP = -0.857142857 * userHealthProfile.vo2max + 139.07143
+                    estimatedSystolicBP = -0.0989 * userHealthProfile.vo2max + 115
                 }
             } else {
                 return
             }
             
             RiskDataManager.shared.estimatedSystolicBP = estimatedSystolicBP
-            print("Estimated SBP from RiskDataManager: \(RiskDataManager.shared.estimatedSystolicBP)")
-            //updateLabelsEstimatedSystolicBP(newSbp: estimatedSystolicBP)
         }
     }
     
@@ -326,31 +346,21 @@ final class RiskDataManager {
     //MARK: Compute Risk Methods
     func computeFemaleRisk() -> Double {
         
-        let pressure = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic)!
-        let statusPressure = HKHealthStore().authorizationStatus(for: pressure)
-        
-        if statusPressure == .sharingAuthorized {
-            RiskDataManager.shared.loadMostRecentVo2maxData() // Þetta ætti að setja estimatedCholesterolHDLRatio og estimatedSystolicBloodPressure en gerir það ekki!
-        }
-        
         // Calculation of BMI Index
         let dblWeight = RiskDataManager.shared.weight
         let dblHeight = RiskDataManager.shared.height/100
         let bmiIndex = dblWeight / (pow(dblHeight,2))
         
         // Declaration of variables
-        
         var dblCholesterolHDLRatio = RiskDataManager.shared.cholesterolHDL
         if RiskDataManager.shared.estimatedCholesterolHDLRatio != 0 {
             dblCholesterolHDLRatio = RiskDataManager.shared.estimatedCholesterolHDLRatio
         }
         
-        
         var dblSystolicBloodPressure = RiskDataManager.shared.systolicBloodPressure
         if RiskDataManager.shared.estimatedSystolicBP != 0 {
             dblSystolicBloodPressure = RiskDataManager.shared.estimatedSystolicBP
         }
-        print("Systolic Blood pressure notaður er: \(dblSystolicBloodPressure)")
         
         let ethnicityCategory = RiskDataManager.shared.ethnicity.rawValue
         let smokingCategory = RiskDataManager.shared.smokingStatus.rawValue
@@ -363,7 +373,7 @@ final class RiskDataManager {
             diabetesType2 = 1
         }
         
-        var sbps5 = 8.9 // We assume this fixed number, taken from an United Arab Emirates Study
+        var sbps5 = 9.3 // We assume this fixed number
         var town: Double = 0
         
         if ethnicityCategory == 0 {
@@ -509,7 +519,15 @@ final class RiskDataManager {
         
         // Declaration of variables
         var dblCholesterolHDLRatio = RiskDataManager.shared.cholesterolHDL
+        if RiskDataManager.shared.estimatedCholesterolHDLRatio != 0 {
+            dblCholesterolHDLRatio = RiskDataManager.shared.estimatedCholesterolHDLRatio
+        }
+        
         var dblSystolicBloodPressure = RiskDataManager.shared.systolicBloodPressure
+        if RiskDataManager.shared.estimatedSystolicBP != 0 {
+            dblSystolicBloodPressure = RiskDataManager.shared.estimatedSystolicBP
+        }
+        
         let ethnicityCategory = RiskDataManager.shared.ethnicity.rawValue
         let smokingCategory = RiskDataManager.shared.smokingStatus.rawValue
         var diabetesType1: Double = 0
@@ -521,7 +539,7 @@ final class RiskDataManager {
             diabetesType2 = 1
         }
         
-        var sbps5 = 10.8 // We assume this fixed number, taken from an United Arab Emirates Study
+        var sbps5 = 9.9 // We assume this fixed number
         var town: Double = 0
         
         if ethnicityCategory == 0 {
@@ -658,14 +676,79 @@ final class RiskDataManager {
         let riskScore: Double = 100.0 * (1 - pow(0.977268040180206, exp(sum)))
         return riskScore
     }
+    
+    func storeConnection() {
+        UserDefaults.standard.set(RiskDataManager.shared.connectedClicked, forKey: "connected")
+    }
+    
+    func retrieveConnection() {
+        RiskDataManager.shared.connectedClicked = UserDefaults.standard.bool(forKey: "connected")
+    }
+    
+    func storeVariables() {
+        defaults.set(RiskDataManager.shared.gender.rawValue, forKey: Keys.gender)
+        defaults.set(RiskDataManager.shared.dateOfBirth, forKey: Keys.dateOfBirth)
+        defaults.set(RiskDataManager.shared.ethnicity.rawValue, forKey: Keys.ethnicity)
+        defaults.set(RiskDataManager.shared.smokingStatus.rawValue, forKey: Keys.smokingStatus)
+        defaults.set(RiskDataManager.shared.diabetesStatus.rawValue, forKey: Keys.diabetesStatus)
+        defaults.set(RiskDataManager.shared.familyHistory, forKey: Keys.famHistory)
+        defaults.set(RiskDataManager.shared.chronicKidneyDisease, forKey: Keys.kidney)
+        defaults.set(RiskDataManager.shared.atrialFibrillation, forKey: Keys.atrial)
+        defaults.set(RiskDataManager.shared.migraines, forKey: Keys.migraines)
+        defaults.set(RiskDataManager.shared.rheumatoidArthritis, forKey: Keys.arthritis)
+        defaults.set(RiskDataManager.shared.systemicLupusErythematosus, forKey: Keys.sle)
+        defaults.set(RiskDataManager.shared.severeMentalIllness, forKey: Keys.mental)
+        defaults.set(RiskDataManager.shared.erectileDysfunction, forKey: Keys.erectile)
+        defaults.set(RiskDataManager.shared.noConditions, forKey: Keys.noConditions)
+        defaults.set(RiskDataManager.shared.bloodPressureTreatment, forKey: Keys.bpTreatment)
+        defaults.set(RiskDataManager.shared.atypicalAntipsychoticMedication, forKey: Keys.antiPsychotic)
+        defaults.set(RiskDataManager.shared.regularSteroidTablets, forKey: Keys.steroids)
+        defaults.set(RiskDataManager.shared.noMedications, forKey: Keys.noMedications)
+        defaults.set(RiskDataManager.shared.height, forKey: Keys.height)
+        defaults.set(RiskDataManager.shared.weight, forKey: Keys.weight)
+    }
+    
+    func retrieveVariables() {
+        RiskDataManager.shared.gender = Gender(rawValue: defaults.string(forKey: Keys.gender)!)!
+        RiskDataManager.shared.dateOfBirth = defaults.object(forKey: Keys.dateOfBirth) as! Date
+        RiskDataManager.shared.ethnicity = Ethnicity(rawValue: defaults.integer(forKey: Keys.ethnicity))!
+        RiskDataManager.shared.smokingStatus = SmokingStatus(rawValue: defaults.integer(forKey: Keys.smokingStatus))!
+        RiskDataManager.shared.diabetesStatus = DiabetesStatus(rawValue: defaults.string(forKey: Keys.diabetesStatus)!)!
+        RiskDataManager.shared.familyHistory = defaults.bool(forKey: Keys.famHistory)
+        RiskDataManager.shared.chronicKidneyDisease = defaults.bool(forKey: Keys.kidney)
+        RiskDataManager.shared.atrialFibrillation = defaults.bool(forKey: Keys.atrial)
+        RiskDataManager.shared.migraines = defaults.bool(forKey: Keys.migraines)
+        RiskDataManager.shared.rheumatoidArthritis = defaults.bool(forKey: Keys.arthritis)
+        RiskDataManager.shared.systemicLupusErythematosus = defaults.bool(forKey: Keys.sle)
+        RiskDataManager.shared.severeMentalIllness = defaults.bool(forKey: Keys.mental)
+        RiskDataManager.shared.erectileDysfunction = defaults.bool(forKey: Keys.erectile)
+        RiskDataManager.shared.noConditions = defaults.bool(forKey: Keys.noConditions)
+        RiskDataManager.shared.bloodPressureTreatment = defaults.bool(forKey: Keys.bpTreatment)
+        RiskDataManager.shared.atypicalAntipsychoticMedication = defaults.bool(forKey: Keys.antiPsychotic)
+        RiskDataManager.shared.regularSteroidTablets = defaults.bool(forKey: Keys.steroids)
+        RiskDataManager.shared.noMedications = defaults.bool(forKey: Keys.noMedications)
+        RiskDataManager.shared.height = defaults.double(forKey: Keys.height)
+        RiskDataManager.shared.weight = defaults.double(forKey: Keys.weight)
+    }
+    
+    func storeRiskAndDateArrs() {
+        defaults.set(RiskDataManager.shared.riskArr, forKey: Keys.updatedRisk)
+        defaults.set(RiskDataManager.shared.dateArr, forKey: Keys.updatedDate)
+    }
+    
+    func retrieveRiskAndDateArrs() {
+        RiskDataManager.shared.riskArr = defaults.array(forKey: Keys.updatedRisk) as? [Double] ?? [Double]()
+        RiskDataManager.shared.dateArr = defaults.array(forKey: Keys.updatedDate) as? [String] ?? [String]()
+    }
+    
+
+    
 }
+
+
 
 extension Bool {
     var doubleValue: Double {
         return self ? 1 : 0
     }
 }
-
-
-
-

@@ -12,8 +12,6 @@ import XCTest
 class CardioTrackerTests: XCTestCase {
     
     
-    
-    
     //MARK: FEMALES
     
     //MARK: AGE
@@ -23,13 +21,8 @@ class CardioTrackerTests: XCTestCase {
         let someKnownValueOfQRiskWithTheseParams = 0.1
         if  risk.computedRisk > 0 {
             
-            //Test data er stærra en 0, þetta condition er bara hérna því ég veit að someKnown... er > 0 og ég er að nota tölugildi
-            //Tölugildið á milli þeirra er á einhverju bili
-            //Til að teljast ástættanleg niðurstaða
-            
-            //Assertum að eftirfarandi statement sé satt
-            //Basically að riskið okkar sé nógu nálægt known value
-            //Ef þetta failar þá failar testið
+
+            //If this fails, the test fails.
             let acceptedErrorMargin: Double = 0.1 * someKnownValueOfQRiskWithTheseParams // Works with 0.3
             XCTAssertTrue( abs(risk.computedRisk - someKnownValueOfQRiskWithTheseParams) < acceptedErrorMargin, "Computed and test data within range")
             
@@ -2543,8 +2536,9 @@ class CardioTrackerTests: XCTestCase {
         
         let risk = getMaleMockedRiskWith(age: 48, diabetes: .type1, familyHistory: true, systolicBP: 125, height: 173, weight: 80)
         let someKnownValueOfQRiskWithTheseParams = 14.9
+        
         if  risk.computedRisk > 0 {
-            
+        
             let acceptedErrorMargin: Double = 0.1 * someKnownValueOfQRiskWithTheseParams
             XCTAssertTrue( abs(risk.computedRisk - someKnownValueOfQRiskWithTheseParams) < acceptedErrorMargin, "Computed and test data within range")
             
@@ -2587,6 +2581,8 @@ class CardioTrackerTests: XCTestCase {
         riskTest.height = height
         riskTest.weight = weight
         
+        riskTest.computedRisk = riskTest.computeFemaleRisk()
+        
         return riskTest
     }
     
@@ -2618,6 +2614,8 @@ class CardioTrackerTests: XCTestCase {
         riskTest.systolicBloodPressure = systolicBP
         riskTest.height = height
         riskTest.weight = weight
+        
+        riskTest.computedRisk = riskTest.computeMaleRisk()
         
         return riskTest
     }

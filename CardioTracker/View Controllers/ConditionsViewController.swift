@@ -9,19 +9,13 @@ import UIKit
 
 class ConditionsViewController: UIViewController {
     
-    
-    @IBOutlet weak var btnBack: UIButton!
-    
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
-    
     @IBOutlet weak var btnCircle: UIButton!
     @IBOutlet weak var lblQuestions: UILabel!
-    
     @IBOutlet weak var lblConditions: UILabel!
-    
     @IBOutlet weak var lblKidney: UILabel!
     @IBOutlet weak var checkBoxKidney: UIButton!
     @IBOutlet weak var lblAtrialFibrillation: UILabel!
@@ -36,12 +30,9 @@ class ConditionsViewController: UIViewController {
     @IBOutlet weak var checkBoxSevereMentalIllness: UIButton!
     @IBOutlet weak var lblErectileDysfunction: UILabel!
     @IBOutlet weak var checkBoxErectileDysfunction: UIButton!
-    
     @IBOutlet weak var lblHealthy: UILabel!
     @IBOutlet weak var checkBoxHealthy: UIButton!
-    
     @IBOutlet weak var btnNext: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,13 +46,17 @@ class ConditionsViewController: UIViewController {
         btnNext.alpha = 0.5
         
         //MARK: Labels Layout
-        lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblConditions.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
+        let lblArr = [lblC, lblCardio, lblT, lblTracker]
+        
+        for label in lblArr {
+            label?.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        }
+        
         lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
         lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
+        
+        lblConditions.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
+
         
         //MARK: Buttons Layout
         btnNext.layer.cornerRadius = 15
@@ -86,6 +81,7 @@ class ConditionsViewController: UIViewController {
     
     
     //MARK: Button Methods
+    
     func enableNextBtn() {
         btnNext.isEnabled = true
         btnNext.alpha = 1.0
@@ -220,9 +216,5 @@ class ConditionsViewController: UIViewController {
     }
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
-    }
-    
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
     }
 }

@@ -18,18 +18,13 @@ class YAxisValueFormatter: IAxisValueFormatter {
 
 class TrackingViewController: UIViewController {
     
-
-    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var lineChartView: LineChartView!
-    
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
     @IBOutlet weak var lblChange: UILabel!
-    @IBOutlet weak var lblOverview: UILabel!
     @IBOutlet weak var lblWarning: UILabel!
-
     @IBOutlet weak var viewContainer: UIView!
     
     override func viewDidLoad() {
@@ -43,16 +38,11 @@ class TrackingViewController: UIViewController {
             lbl?.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
         }
         
-        
-        let lblGrayArr = [lblOverview, lblChange]
-        
-        for lbl in lblGrayArr {
-            lbl?.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
-        }
-        
-        
         lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
         lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
+        
+        
+        lblChange.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
         
         var first: Double = 0
         var last: Double = 0
@@ -80,9 +70,11 @@ class TrackingViewController: UIViewController {
             lblWarning.text = "GOOD NEWS!"
             lblWarning.textColor = UIColor(red: 50/255, green: 205/255, blue: 50/255, alpha: 1)
             lblChange.text = "Your cardiovascular risk has decreased since CardioTracker was activated."
+        } else if last == first {
+            lblWarning.text = "NO CHANGE!"
+            lblWarning.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+            lblChange.text = "Your cardiovascular risk is the same as when CardioTracker was activated."
         }
-        
-        
         
         
         //MARK: Call methods
@@ -95,7 +87,6 @@ class TrackingViewController: UIViewController {
         setValuesAndLayout()
         setXAxis()
         setYAxis()
-        setGridlines()
         lineChartView.fitScreen()
     }
     
@@ -108,10 +99,9 @@ class TrackingViewController: UIViewController {
         }
         
         let set1 = LineChartDataSet(entries: values, label: "Estimated 10-year risk of developing cardiovascular disease")
-    
+        
         let data = LineChartData(dataSet: set1)
-        
-        
+    
         
         // Set Layout
         data.setDrawValues(false)
@@ -119,13 +109,11 @@ class TrackingViewController: UIViewController {
         set1.circleRadius = CGFloat.init(2.0)
         set1.circleColors = [UIColor(red: 150/255, green: 8/255, blue: 8/255, alpha: 1)]
         
-        
-        
         self.lineChartView.data = data
     }
     
     func setXAxis() {
-
+        
         // Set Date Labels to X Axis
         lineChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values: RiskDataManager.shared.dateArr)
         
@@ -134,7 +122,7 @@ class TrackingViewController: UIViewController {
         
         // Layout
         lineChartView.xAxis.labelPosition = .bottom
-
+        
     }
     
     func setYAxis() {
@@ -142,17 +130,6 @@ class TrackingViewController: UIViewController {
         lineChartView.leftAxis.valueFormatter = YAxisValueFormatter()
         lineChartView.leftAxis.axisMaximum = RiskDataManager.shared.riskArr.max()! + 1
         lineChartView.leftAxis.axisMinimum = 0
-    }
-    
-    func setGridlines() {
-        
-    }
-
-    
-    
-    
-    @IBAction func btnBackClicked(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
     }
     
 }

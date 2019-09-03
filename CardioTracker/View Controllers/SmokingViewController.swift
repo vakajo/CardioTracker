@@ -11,27 +11,21 @@ import UIKit
 
 class SmokingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    // Outlets
-    @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
-    
     @IBOutlet weak var btnCircle: UIButton!
     @IBOutlet weak var lblQuestions: UILabel!
-    
     @IBOutlet weak var lblSmoking: UILabel!
     @IBOutlet weak var pickerViewSmoking: UIPickerView!
     @IBOutlet weak var btnNext: UIButton!
-    
     @IBOutlet weak var viewSepTop: UIView!
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
     
     // Declare array for Picker View
     var pickerData: [String] = [String]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,15 +38,17 @@ class SmokingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         pickerData = ["Non-Smoker", "Ex-Smoker", "Light Smoker (Under 10 pr day)", "Moderate Smoker (10-19 pr day)", "Heavy Smoker (Over 20 pr day)"]
         
         //MARK: Labels Layout
-        lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        let lblArr = [lblC, lblCardio, lblT, lblTracker]
+        
+        for label in lblArr {
+            label?.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        }
+        
         lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
         lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
+        
         lblSmoking.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblDesc
-            .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        lblDesc.textColor = .darkGray
         
         
         //MARK: Buttons layout
@@ -66,11 +62,9 @@ class SmokingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         btnCircle.layer.borderColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1).cgColor
         btnCircle.layer.borderWidth = 1.0
         btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
-       
     }
     
     //MARK: PickerView Methods
-    
     // Number of columns of data
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -106,11 +100,6 @@ class SmokingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         sender.backgroundColor = UIColor(red: 119.0/255.0, green: 8.0/255.0, blue: 8.0/255.0, alpha: 1.0)
         sender.setTitleColor(.white, for: [])
     }
-    
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    
     
     @IBAction func btnNextSelected(_ sender: UIButton) {
     }

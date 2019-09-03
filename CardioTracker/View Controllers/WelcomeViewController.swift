@@ -30,12 +30,14 @@ class WelcomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
         // Hide the Navigation Bar
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
+        
         // Show the Navigation Bar
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
@@ -43,38 +45,34 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // MARK: Text Color
-        lblWelcome.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
-        lblTo.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
-        lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblCartdio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblAboutBold
-            .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
-        lblDesc
-            .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
-        lblDisclaimer
-            .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
-        lblGetStarted
-            .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        //MARK: Labels Layout
+        let lblArrLogo = [lblC, lblCartdio, lblT, lblTracker]
+        
+        for label in lblArrLogo {
+            label?.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        }
+        
         lblCartdio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
         lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
         
+        let lblArr = [lblWelcome, lblTo, lblAboutBold, lblGetStarted]
+        
+        for label in lblArr {
+            label?.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        }
+
+        lblDesc.textColor = .darkGray
+        lblDisclaimer.textColor = .darkGray
         
         //MARK: Button
         btnStart.layer.cornerRadius = 15
         btnStart.clipsToBounds = true
         btnStart.backgroundColor = UIColor(red: 190/255, green: 8/255, blue: 8/255, alpha: 1)
-        
-    
     }
-    
     
     
     @IBAction func btnStartedClicked(_ sender: UIButton){
     }
-    
     
 }
 

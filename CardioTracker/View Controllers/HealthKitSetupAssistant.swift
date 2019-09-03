@@ -59,12 +59,9 @@ class HealthKitSetupAssistant {
         }
         
         //2. Prepare the data types that will interact with HealthKit
-        guard /*let biologicalSex = HKObjectType.characteristicType(forIdentifier: .biologicalSex),*/
+        guard
             let systolicBloodPressure = HKObjectType.quantityType(forIdentifier: .bloodPressureSystolic),
-            //let bodyMassIndex = HKObjectType.quantityType(forIdentifier: .bodyMassIndex),
-            //let height = HKObjectType.quantityType(forIdentifier: .height),
-            //let bodyMass = HKObjectType.quantityType(forIdentifier: .bodyMass),
-            let exercise = HKObjectType.quantityType(forIdentifier: .appleExerciseTime),
+            //let exercise = HKObjectType.quantityType(forIdentifier: .appleExerciseTime),
             let vo2max = HKObjectType.quantityType(forIdentifier: .vo2Max) else {
                 
                 completion(false, HealthkitSetupError.dataTypeNotAvailable)
@@ -74,8 +71,7 @@ class HealthKitSetupAssistant {
         //3. Prepare a list of types you want HealthKit to read and write
         let healthKitTypesToWrite: Set<HKSampleType> = [systolicBloodPressure]
         
-        let healthKitTypesToRead: Set<HKObjectType> = [systolicBloodPressure,
-                                                       exercise,
+        let healthKitTypesToRead: Set<HKObjectType> = [/*exercise,*/
                                                        vo2max]
         
         //4. Request Authorization
@@ -123,3 +119,9 @@ class HealthKitSetupAssistant {
     
     
 }
+
+
+/*let biologicalSex = HKObjectType.characteristicType(forIdentifier: .biologicalSex),*/
+//let bodyMassIndex = HKObjectType.quantityType(forIdentifier: .bodyMassIndex),
+//let height = HKObjectType.quantityType(forIdentifier: .height),
+//let bodyMass = HKObjectType.quantityType(forIdentifier: .bodyMass),

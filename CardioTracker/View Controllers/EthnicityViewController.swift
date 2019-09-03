@@ -9,29 +9,22 @@
 import UIKit
 
 class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    // Outlets
-    
-    @IBOutlet weak var btnBack: UIButton!
+
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
-    
     @IBOutlet weak var btnCircle: UIButton!
     @IBOutlet weak var lblQuestions: UILabel!
-    
     @IBOutlet weak var lblEthnicity: UILabel!
     @IBOutlet weak var pickerViewEthnicity: UIPickerView!
     @IBOutlet weak var btnNext: UIButton!
-
     @IBOutlet weak var viewSepTop: UIView!
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
     
     // Declare array for Picker View
     var pickerData: [String] = [String]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,18 +34,24 @@ class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         pickerViewEthnicity.dataSource = self
         
         // Input picker data to the array
-        pickerData = ["White", "Indian", "Pakistani", "Bangladeshi", "Other Asian", "Black Caribbean", "Black African", "Chinese", "Other"]
+        
+        pickerData = ["White", "Indian", "Pakistani", "Bangladeshi",
+                      "Other Asian", "Black Caribbean", "Black African",
+                      "Chinese", "Other"]
         
         //MARK: Labels Layout
-        lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblEthnicity.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblDesc
-            .textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        let lblArr = [lblC, lblCardio, lblT, lblTracker]
+        
+        for label in lblArr {
+            label?.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        }
+        
         lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
         lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
+        
+        lblEthnicity.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
+        lblDesc.textColor = .darkGray
+       
         
         //MARK: Buttons layout
         btnNext.layer.cornerRadius = 15
@@ -67,9 +66,7 @@ class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
     }
     
-    
     //MARK: Picker View Methods
-    
     // Number of columns of data
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -85,6 +82,11 @@ class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         return pickerData[row]
     }
     
+    // Set value of ethnicity
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        RiskDataManager.shared.ethnicity = RiskDataManager.getEthnicityFrom(strEthnicity: pickerData[row])
+    }
+    
     // Set font of PickerView
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let label = UILabel()
@@ -92,11 +94,6 @@ class EthnicityViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         label.text = pickerData[row]
         label.textAlignment = .center
         return label
-    }
-    
-    // Set value of ethnicity
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        RiskDataManager.shared.ethnicity = RiskDataManager.getEthnicityFrom(strEthnicity: pickerData[row])
     }
     
     

@@ -15,12 +15,9 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
-    
     @IBOutlet weak var btnCircle: UIButton!
     @IBOutlet weak var lblQuestions: UILabel!
-    
     @IBOutlet weak var lblMedication: UILabel!
-    
     @IBOutlet weak var lblBloodPressureTreatment: UILabel!
     @IBOutlet weak var btnBloodPressureTreatment: UIButton!
     @IBOutlet weak var lblAtypicalAntipsychotic: UILabel!
@@ -29,11 +26,9 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
     @IBOutlet weak var btnSteroidTablets: UIButton!
     @IBOutlet weak var lblHealthy: UILabel!
     @IBOutlet weak var btnHealthy: UIButton!
-    
     @IBOutlet weak var btnNext: UIButton!
     
     var viewControllerToInsertBelow : UIViewController?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,13 +38,17 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
         btnNext.alpha = 0.5
         
         //MARK: Labels Layout
-        lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblMedication.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
+        let lblArr = [lblC, lblCardio, lblT, lblTracker]
+        
+        for label in lblArr {
+            label?.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        }
+        
         lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
         lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
+        
+        lblMedication.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
+       
         
         //MARK: Buttons Layout
             btnNext.layer.cornerRadius = 15
@@ -69,7 +68,6 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
         btnCircle.layer.borderColor = UIColor(red: 200/255, green: 200/255, blue: 200/255, alpha: 1).cgColor
         btnCircle.layer.borderWidth = 1.0
         btnCircle.layer.cornerRadius = btnCircle.frame.size.height/2.0
-        
     }
     
     
@@ -131,7 +129,7 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
             enableNextBtn()
         }
     }
-    
+
     
     @IBAction func btnBloodPressureSelected(_ sender: UIButton) {
         checkBoxTapped(btnBloodPressureTreatment)
@@ -173,7 +171,6 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
     }
     
     
-    
     @IBAction func btnNextSelected(_ sender: UIButton) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -189,6 +186,4 @@ class MedicationViewController: UIViewController, UINavigationControllerDelegate
             self.navigationController?.pushViewController(newViewController, animated: true)
         }
     }
-    
-
 }

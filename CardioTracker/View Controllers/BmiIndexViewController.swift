@@ -9,25 +9,19 @@
 import UIKit
 
 class BmiIndexViewController: UIViewController, UITextFieldDelegate {
-    
-    
-    @IBOutlet weak var btnBack: UIButton!
-    
+
     @IBOutlet weak var lblC: UILabel!
     @IBOutlet weak var lblCardio: UILabel!
     @IBOutlet weak var lblT: UILabel!
     @IBOutlet weak var lblTracker: UILabel!
-    
     @IBOutlet weak var btnCircle: UIButton!
     @IBOutlet weak var lblQuestions: UILabel!
-    
     @IBOutlet weak var lblHeightWeight: UILabel!
     @IBOutlet weak var lblHeight: UILabel!
     @IBOutlet weak var txtFieldHeight: UITextField!
     @IBOutlet weak var lblWeight: UILabel!
     @IBOutlet weak var txtFieldWeight: UITextField!
     @IBOutlet weak var btnFinish: UIButton!
-    
     @IBOutlet weak var viewSepTop: UIView!
     @IBOutlet weak var lblDesc: UILabel!
     @IBOutlet weak var viewSepBottom: UIView!
@@ -50,17 +44,24 @@ class BmiIndexViewController: UIViewController, UITextFieldDelegate {
 
         
         //MARK: Labels Layout
-        lblC.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblCardio.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblT.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblTracker.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblHeightWeight.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
-        lblHeight.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
-        lblWeight.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
-        lblDesc.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        let lblArr = [lblC, lblCardio, lblT, lblTracker]
+        
+        for label in lblArr {
+            label?.textColor = UIColor(red: 100/255, green: 8/255, blue: 8/255, alpha: 1)
+        }
+        
         lblCardio.attributedText = NSAttributedString(string: "ARDIO",attributes:[ NSAttributedString.Key.kern: 1.3])
         lblTracker.attributedText = NSAttributedString(string: "RACKER",attributes:[ NSAttributedString.Key.kern: 1.2])
         
+        lblHeightWeight.textColor = UIColor(red: 119/255, green: 8/255, blue: 8/255, alpha: 1)
+        lblHeight.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        lblWeight.textColor = UIColor(red: 140/255, green: 140/255, blue: 140/255, alpha: 1)
+        lblDesc.textColor = .darkGray
+        
+        if RiskDataManager.shared.connectedClicked == true {
+            lblQuestions.text = "1/9"
+        }
+
         //MARK: Button
         btnFinish.layer.cornerRadius = 15
         btnFinish.clipsToBounds = true
@@ -102,11 +103,11 @@ class BmiIndexViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.activeTextField = textField
     }
 
-    
     @objc func editingChanged(_ textField: UITextField) {
         if textField.text?.count == 1 {
             if textField.text?.first == " " {
@@ -139,10 +140,6 @@ class BmiIndexViewController: UIViewController, UITextFieldDelegate {
         guard let textWeight = txtFieldWeight.text else { return }
         guard let dblWeight = Double(textWeight) else { return }
         RiskDataManager.shared.weight = dblWeight
-    }
-    
-    @IBAction func backBtnPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
     }
 
 }
